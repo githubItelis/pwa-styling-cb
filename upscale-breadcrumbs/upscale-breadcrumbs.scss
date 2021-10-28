@@ -1,0 +1,25 @@
+@import "../styles.scss";
+
+:host {
+  font-size: 1.4rem;
+  font-weight: 400;
+	background: red;
+
+  .breadcrumbs__link {
+    color: var(--cx-color-secondary);
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
+  .breadcrumbs__arrow {
+    color: var(--cx-color-grey);
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
+  .breadcrumbs__text {
+    color: var(--cx-color-text-primary);
+    font-size: inherit;
+    font-weight: inherit;
+  }
+}

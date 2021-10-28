@@ -1,0 +1,20 @@
+@import "../styles.scss";
+
+:host {
+  article {
+    background-color: var(--cx-color-item-background);
+
+    h1 {
+      color: var(--cx-color-text-primary);
+    }
+
+    h2, .excerpt {
+      color: var(--cx-color-text-secondary);
+    }
+
+    button {
+      background-color: var(--cx-color-primary);
+      color: var(--cx-color-inverse);
+    }
+  }
+}

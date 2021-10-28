@@ -1,0 +1,8 @@
+@import "../styles.scss";
+
+:host {
+  button {
+    background-color: var(--cx-color-primary) !important;
+    color: var(--cx-color-inverse) !important;
+  }
+}

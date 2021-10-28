@@ -1,0 +1,11 @@
+@import "../styles.scss";
+
+:host {
+  .storybook-component-headline {
+    color: var(--cx-color-text-secondary) !important;
+  }
+
+  .storybook-component-sub-headline {
+    color: var(--cx-color-text-secondary) !important;
+  }
+}

@@ -1,0 +1,16 @@
+@import "../styles.scss";
+
+:host {
+  nav ul li a {
+    background-color: var(--cx-color-primary);
+    color: var(--cx-color-inverse);
+
+    &:hover {
+      background-color: var(--cx-color-dark);
+    }
+  }
+
+  nav ul {
+    width: 100%;
+  }
+}

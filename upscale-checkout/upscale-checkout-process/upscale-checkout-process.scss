@@ -1,0 +1,13 @@
+@import "../../styles.scss";
+
+:host {
+  .section__button {
+    background-color: var(--cx-color-primary) !important;
+    color: var(--cx-color-inverse) !important;
+  }
+
+  .cart__checkout-button.cart-checkout-button {
+    background-color: var(--cx-color-secondary) !important;
+    color: var(--cx-color-inverse) !important;
+  }
+}

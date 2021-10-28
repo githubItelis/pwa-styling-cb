@@ -1,0 +1,19 @@
+@import "../styles.scss";
+
+:host {
+  .cart__checkout-button.cart-checkout-button {
+    background-color: var(--cx-color-secondary) !important;
+    color: var(--cx-color-inverse) !important;
+    border-color: var(--cx-color-secondary) !important;
+  }
+
+  .name {
+    color: var(--cx-color-text-primary);
+  }
+
+  .cart-empty__start-shopping-button {
+    background-color: var(--cx-color-primary);
+    color: var(--cx-color-inverse);
+    border-color: var(--cx-color-primary);
+  }
+}

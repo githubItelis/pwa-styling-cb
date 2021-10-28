@@ -1,0 +1,18 @@
+@import "../styles.scss";
+
+:host {
+  .productWrapper .product-info .product-details .title {
+    color: var(--cx-color-text-secondary);
+  }
+
+  .selling-price, .original-price {
+    color: var(--cx-color-text-secondary);
+  }
+
+  .text-button {
+    background-color: var(--cx-color-primary);
+    color: var(--cx-color-inverse);
+    border: solid var(--cx-color-primary) 1px;
+  }
+}
+

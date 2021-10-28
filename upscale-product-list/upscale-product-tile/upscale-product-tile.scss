@@ -1,0 +1,20 @@
+@import "../../styles.scss";
+
+:host {
+  a.name {
+    color: var(--cx-color-text-secondary) !important;
+  }
+
+  .original-price.browse-original-price {
+    color: var(--cx-color-grey) !important;
+  }
+
+  .selling-price.browse-sale-price {
+    color: var(--cx-color-text-secondary) !important;
+  }
+
+  .buy-buttons .browse-add-to-cart-button {
+    background-color: var(--cx-color-secondary) !important;
+    color: var(--cx-color-inverse) !important;
+  }
+}

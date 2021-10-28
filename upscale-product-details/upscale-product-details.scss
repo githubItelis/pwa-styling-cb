@@ -1,0 +1,16 @@
+@import "../styles.scss";
+
+:host {
+  .title {
+    color: var(--cx-color-text-secondary);
+  }
+
+  .original-price.pdp-original-price-text, .pdp-sale-price-text {
+    color: var(--cx-color-text-secondary) !important;
+  }
+
+  .add-to-cart.pdp-add-to-cart-button {
+    background-color: var(--cx-color-secondary) !important;
+    color: var(--cx-color-inverse) !important;
+  }
+}
