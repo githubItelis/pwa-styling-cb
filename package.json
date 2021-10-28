@@ -1,4 +1,9 @@
 {
-	"name": "upscale-style-agroavant",
-	"version": "0.1"
+  "name": "upscale-style-agroavant",
+  "version": "0.0.1",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifafter/pwa-styling-agroavant.git"
+  },  
 }
