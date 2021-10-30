@@ -2,16 +2,6 @@
 
 :host {
 	background-color: yellow;
-}
-
-:host {
-	[_nghost-serverApp-c157] {
-		background-color: --cx-color-red;
-		background-color: green;
-	}
-}
-
-[_nghost-serverApp-c157] {
-	background-color: --cx-color-red;
-	background-color: green;
+	background-color: --cx-color-red;		
+	font-family: $font-family;
 }
