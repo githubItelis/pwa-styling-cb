@@ -4,6 +4,12 @@
 	background-color: yellow;
 	background-color: var(--cx-color-red);		
 	font-family: $font-family;
+	
+	html, body, #upscale,
+	.header__top, 
+	.header__bottom nav { 
+		background-color: var(--cx-color-white); 
+	}
 }
 
 html, body, #upscale,
