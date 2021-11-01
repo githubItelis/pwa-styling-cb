@@ -17,7 +17,7 @@
 			text-decoration: underline;
 		}
 	}
-	nav ul li a[routerlinkactive="active"] {
+	nav ul li a.active {
 		text-decoration: underline;
 	}
 	/*
