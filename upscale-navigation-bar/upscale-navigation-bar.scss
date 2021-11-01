@@ -13,13 +13,16 @@
 		color: var(--cx-color-grey);
 		
 		&:hover {
-    		/*background-color: transparent;*/
+    		background-color: transparent;
 			text-decoration: underline;
 		}
 	}
-	
+	nav ul li a[routerlinkactive="active"] {
+		text-decoration: underline;
+	}
+	/*
 	nav ul li:first-child {
 		flex-grow: 1;
 	}		
-	
+	*/
 }
