@@ -1,0 +1,24 @@
+@import "../styles.scss";
+
+:host {
+  
+  	nav ul {
+    	width: 100%;
+	  	justify-content: flex-end;
+  	}
+	
+	nav ul li a { 
+		background-color: transparent;
+		text-transform: uppercase;
+		
+		&:hover {
+    		background-color: #1a1a1a;
+			text-decoration: underline;
+		}
+	}
+	
+	nav ul li:first-child {
+		flex-grow: 1;
+	}
+
+}
