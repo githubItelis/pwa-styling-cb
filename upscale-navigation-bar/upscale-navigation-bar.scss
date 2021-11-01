@@ -10,6 +10,7 @@
 	nav ul li a { 
 		background-color: transparent;
 		text-transform: uppercase;
+		color: var(--cx-color-grey);
 		
 		&:hover {
     		background-color: #1a1a1a;
@@ -19,6 +20,6 @@
 	
 	nav ul li:first-child {
 		flex-grow: 1;
-	}
-
+	}		
+	
 }
