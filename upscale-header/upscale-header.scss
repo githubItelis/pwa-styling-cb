@@ -1,5 +1,9 @@
 @import "../styles.scss";
 
+html, body, #upscale {
+	background-color: var(--cx-color-white); 	
+}
+
 :host {
 	/*background-color: var(--cx-color-white); 
 	font-family: $font-family;
@@ -10,39 +14,24 @@
 		padding-bottom: 20px;
 	}
 	
+	.header,
 	.header__top, 
 	.header__bottom nav { 
 		background-color: var(--cx-color-white); 
 	}
 
 }
-/*
-html, body, #upscale,
-[_nghost-serverApp-c86] .header__top[_ngcontent-serverApp-c86], 
-[_nghost-serverApp-c86],
-[_nghost-serverApp-c85].header__bottom nav[_ngcontent-serverApp-c85],
-[_nghost-serverApp-c56]:not(.showSettings),
-[_nghost-serverApp-c157] { 
-	/*background-color: var(--cx-color-white); 
-	background-color: $color-white;
-}
-.container[_ngcontent-serverApp-c220]  {
-	max-width: 1200px;
-}
-.header__bottom nav[_ngcontent-serverApp-c85] ul[_ngcontent-serverApp-c85] {
-	padding-bottom: 20px;
-}
+
 .cdk-overlay-dark-backdrop {
 	background: rgba(162, 162, 162, 0.5);
 }
-[_nghost-serverApp-c85] nav[_ngcontent-serverApp-c85] ul[_ngcontent-serverApp-c85] li[_ngcontent-serverApp-c85] a[_ngcontent-serverApp-c85],
-[_nghost-serverApp-c56]:not(.showSettings) .content[_ngcontent-serverApp-c56],
-[_nghost-serverApp-c55] .link[_ngcontent-serverApp-c55], [_nghost-serverApp-c55] .content[_ngcontent-serverApp-c55] a { 
-	color: var(--cx-color-grey);
+
+/*
+.container[_ngcontent-serverApp-c220]  {
+	max-width: 1200px;
 }
-[_nghost-serverApp-c55] .link[_ngcontent-serverApp-c55]:hover,
-[_nghost-serverApp-c55] .content[_ngcontent-serverApp-c55] a:hover { 
-	text-decoration: none; 
+.cdk-overlay-dark-backdrop {
+	background: rgba(162, 162, 162, 0.5);
 }
 [_nghost-serverApp-c56]:not(.showSettings) button[_ngcontent-serverApp-c56] {
 	padding-top: 10px;
