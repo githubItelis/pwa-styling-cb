@@ -1,45 +1,30 @@
-/*@import "../styles.scss";*/
-
-$color-white: #FFFFFF;
+@import "../styles.scss";
 
 :host {
 	/*background-color: var(--cx-color-white); 
 	font-family: $font-family;
 	*/
-}
+	background-color: var(--cx-color-white); 
+	
+	.header__bottom nav ul {
+		padding-bottom: 20px;
+	}
+	
+	.header__top, 
+	.header__bottom nav { 
+		background-color: var(--cx-color-white); 
+	}
 
+}
+/*
 html, body, #upscale,
 [_nghost-serverApp-c86] .header__top[_ngcontent-serverApp-c86], 
 [_nghost-serverApp-c86],
 [_nghost-serverApp-c85].header__bottom nav[_ngcontent-serverApp-c85],
-[_nghost-serverApp-c56]:not(.showSettings) { 
-	/*background-color: var(--cx-color-white); */
+[_nghost-serverApp-c56]:not(.showSettings),
+[_nghost-serverApp-c157] { 
+	/*background-color: var(--cx-color-white); 
 	background-color: $color-white;
-}
-[_nghost-serverApp-c85] nav[_ngcontent-serverApp-c85] ul[_ngcontent-serverApp-c85] li[_ngcontent-serverApp-c85] a[_ngcontent-serverApp-c85] {
-	
-}
-[_nghost-serverApp-c85] nav[_ngcontent-serverApp-c85] ul[_ngcontent-serverApp-c85] li[_ngcontent-serverApp-c85] a[_ngcontent-serverApp-c85]:hover {
-    background-color: #1a1a1a;
-}
-[_nghost-serverApp-c85] nav[_ngcontent-serverApp-c85] ul[_ngcontent-serverApp-c85] li[_ngcontent-serverApp-c85] a[_ngcontent-serverApp-c85],
-[_nghost-serverApp-c85] nav[_ngcontent-serverApp-c85] ul[_ngcontent-serverApp-c85] li[_ngcontent-serverApp-c85] a[_ngcontent-serverApp-c85]:hover {
-	background-color: transparent;
-}
-[_nghost-serverApp-c85] nav[_ngcontent-serverApp-c85] ul[_ngcontent-serverApp-c85] li[_ngcontent-serverApp-c85] a[_ngcontent-serverApp-c85] {
-	text-transform: uppercase;
-}
-[_nghost-serverApp-c85] nav[_ngcontent-serverApp-c85] ul[_ngcontent-serverApp-c85] li[_ngcontent-serverApp-c85] a[_ngcontent-serverApp-c85]:hover {
-	text-decoration: underline;
-}
-[_nghost-serverApp-c86] {
-	box-shadow: none;
-}
-[_nghost-serverApp-c85] nav[_ngcontent-serverApp-c85] ul[_ngcontent-serverApp-c85] {
-	justify-content: flex-end;
-}
-[_nghost-serverApp-c85] nav[_ngcontent-serverApp-c85] ul[_ngcontent-serverApp-c85] li[_ngcontent-serverApp-c85]:first-child {
-	flex-grow: 1;
 }
 .container[_ngcontent-serverApp-c220]  {
 	max-width: 1200px;
@@ -66,4 +51,4 @@ html, body, #upscale,
 }
 [_nghost-serverApp-c56]:not(.showSettings) button[_ngcontent-serverApp-c56]:hover { 
 	background-color: var(--cx-color-green); 
-}
+}*/
