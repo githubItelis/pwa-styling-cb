@@ -1,8 +1,9 @@
 @import "../styles.scss";
 
 :host {
-	background-color: yellow;
-	background-color: var(--cx-color-red);		
+	/*background-color: yellow;
+	background-color: var(--cx-color-red);*/
+	background-color: var(--cx-color-white); 
 	font-family: $font-family;
 	
 	html, body, #upscale,
