@@ -1,0 +1,8 @@
+@import "../styles.scss";
+
+:host {
+	.link,
+	.content ::ng-deep a {
+		color: var(--cx-color-grey);
+	}	
+}
