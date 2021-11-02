@@ -7,13 +7,8 @@
 	background-color: var(--cx-color-white); 
 	
 	.header,
-	.header__top, 
-	.header__bottom nav { 
+	.header__top { 
 		background-color: var(--cx-color-white); 
 	}
 
-}
-
-:host.header__bottom nav ul {
-	padding-bottom: 20px;
 }
