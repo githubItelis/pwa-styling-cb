@@ -5,4 +5,8 @@
 	.content ::ng-deep a {
 		color: var(--cx-color-grey);
 	}	
+	.link:hover,
+	.content ::ng-deep a:hover {
+		text-decoration: none;
+	}
 }
