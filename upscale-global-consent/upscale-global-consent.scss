@@ -1,5 +1,39 @@
 @import "../styles.scss";
 
-:host {
-	background: red;	
+.cdk-overlay-dark-backdrop {
+	background: rgba(162, 162, 162, 0.5);
+}
+
+:host:not(.showSettings) {
+	background: var(--cx-color-white);	
+		
+	div.content {
+		padding: 50px 15px;
+	}	
+
+	a {
+		color: #707070 !important;
+	}
+
+	.link,
+	.content,
+	.content a {
+		color: #707070;
+	}
+	
+	.link:hover,
+	.content a:hover {
+		text-decoration: none;
+	}
+	
+	button {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background-color: var(--cx-color-grey);
+		border: none;
+	}
+
+	button:hover { 
+		background-color: var(--cx-color-green); 
+	}
 }
