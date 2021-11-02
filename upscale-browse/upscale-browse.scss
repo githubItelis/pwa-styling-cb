@@ -1,0 +1,23 @@
+@import "../styles.scss";
+
+:host {
+	font-family: $font-family;
+}
+
+.breadcrumbs {
+	font-family: $font-family;
+	width: 85%;
+}
+
+.breadcrumbs .breadcrumb:first-child {
+	padding-left: 15px;
+}
+
+/*.breadcrumbs .breadcrumb:not(:last-of-type){
+	text-decoration: none;
+}
+
+.breadcrumbs .breadcrumb:last-of-type {
+	color: var(--cx-color-green);
+}
+*/
