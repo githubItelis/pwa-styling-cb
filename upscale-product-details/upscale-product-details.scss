@@ -1,0 +1,27 @@
+@import "../styles.scss";
+
+:host {
+	color: var(--cx-color-grey);
+	align-items: center;
+	
+	.in-edition:not(.image-carousel-view) .row {
+		max-width: 1500px;
+		
+	}
+	
+	.in-edition:not(.image-carousel-view) .row:first-child {
+		width: 33.3%;
+	}
+	
+	.in-edition:not(.image-carousel-view) .row:last-child {
+		width: 66.6%;
+	}
+	
+	.attribute-details__banner-headline {
+		display: none;
+	}
+	
+	.attribute-details__body {
+		padding-left: 0;
+	}
+}
