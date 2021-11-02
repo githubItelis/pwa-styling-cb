@@ -10,8 +10,10 @@
 	.header__top,
 	.header__hamburger { 
 		background-color: var(--cx-color-white); 
-	}
-	
+	}	
+	.header__hamburger {
+		padding: 0 12px 0 0;
+	}	
 	button.header__hamburger:before {
 		content: "";
 		background-image: url(https://cdn.mojazemlja.eu/SL/development/ikone/mobile-menu.png);
