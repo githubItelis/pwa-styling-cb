@@ -1,9 +1,5 @@
 @import "../styles.scss";
 
-html, body, #upscale {
-	background-color: var(--cx-color-white); 	
-}
-
 :host {
 	/*background-color: var(--cx-color-white); 
 	font-family: $font-family;
@@ -18,27 +14,6 @@ html, body, #upscale {
 
 }
 
-.header__bottom nav ul {
+:host.header__bottom nav ul {
 	padding-bottom: 20px;
 }
-	
-
-.cdk-overlay-dark-backdrop {
-	background: rgba(162, 162, 162, 0.5);
-}
-
-/*
-.container[_ngcontent-serverApp-c220]  {
-	max-width: 1200px;
-}
-.cdk-overlay-dark-backdrop {
-	background: rgba(162, 162, 162, 0.5);
-}
-[_nghost-serverApp-c56]:not(.showSettings) button[_ngcontent-serverApp-c56] {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background-color: var(--cx-color-grey); 
-}
-[_nghost-serverApp-c56]:not(.showSettings) button[_ngcontent-serverApp-c56]:hover { 
-	background-color: var(--cx-color-green); 
-}*/
