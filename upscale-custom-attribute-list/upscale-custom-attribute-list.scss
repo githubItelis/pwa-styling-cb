@@ -1,7 +1,7 @@
 @import "../styles.scss";
 
 :host {
-	.attribute-details__banner-headline {
-		background: red;
+	.attribute-details__body-html .html-container {
+		color: var(--cx-color-grey);
 	}
 }
