@@ -1,12 +1,14 @@
 @import "../styles.scss";
 
 :host {
-  
-  	nav ul {
+
+	nav { 
+		background-color: var(--cx-color-white); 
+	}  	
+	nav ul {
     	width: 100%;
 	  	/*justify-content: flex-end;*/
-  	}
-	
+  	}	
 	nav ul li a { 
 		background-color: transparent;
 		text-transform: uppercase;
@@ -27,4 +29,9 @@
 		flex-grow: 1;
 	}		
 	*/
+	
+}
+
+:host.header__bottom nav ul {
+	padding-bottom: 20px;
 }
