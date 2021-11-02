@@ -11,5 +11,17 @@
 	.header__hamburger { 
 		background-color: var(--cx-color-white); 
 	}
-
+	
+	button.header__hamburger:before {
+		content: "";
+		background-image: url(https://cdn.mojazemlja.eu/SL/development/ikone/mobile-menu.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 42px;
+		width: 42px;
+		display: inline-block;		
+	}
+	button.header__hamburger img {
+		display: none;
+	}
 }
