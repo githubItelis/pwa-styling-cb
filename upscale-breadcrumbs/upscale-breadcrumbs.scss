@@ -1,5 +1,18 @@
 @import "../styles.scss";
 
+:host {
+	max-width: 1500px;
+    margin: 0 auto;
+	
+	.breadcrumbs__link {
+		color: var(--cx-color-green);
+		text-decoration: none;
+	}
+	.breadcrumbs__link:hover {
+		text-decoration: underline;
+	}
+}
+
 .breadcrumbs {
 	font-family: $font-family;
 	width: 85%;
