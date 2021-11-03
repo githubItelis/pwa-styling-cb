@@ -8,7 +8,9 @@
 	.attribute-details__body-html .html-container {
 		color: var(--cx-color-grey);
 	}
-	.attribute-details__body:nth-of-type(2) {
+	
+	.attribute-details__banner-headline,
+	.attribute-details__body {
 		padding-left: 0;
 	}
 }
