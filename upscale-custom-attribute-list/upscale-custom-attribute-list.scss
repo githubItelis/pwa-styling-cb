@@ -4,14 +4,11 @@
 	.ng-star-inserted > .attribute-details__banner-headline {
 		display: none;
 	}
-	
-	.attribute-details__body.ng-star-inserted {
-		padding-left: 0;
-	}
-	
+		
 	.attribute-details__body-html .html-container {
 		color: var(--cx-color-grey);
-		padding-left: 12px;
-	}	
-		
+	}
+	.attribute-details__body:nth-of-type(2) {
+		padding-left: 0;
+	}
 }
