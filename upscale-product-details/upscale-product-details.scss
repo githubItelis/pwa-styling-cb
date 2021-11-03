@@ -17,4 +17,10 @@
 		max-width: none !important;
 		position: relative;
 	}		
+	
+	.actions .actions__buttons,
+	#upscale .pdp-add-to-cart-button {
+		max-width: 300px;
+		font-family: $font-family;
+	}
 }
