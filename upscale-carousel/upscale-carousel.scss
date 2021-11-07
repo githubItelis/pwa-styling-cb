@@ -1,0 +1,12 @@
+@import "../styles.scss";
+
+:host {
+	font-family: $font-family;
+}
+
+.carousel-container {
+	position: relative;
+	max-width: 1500px;
+	width: 85%;
+	margin: 0 auto;
+}
