@@ -28,14 +28,12 @@
 	nav ul li:first-child {
 		flex-grow: 1;
 	}		
-	*/
-	
-	.header__bottom nav ul li a .item-icon {
-		height: 30px;
-	}
-	
+	*/	
 }
 
 :host.header__bottom nav ul {
 	padding-bottom: 10px;
+}
+:host.header__bottom nav ul li a .item-icon {
+	height: 30px;
 }
