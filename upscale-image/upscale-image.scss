@@ -1,0 +1,8 @@
+@import "../styles.scss";
+
+:host {
+	 .image-component-content-headline {
+		 font-family: $font-family;
+		 background: red;
+	}
+}
