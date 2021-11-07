@@ -26,4 +26,8 @@
 	button.header__hamburger img {
 		display: none;
 	}
+	
+	.header__hamburger:hover {
+		background-color: transparent;
+	}
 }
