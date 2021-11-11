@@ -1,0 +1,8 @@
+@import "../styles.scss";
+
+:host {
+	.storybook-content .storybook-category-content-cell-background .overlay-content {
+		background-color: transparent;
+		color: var(--cx-color-grey);
+	}
+}
