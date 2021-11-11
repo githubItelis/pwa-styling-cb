@@ -20,7 +20,7 @@
 		text-transform: uppercase;
 		color: var(--cx-color-grey);
 		border-radius: 0;
-    	font-family: $font-family;
+    	/*font-family: $font-family;*/
 		
 		&:hover {
     		background-color: transparent;
@@ -40,6 +40,9 @@
 :host.header__bottom nav ul {
 	padding-bottom: 10px;
 }
+:host.header__bottom nav ul li:first-child a {
+	height: 100%;
+}	
 :host.header__bottom nav ul li a .item-icon {
-	height: 30px;
+	height: 50px;
 }
