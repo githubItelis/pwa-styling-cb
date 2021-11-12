@@ -1,0 +1,22 @@
+@import "../styles.scss";
+
+.search-bar {
+	max-width: 300px;
+	height: 30px;
+	background-color: var(--cx-color-grey);	
+	
+	&__input {
+		margin-top: 0;
+		font-size: $font-size-text;
+	}
+	&__icon {
+		padding: 0 6px;
+		width: auto;
+		height: 20px;
+		align-self: center;
+	}
+}
+
+.navbar-width {
+	width: auto;
+}
