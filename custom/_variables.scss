@@ -1,3 +1,10 @@
+$font-size-text: 12px;
+$font-size-medium: 14px;
+$font-size-normal: 16px;
+$font-size-normal-big: 18px;
+$font-size-title: 20px;
+$font-size-big: 26px;
+
 :root {
   	--cx-color-blue: #0066cc;
 	--cx-color-green: #339933;
@@ -7,6 +14,34 @@
 	--cx-color-grey: #707070;
 	--cx-color-white: #FFFFFF;
 	--cx-color-black: #000000;
+	
+	/*
+	&::-webkit-input-placeholder { color: var(--cx-color-white); }
+  	&::-moz-placeholder { color: var(--cx-color-white); } */ /* Firefox 19+ */
+  	/*&:-moz-placeholder { color: var(--cx-color-white); } */ /* Firefox 18- */
+  	/*&:-ms-input-placeholder { color: var(--cx-color-white); }
+	&::placeholder { color: var(--cx-color-white); }*/
+}
+
+::-webkit-input-placeholder,
+:-ms-input-placeholder,
+::placeholder {
+	color: var(--cx-color-white);
+}		
+/*
+::-webkit-input-placeholder { color: var(--cx-color-white); }
+::-moz-placeholder { color: var(--cx-color-white); } *//* Firefox 19+ */
+/*:-moz-placeholder { color: var(--cx-color-white); } *//* Firefox 18- */
+/*:-ms-input-placeholder { color: var(--cx-color-white); }
+::placeholder { color: var(--cx-color-white); }
+*/
+
+html, body {
+	font-size: 12px !important;
+}
+
+body {
+	color: var(--cx-color-grey);
 }
 
 #upscale .storybook-component-headline {
@@ -16,6 +51,157 @@
 .storybook-component-headline {
 	font-size: 26px;
 }
+
+.headline,
+.productWrapper .product-info .product-details.title {
+	font-size: 20px !important;
+}
+
+.upscale-large .title, 
+.upscale-extra-large .title {
+	font-size: 18px !important;
+}
+
+.sub-headline,
+#upscale .storybook-product-content-name {
+	font-size: 16px;
+}
+
+#upscale .storybook-category-content-name,
+#upscale .pdp-sale-price-text,
+.quantity-label__text,
+.quantity-label__max,
+.attribute-details__banner-headline {
+	font-size: 14px;
+}
+
+upscale-dropdown,
+.quantity-label__text {
+	font-size: 14px !important;
+}
+
+.attribute-details__banner-headline {
+	font-weight: 400;
+}
+
+.headline,
+.sub-headline,
+.excerpt {
+	color: var(--cx-color-grey);
+}
+
+.more-button,
+#upscale .image-component-link-button {
+	background-color: var(--cx-color-blue) !important;
+	border-radius: 0;
+}
+
+.more-button:hover,
+#upscale .image-component-link-button:hover {
+	background-color: var(--cx-color-green) !important;
+}
+
+#upscale .storybook-product-content-background-overlay {
+	background-color: transparent !important;
+}
+
+#upscale .image-component-link-button,
+.excerpt,
+.more-button,
+/*upscale-navigation-bar upscale-navigation-search .search-bar__input,*/
+.attribute-details__body,
+.attribute-details__body-html .html-container {
+	font-size: 12px !important;
+}
+/*
+upscale-navigation-bar upscale-navigation-search {
+	background-color: var(--cx-color-grey);	
+}
+.search-bar {
+	max-width: 300px !important;
+	height: 30px !important;
+}
+upscale-navigation-bar upscale-navigation-search .search-bar__input {
+	margin-top: 0 !important;
+}
+*/
+.storybook-content {
+    height: 200px;
+}
+
+.storybook-content .aspect-ratio-image {
+    padding: 50px;
+}
+
+.storybook-content .aspect-ratio-image {
+    padding-bottom: 30px;
+}
+
+.image-aspect-ratio_16-9 {
+	padding-top: 34% !important;
+}
+
+#upscale .image-component-link-button {
+	padding: 10px 20px;
+	border: none !important;
+}
+
+
+.image-container .overlay-content .link-text {
+    line-height: 1.2;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 10px 20px;
+}
+
+.navbar-width {
+	width: auto;
+}
+
+.static-height {
+	height: 100%;
+	width: auto;
+	max-height: 570px;
+	max-width: 570px;
+}
+
+.custom-attributes .attribute-details__body {
+	padding-top: 0 !important;
+}
+
+.quantity-selector {
+	padding-left: 0 !important;
+}
+
+.inputs .action-button {
+	width: 26px !important;
+	height: 26px !important;
+	line-height: 26px !important;	
+}
+
+.inputs .number {
+	height: 22px !important;
+	font-size: 14px !important;
+	width: 82px !important;
+}
+
+.inputs .action-button .subtract,
+.inputs .action-button .add {
+	font-size: 20px !important;
+}
+
+.carousel-container .progress-bar .active {
+	background-color: var(--cx-color-green) !important;
+}
+
+.image-container .overlay-content .link-text {
+	padding: 10px 20px !important;
+}
+
+/*
+.excerpt {
+	max-width: 700px;
+}*/
 
 /*
 $font-family: "Fira Sans", sans-serif;
