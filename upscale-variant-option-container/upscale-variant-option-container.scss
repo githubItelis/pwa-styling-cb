@@ -1,5 +1,10 @@
 /*@import "../styles.scss";*/
 
+:host .swatch-label,
+.wrap upscale-variant-listing {
+	font-size: 14px;
+}
+
 .swatch-listing-container {
-	max-width: 300px;
+	max-width: 160px;
 }
