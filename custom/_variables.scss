@@ -22,19 +22,18 @@ $font-size-big: 26px;
   	/*&:-ms-input-placeholder { color: var(--cx-color-white); }
 	&::placeholder { color: var(--cx-color-white); }*/
 }
-
+/*
 ::-webkit-input-placeholder,
 :-ms-input-placeholder,
 ::placeholder {
 	color: var(--cx-color-white);
 }		
-/*
-::-webkit-input-placeholder { color: var(--cx-color-white); }
-::-moz-placeholder { color: var(--cx-color-white); } *//* Firefox 19+ */
-/*:-moz-placeholder { color: var(--cx-color-white); } *//* Firefox 18- */
-/*:-ms-input-placeholder { color: var(--cx-color-white); }
-::placeholder { color: var(--cx-color-white); }
 */
+::-webkit-input-placeholder { color: var(--cx-color-white); }
+::-moz-placeholder { color: var(--cx-color-white); } /* Firefox 19+ */
+:-moz-placeholder { color: var(--cx-color-white); } /* Firefox 18- */
+:-ms-input-placeholder { color: var(--cx-color-white); }
+::placeholder { color: var(--cx-color-white); }
 
 html, body {
 	font-size: 12px !important;
