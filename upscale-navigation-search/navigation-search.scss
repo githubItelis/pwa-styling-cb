@@ -1,13 +1,18 @@
 @import "../styles.scss";
 
+:host {
+    align-self: center;
+    margin: 0 auto;
+}
 .search-bar {
-	max-width: 300px;
-	height: 30px;
-	background-color: var(--cx-color-grey);	
+	/*max-width: 300px;*/
+	height: 28px;
+	background-color: var(--cx-color-lightgrey);	
 	
 	&__input {
 		margin-top: 0;
 		font-size: $font-size-text;
+		height: 26px;
 	}
 	&__icon {
 		padding: 0 6px;
@@ -17,6 +22,7 @@
 	}
 }
 
-.navbar-width {
+/*.navbar-width {
 	width: auto;
 }
+*/

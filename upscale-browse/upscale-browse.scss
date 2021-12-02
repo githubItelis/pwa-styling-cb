@@ -7,17 +7,18 @@
 .breadcrumbs {
 	/*font-family: $font-family;*/
 	width: 85%;
+	font-size: $font-size-13;
 }
 
 .breadcrumbs .breadcrumb:first-child {
 	padding-left: 15px;
 }
 
-/*.breadcrumbs .breadcrumb:not(:last-of-type){
+.breadcrumbs .breadcrumb:not(:last-of-type){
 	text-decoration: none;
 }
 
-.breadcrumbs .breadcrumb:last-of-type {
+.breadcrumbs .breadcrumb:last-of-type,
+.breadcrumbs .breadcrumb:hover {
 	color: var(--cx-color-green);
 }
-*/

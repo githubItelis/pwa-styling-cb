@@ -4,15 +4,15 @@
 	max-width: 1500px;
     margin: 0 auto;
 	width: 85%;
-	/*font-family: $font-family;*/
+	/*font-family: $font-family;*/	
 	
 	.breadcrumbs__link {
 		color: var(--cx-color-green);
 		text-decoration: none;
 	}
 	.breadcrumbs__link:hover {
-		text-decoration: underline;
-	}
+		color: var(--cx-color-green);
+	}		
 }
 
 .breadcrumbs {
@@ -24,11 +24,10 @@
 	padding-left: 15px;
 }
 
-/*.breadcrumbs .breadcrumb:not(:last-of-type){
+.breadcrumbs .breadcrumb:not(:last-of-type){
 	text-decoration: none;
 }
 
 .breadcrumbs .breadcrumb:last-of-type {
 	color: var(--cx-color-green);
 }
-*/
