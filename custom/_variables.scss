@@ -632,8 +632,10 @@ upscale-attribute-set-label {
 .card .header .division-info-container,
 .card .header .division-label,
 .order-details__order-line .order-line__product-prices,
-.card .content .division-name {
-	display: none;
+.card .content .division-name,
+.division-info-container,
+.order-details__info-cards .order-details__vat-total {
+	display: none !important;
 }
 
 .order-details .section-header {
@@ -709,6 +711,12 @@ a:-webkit-any-link {
 .default .name {
     text-align: center;
     text-transform: uppercase;
+}
+
+.upscale-medium .details-header,
+.upscale-large .details-header,
+.upscale-extra-large .details-header {
+	
 }
 
 /*
