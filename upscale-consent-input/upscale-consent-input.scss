@@ -1,12 +1,18 @@
 @import "../styles.scss";
 
 :host {
-	.link,
 	.content ::ng-deep a {
-		color: var(--cx-color-grey);
-	}	
-	.link:hover,
-	.content ::ng-deep a:hover {
+		color: var(--cx-color-green);
 		text-decoration: none;
+	}	
+	.content ::ng-deep a:hover {
+		border-bottom: 1px solid;
 	}
+	.link {
+		color: var(--cx-color-grey);
+	}
+	.link:hover {
+		color: var(--cx-color-green);
+	}
+	
 }

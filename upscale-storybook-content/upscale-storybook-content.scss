@@ -3,6 +3,18 @@
 :host {
 	.storybook-content .storybook-category-content-cell-background .overlay-content {
 		background-color: transparent;
-		color: var(--cx-color-grey);
+		color: var(--cx-color-almostblack);
+	}
+	
+	.storybook-content .overlay.product .price,
+	.storybook-content .overlay.product .price .original-price,
+	.storybook-content .overlay.product .price .selling-price {		
+		font-size: $font-size-12;
+		color: var(--cx-color-almostblack);
+	}
+	
+	.storybook-content .overlay.product .price,
+	.storybook-content .overlay.product .price .selling-price {		
+		font-weight: 700;
 	}
 }

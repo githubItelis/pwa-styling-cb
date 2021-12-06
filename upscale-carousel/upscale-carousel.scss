@@ -1,7 +1,11 @@
 @import "../styles.scss";
 
 :host {
-	/*font-family: $font-family;*/
+	/*font-family: $font-family;*/		
+}
+
+:host upscale-ui-carousel::ng-deep .slick-arrow {
+	border-radius: 100% !important;
 }
 
 .carousel-container {
@@ -9,4 +13,9 @@
 	max-width: 1500px;
 	width: 85%;
 	margin: 20px auto 0 auto;
+}
+
+:host upscale-ui-carousel::ng-deep .slick-next:before,
+:host upscale-ui-carousel::ng-deep .slick-prev:before {
+  	color: var(--cx-color-almostblack);
 }
