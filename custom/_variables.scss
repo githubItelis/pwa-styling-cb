@@ -1286,7 +1286,7 @@ upscale-explicit-consent a:hover {
 }
 
 .formgroup__cancel:hover,
-.actions .section__button--empty:hover {
+.actions .section__button.section__button--empty:not(.change):hover {
 	color: var(--cx-color-green) !important;
 }
 
