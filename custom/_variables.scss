@@ -316,7 +316,8 @@ button,
 .formgroup__button,
 .cart-empty__start-shopping-button,
 .section__button,
-.create-address-btn {
+.create-address-btn,
+.account__logout {
 	background-color: var(--cx-color-blue) !important;
 	color: var(--cx-color-white) !important;
 	border: solid 2px var(--cx-color-blue) !important;    
@@ -337,7 +338,8 @@ button,
 .formgroup__button:hover,
 .cart-empty__start-shopping-button:hover,
 .section__button:hover,
-.create-address-btn:hover {
+.create-address-btn:hover,
+.account__logout:hover {
 	color: var(--cx-color-blue) !important;    
     background-color: var(--cx-color-white) !important;
 }
@@ -400,7 +402,7 @@ button,
 	padding-left: 0 !important;
 }
 
-.formgroup__container-content .input.ng-invalid {
+.formgroup__container-content .input.ng-invalid.ng-touched {
 	border-color: var(--cx-color-red);
 	border-width: 1px;
 }
@@ -683,8 +685,11 @@ upscale-attribute-set-label {
 	color: var(--cx-color-green) !important;
 	border-top: 1px solid #ebebeb;
     border-bottom: 1px solid #ebebeb;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+	margin-top: 0 !important;
+	padding-left: 24px !important;
+    padding-right: 24px !important;
 }
 
 .order-line__product-info .order-line__product-name,
@@ -773,6 +778,10 @@ a:-webkit-any-link {
 	font-size: $font-size-20;
 }
 
+.manage-account upscale-formgroup-input-container:nth-of-type(2).manage-account__formgroup .formgroup__actions [type=submit].formgroup__button {
+	display: none !important;
+}
+ 
 .formgroup-input-container .errorMessages {
 	padding: 12px;
 }
@@ -864,7 +873,7 @@ upscale-account {
 }
 
 .account__logout {
-	font-size: $font-size-14;
+	font-size: $font-size-14 !important;
     min-width: 250px !important;
     width: auto !important;
     height: 40px !important;	
@@ -874,7 +883,8 @@ upscale-account {
 }
 
 .account__logout:hover {
-	border-color: var(--cx-color-blue) !important;
+	background-color: var(--cx-color-white) !important;
+	/*border-color: var(--cx-color-blue) !important;*/
 	color: var(--cx-color-blue) !important;
 }
 
@@ -1164,10 +1174,6 @@ select,
 	font-size: $font-size-14 !important;
 }
 
-.manage-account__formgroup .formgroup__actions [type=submit].formgroup__button {
-	display: none !important;
-}
-
 .default .image {
 	height: 100px !important;
 }
@@ -1264,6 +1270,48 @@ upscale-explicit-consent a:hover {
 
 .attribute-details__body-html .html-container {
 	color: var(--cx-color-almostblack) !important;
+}
+
+.account__link-arrow:after {
+	border-color: var(--cx-color-almostblack) !important;
+}
+
+.formgroup__cancel:hover,
+.actions .section__button--empty:hover {
+	color: var(--cx-color-green) !important;
+}
+
+.formgroup__container-content {
+	padding-left: 15px;
+    padding-right: 15px;
+}
+
+.mat-list-base .mat-list-item, 
+.mat-list-base .mat-list-option {
+    height: 30px !important;
+}
+
+.resizable-input-value.mini {
+	width: 200px !important;
+}
+
+.resizable-input-value {
+	height: 20px !important;
+	color: var(--cx-color-almostblack) !important;
+	line-height: 20px !important;
+}
+
+.order-listing .card-holder {
+    border-radius: 0 !important;
+    border-bottom: 1px solid var(--cx-color-lightgrey);
+}
+
+.details-header .order-details .section-header{
+	padding: 12px 24px !important;
+}
+
+.order-details-cancel {
+	margin-left: 24px;
 }
 
 /*
