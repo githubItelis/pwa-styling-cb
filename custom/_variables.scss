@@ -547,10 +547,13 @@ upscale-attribute-set-label {
 }
 
 .login .login-content .description:before,
-.register-content .description:before,
-.register-content .formgroup-inputs__registration .formgroup__container-header:before {
+.register-content .description:before {
 	font-size: $font-size-12;
 	white-space: pre-wrap;
+}
+
+.register-content .formgroup-inputs__registration .formgroup__container-header:before {
+	font-size: $font-size-16 !important;
 }
 
 .login .login-content .description:before {
