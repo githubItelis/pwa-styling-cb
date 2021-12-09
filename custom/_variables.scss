@@ -541,22 +541,28 @@ upscale-attribute-set-label {
 }
 
 .login .login-content .description,
-.register-content .description {
+.register-content .description,
+.register-content .formgroup-inputs__registration .formgroup__container-header {
 	font-size: 0;
 }
 
 .login .login-content .description:before,
-.register-content .description:before {
+.register-content .description:before,
+.register-content .formgroup-inputs__registration .formgroup__container-header:before {
 	font-size: $font-size-12;
 	white-space: pre-wrap;
 }
 
 .login .login-content .description:before {
-	content: "Ste že član kluba Moja zemlja? \A Prijavite se v svoj uporabniški račun.";
+	content: "Ste že član skupnosti Moja zemlja? \A Prijavite se v svoj uporabniški račun.";
 }
 
 .register-content .description:before {
-	content: "Nov član? Ustvarite svoj uporabniški račun in izkoristite prednosti članstva.";
+	content: "Nov član? Ustvarite svoj uporabniški račun in izkoristite prednosti.";
+}
+
+.register-content .formgroup-inputs__registration .formgroup__container-header:before {
+	content: "Ustvarjanje uporabniškega računa"; 
 }
 
 .login .login-content .title,
@@ -1271,10 +1277,6 @@ upscale-explicit-consent a:hover {
 
 .disabled-link {
 	text-decoration: none !important;
-}
-
-.default {
-	min-height: 145px !important;
 }
 
 .attribute-details__body-html .html-container {
