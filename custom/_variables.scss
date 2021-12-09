@@ -543,7 +543,7 @@ upscale-attribute-set-label {
 .login .login-content .description,
 .register-content .description,
 .register-content .formgroup-inputs__registration .formgroup__container-header {
-	font-size: 0;
+	font-size: 0 !important;
 }
 
 .login .login-content .description:before,
