@@ -44,12 +44,19 @@
 	padding: 0 5px;
 }
 
+:host.header__top-navbar nav ul li {
+	height: 44px;
+}
+
 :host.header__bottom nav ul {
 	padding-bottom: 10px;
+}
+:host.header__bottom nav ul li {
+	height: 64px;
 }
 :host.header__bottom nav ul li:first-child a {
 	height: 100%;
 }
 :host.header__bottom nav ul li a .item-icon {
-	height: 50px;
+	height: 60px;
 }
