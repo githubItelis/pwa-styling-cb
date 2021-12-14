@@ -60,7 +60,8 @@ html, body, #upscale {
 }
 
 #upscale .storybook-component-headline,
-.generic-text-extra-large {
+.generic-text-extra-large,
+.content-slot-component-headline {
 	font-size: $font-size-20 !important;
 }
 
@@ -1406,6 +1407,15 @@ upscale-article-group .container-content .grouping .article-card {
 #upscale .carousel-container .image-component-content-headline {
 	font-weight: 700 !important;
     letter-spacing: 0.5px !important;
+}
+
+.content-slot-component-background,
+.upscale-desktop .configuration.content-slot-component-background {
+	padding: 0 !important;
+}
+
+#upscale .content-slot-component-background {
+	background-color: var(--cx-color-white) !important;
 }
 
 @media (max-width: 768px){
