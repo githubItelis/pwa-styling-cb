@@ -1,0 +1,10 @@
+@import "../styles.scss";
+
+:host {
+	padding-bottom: 40px;
+	border-bottom: 1px solid var(--cx-color-lightgrey);
+	
+	.product-tile {
+		max-width: 160px;
+	}
+}
