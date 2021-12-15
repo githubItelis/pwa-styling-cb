@@ -4,6 +4,7 @@
 	max-width: 1500px;
     margin: 0 auto;
 	width: 85%;
+	padding: 0 12px;
 	/*font-family: $font-family;*/	
 	
 	.breadcrumbs__link {
@@ -30,4 +31,8 @@
 
 .breadcrumbs .breadcrumb:last-of-type {
 	color: var(--cx-color-green);
+}
+
+.upscale-mobile :host {
+	width: 95%;	
 }

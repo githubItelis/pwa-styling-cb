@@ -7,16 +7,25 @@
 	.product-detail-content.row {
 		max-width: 1500px;		
 		margin: 0 auto !important;
+		width: 85%;
+		padding: 20px 0 40px 0 !important;
+	}
+	.product-detail-content {
+		border-bottom: 1px solid var(--cx-color-lightgrey);
 	}
 	.product-detail-content .column:first-child {
-		width: 33.3%;
+		width: 400px;
+		padding-left: 13px;
+		width: 28.3%;
 	}
 	
 	.product-detail-content.row .column:nth-of-type(2) {		
-		width: 66.6%;
+		/*width: 66.6%;*/
 		max-width: none !important;
 		position: relative;
-	}		
+		width: 71.7%;
+		padding-left: 50px;
+	}			
 	
 	.actions .actions__buttons,
 	#upscale .pdp-add-to-cart-button {
@@ -26,5 +35,63 @@
 	
 	.image-column {
 		height: 100%;
+		margin: 0;
 	}
+	
+	.static-height {
+    	height: 100%;
+		width: auto;
+		max-height: 420px;
+		max-width: 420px;
+	}
+	
+	upscale-scroll-carousel .thumbnail {
+		height: 80px;
+		min-width: 80px;
+	}
+	
+	upscale-scroll-carousel .thumbnail.selected,
+	upscale-scroll-carousel .overlay-styling.TEXT.selected .swatch {
+		border-color: var(--cx-color-lightgrey);
+		border-width: 1px;
+	}
+	
+	.thumbnail {
+		margin-left: 0;
+	}
+	
+	.actions .actions__buttons {
+		max-width: 250px;
+	}	
+}
+
+.upscale-mobile :host {
+	.image-column {
+		padding-top: 20px;
+	}
+	.image.carousel {
+		margin-bottom: 0;
+	}	
+	.product-detail-content {
+    	width: 95%;
+    	margin: 0 auto;
+		padding-bottom: 20px;
+	}	
+	.product-detail-content .actions {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+	/*.product-detail-content upscale-ui-carousel .slick-track upscale-generic-image .img img {
+		width: auto;
+		padding-left: 12px;
+	}*/	
+}
+
+.upscale-large :host {
+	.static-height {
+		height: 100%;
+		width: auto;
+		max-height: 290px;
+		max-width: 290px;
+	}	
 }

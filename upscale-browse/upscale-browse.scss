@@ -23,6 +23,22 @@
 	color: var(--cx-color-green);
 }
 
+.guided-filter,
 upscale-product-list {
 	background-color: var(--cx-color-white) !important;
+}
+
+.guided-filter-trigger-text {
+	font-size: $font-size-14;	
+}
+
+.guided-filter-trigger-icon {
+	order: 2;
+	font-weight: 400;
+	margin-right: 0;
+	margin-left: 14px;
+}
+
+.guided-filter-trigger {
+	border: none;
 }

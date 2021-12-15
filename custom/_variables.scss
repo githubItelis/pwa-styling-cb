@@ -25,6 +25,7 @@ $font-size-26: 26px;
 	--cx-color-green: #8fc055;
 	--cx-color-almostblack: #434343;
 	--cx-color-lightgrey: #efefef;
+	--cx-color-grey-border: #cfcfcf;
 	
 	/*
 	&::-webkit-input-placeholder { color: var(--cx-color-white); }
@@ -106,6 +107,13 @@ upscale-product-details .product-detail-content .title,
 
 .storybook-content .overlay.product .price .original-price,
 .storybook-content .overlay.product .price .selling-price {
+}
+
+#upscale .pdp-original-price-text {
+	color: var(--cx-color-almostblack) !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+    font-weight: 400 !important;
 }
 
 .sub-headline,
@@ -236,12 +244,12 @@ upscale-navigation-bar upscale-navigation-search .search-bar__input {
 	width: auto;
 }*/
 
-.static-height {
+/*.static-height {
 	height: 100%;
 	width: auto;
 	max-height: 570px;
 	max-width: 570px;
-}
+}*/
 
 .custom-attributes .attribute-details__body {
 	padding-top: 0 !important;
@@ -547,8 +555,8 @@ upscale-attribute-set-label {
 }
 
 .login .login-content .description,
-.register-content .description,
-.register-content .formgroup-inputs__registration .formgroup__container-header {
+.register-content .description/*,
+.register-content .formgroup-inputs__registration .formgroup__container-header*/ {
 	font-size: 0 !important;
 }
 
@@ -558,9 +566,9 @@ upscale-attribute-set-label {
 	white-space: pre-wrap;
 }
 
-.register-content .formgroup-inputs__registration .formgroup__container-header:before {
+/*.register-content .formgroup-inputs__registration .formgroup__container-header:before {
 	font-size: $font-size-16;
-}
+}*/
 
 .login .login-content .description:before {
 	content: "Ste že član skupnosti Moja zemlja? \A Prijavite se v svoj uporabniški račun.";
@@ -569,11 +577,11 @@ upscale-attribute-set-label {
 .register-content .description:before {
 	content: "Nov član? Ustvarite svoj uporabniški račun in izkoristite prednosti.";
 }
-
+/*
 .register-content .formgroup-inputs__registration .formgroup__container-header:before {
 	content: "Ustvarjanje uporabniškega računa"; 
 }
-
+*/
 .login .login-content .title,
 .register-content .title {
 	padding-top: 40px !important;
@@ -635,11 +643,11 @@ upscale-attribute-set-label {
 	margin: 0 !important;
 }
 
-.upscale-extra-small upscale-breadcrumbs,
+/*.upscale-extra-small upscale-breadcrumbs,
 .upscale-small upscale-breadcrumbs {
 	width: 100% !important;
 	padding: 0 12px !important;
-}
+}*/
 
 .breadcrumbs__text,
 .breadcrumbs__link
@@ -677,12 +685,14 @@ upscale-attribute-set-label {
 	padding-right: 0 !important;
 }
 
-.manage-account__formgroup .input-profile-container-mode .input-label:nth-child(3) .profile {
-	font-size: 0;
+.manage-account__formgroup .input-profile-container-mode .input-label:nth-child(3) .profile,
+.manage-account__formgroup .formgroup__container-content .formgroup__container-content-form .input-profile-container .input-label:nth-of-type(3) {
+	font-size: 0 !important;
 }
 
-.manage-account__formgroup .input-profile-container-mode .input-label:nth-child(3) .profile:before {
-	font-size: $font-size-12;
+.manage-account__formgroup .input-profile-container-mode .input-label:nth-child(3) .profile:before,
+.manage-account__formgroup .formgroup__container-content .formgroup__container-content-form .input-profile-container .input-label:nth-of-type(3):before {
+	font-size: $font-size-12 !important;
 	content: "Telefonska številka";
 }
 
@@ -830,8 +840,7 @@ a:-webkit-any-link {
 /* pobarva svg ikone na hover v zeleno, ki jo imajo */
 .header__top-navbar nav ul li a:hover img,
 .header__hamburger:hover:before {
-    filter: invert(62%) sepia(80%) saturate(272%) hue-rotate(
-45deg) brightness(96%) contrast(91%);
+    filter: invert(62%) sepia(80%) saturate(272%) hue-rotate(45deg) brightness(96%) contrast(91%);
 }
 
 /*
@@ -975,7 +984,7 @@ upscale-account {
 
 .upscale-large-width .product,
 .upscale-extra-large-width .product {
-	width: 20% !important;
+	width: 16% !important;
 }
 
 .divider {
@@ -1098,11 +1107,11 @@ em {
 	width: 100% !important;
 }
 
-.upscale-large .static-height,
+/*.upscale-large .static-height,
 .upscale-extra-large .static-height {
     width: 100% !important;
     height: 250px !important;
-}
+}*/
 
 .variant-selector-dialog .dialog-content .img-container {
 	width: 33.3% !important;
@@ -1126,12 +1135,12 @@ em {
 
 .thumbnail.selected,
 .overlay-styling.TEXT.selected .swatch {
-	border-color: var(--cx-color-almostblack) !important;
+	border-color: var(--cx-color-grey-border) !important;
 	border-width: 1px !important;
 }
 
 .variant-selector-dialog .dialog-content .img-container .thumbnail-collection .thumbnail .image.selected {
-	border: 1px solid var(--cx-color-almostblack) !important;
+	border: 1px solid var(--cx-color-grey-border) !important;
 }
 
 .variant-selector-dialog .dialog-content .img-container .image {
@@ -1416,6 +1425,38 @@ upscale-article-group .container-content .grouping .article-card {
 
 #upscale .content-slot-component-background {
 	background-color: var(--cx-color-white) !important;
+}
+
+.guided-filter[_ngcontent-serverApp-c203] {
+    background: var(--cx-color-white) !important;
+}
+
+upscale-product-details .product-detail-content upscale-generic-image .img img.contain {
+	height: auto;
+}
+
+.upscale-mobile upscale-product-details .product-detail-content upscale-generic-image .img img.contain {
+	height: 100%;
+	width: auto;
+	padding-left: 12px;
+}
+
+.upscale-mobile upscale-product-details .product-detail-content .variant-selectors upscale-variant-option-container {
+	padding-left: 12px !important;
+	padding-right: 12px !important;
+}
+
+.upscale-mobile upscale-product-details .product-detail-content .with-borders {
+	border: none !important;
+}
+
+.upscale-tablet .container-content {
+	width: 85% !important;
+}
+
+#upscale.upscale-small .storybook-component-headline,
+#upscale.upscale-extra-small .storybook-component-headline {
+    padding: 0 !important;
 }
 
 @media (max-width: 768px){

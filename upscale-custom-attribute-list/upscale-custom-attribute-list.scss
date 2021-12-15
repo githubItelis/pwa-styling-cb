@@ -7,10 +7,20 @@
 		
 	.attribute-details__body-html .html-container {
 		color: var(--cx-color-grey);
+		line-height: 1.29;
+		padding-bottom: 0;
 	}
 	
 	.attribute-details__banner-headline,
 	.attribute-details__body {
 		padding-left: 0;
 	}
+	
+	.attribute-details__banner-headline {
+		margin-bottom: 10px;
+    	height: 30px;
+		cursor: pointer;
+    	font-weight: 500 !important;
+	}
+		
 }
