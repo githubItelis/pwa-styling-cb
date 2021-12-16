@@ -29,7 +29,12 @@ upscale-product-list {
 }
 
 .guided-filter-trigger-text {
-	font-size: $font-size-14;	
+	font-size: $font-size-13;
+	overflow: auto;
+    text-overflow: clip;
+    white-space: normal;
+	color: var(--cx-color-almostblack);
+	font-weight: 400;
 }
 
 .guided-filter-trigger-icon {
@@ -37,8 +42,10 @@ upscale-product-list {
 	font-weight: 400;
 	margin-right: 0;
 	margin-left: 14px;
+	font-size: 30px;
 }
 
 .guided-filter-trigger {
-	border: none;
+	border: none;	
+	padding: 0 12px;
 }
