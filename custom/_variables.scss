@@ -1524,11 +1524,25 @@ upscale-product-details .product-detail-content upscale-generic-image .img img.c
 	border-bottom: 1px solid var(--cx-color-lightgrey) !important;
 	color: var(--cx-color-almostblack) !important;
 	font-size: $font-size-14 !important;
+	font-weight: 700 !important;
+}
+
+.upscale-medium .filter-header {
+    border-top: 1px solid var(--cx-color-lightgrey) !important;	
 }
 
 .upscale-large .products.GRID .product,
 .upscale-extra-large .products.GRID .product {
 	padding: 14px 6px !important;
+}
+
+.products.GRID .product upscale-product-tile .name {
+	text-align: center;
+}
+
+.upscale-small .custom-attribute,
+.upscale-extra-small .custom-attribute {
+	padding-left: 24px !important;
 }
 
 @media (max-width: 768px){
