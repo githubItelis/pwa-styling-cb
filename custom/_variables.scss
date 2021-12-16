@@ -315,7 +315,7 @@ button,
 .login .login-content .buttons .login-button,
 .register-content .register-buttons .register-button,
 .formgroup__button,
-.content .section__button--edit:hover,
+.content .section__button--edit,
 .actions .section__button,
 .upscale-medium .order-details-cancel,
 .upscale-large .order-details-cancel,
@@ -338,7 +338,7 @@ button,
 .login .login-content .buttons .login-button:hover,
 .register-content .register-buttons .register-button:hover,
 .formgroup__button:hover,
-.content .section__button--edit,
+.content .section__button--edit:hover,
 .actions .section__button:hover,
 .upscale-medium .order-details-cancel:hover,
 .upscale-large .order-details-cancel:hover,
@@ -426,14 +426,13 @@ button,
 }
 
 .formgroup__container-content .input.ng-invalid.ng-touched {
-	border-color: var(--cx-color-red);
+	border-color: var(--cx-color-red) !important;
 	border-width: 1px;
 }
 
 .upscale-large .title, 
 .upscale-extra-large .title,
 .consents .title-bar .title,
-.content .manage-account upscale-attribute-set .body .action-button .attribute-set-headline,
 upscale-attribute-set-label {
 	font-size: $font-size-14 !important;
 }
@@ -445,6 +444,7 @@ upscale-attribute-set-label {
 .card-holder .spaced-row .status,
 .details-header__status,
 .card-holder .spaced-row .price,
+.content .manage-account upscale-attribute-set .body .action-button .attribute-set-headline,
 .section-header {
 	font-size: $font-size-20 !important;
 }
@@ -680,9 +680,11 @@ upscale-attribute-set-label {
 	justify-content: flex-start !important;
 }
 
-.content .input-profile-container-mode {
+.manage-account__formgroup .content .input-profile-container-mode {
 	padding-left: 0 !important;
 	padding-right: 0 !important;
+	padding-bottom: 0 !important;
+	padding-top: 10px !important;
 }
 
 .manage-account__formgroup .input-profile-container-mode .input-label:nth-child(3) .profile,
@@ -771,7 +773,9 @@ upscale-ui-carousel .slick-next {
     padding: 7px 0 !important;
 }
 
-#upscale .storybook-product-content-name {
+.body .attribute-set-headline,
+#upscale .storybook-product-content-name,
+upscale-attribute-set-label label {
 	color: var(--cx-color-almostblack) !important;
 }
 
@@ -933,9 +937,9 @@ upscale-account {
 	color: var(--cx-color-blue) !important;
 }
 
-.content .manage-account {
+/*.content .manage-account {
 	padding-left: 12px !important;
-}
+}*/
 
 .content .input {
 	border-bottom: 1px solid var(--cx-color-lightgrey) !important;
@@ -1322,10 +1326,10 @@ upscale-explicit-consent a:hover {
 	color: var(--cx-color-green) !important;
 }
 
-.formgroup__container-content {
+/*.formgroup__container-content {
 	padding-left: 15px;
     padding-right: 15px;
-}
+}*/
 
 .mat-list-base .mat-list-item, 
 .mat-list-base .mat-list-option {
@@ -1333,7 +1337,7 @@ upscale-explicit-consent a:hover {
 }
 
 .resizable-input-value.mini {
-	width: 200px !important;
+	width: 250px !important;
 }
 
 .resizable-input-value {
@@ -1464,6 +1468,50 @@ upscale-product-details .product-detail-content upscale-generic-image .img img.c
 }
 #upscale .browse-category-name-selected {
 	color: var(--cx-color-green) !important;
+}
+
+ .manage-account__formgroup .formgroup__actions .formgroup__cancel {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.formgroup__container-row,
+.formgroup__container-content .content .input {
+	padding: 0 12px !important;
+}
+
+.formgroup__container-content-form .input-profile-container-mode {
+	padding: 0 12px;
+}
+
+.manage-account .formgroup__container-row {
+	border-bottom: 1px solid var(--cx-color-lightgrey);
+}
+
+.content .profile {
+	color: var(--cx-color-almostblack) !important;
+	font-weight: 400 !important;
+}
+
+.manage-account__formgroup .content .input-label {
+	padding: 0 12px;
+	width: 100% !important;
+}
+
+.date-picker-input .make-selection {
+	height: 30px !important;
+	width: auto !important;
+    min-width: 250px !important;
+    border-color: var(--cx-color-lightgrey) !important;
+}
+
+.toggle,
+.dropdown .select {
+	max-width: 250px;
+}
+
+.recap {
+	font-weight: 400 !important;
 }
 
 @media (max-width: 768px){
