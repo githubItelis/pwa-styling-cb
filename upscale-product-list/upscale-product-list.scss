@@ -13,11 +13,7 @@
 	/*.products {
 		justify-content: space-between;
 	}*/
-	
-	.product {
-		padding: 14px 6px;			
-	}
-	
+		
 	.product-tile .name {
 		text-align: center;
 	}
@@ -27,13 +23,20 @@
 	}*/
 }
 
+.upscale-large-width :host .product,
+.upscale-extra-large-width :host .product {	
+	padding: 14px 6px;				
+}
+
 @media (min-width: 600px) and (max-width: 899px){
 	:host {
 		padding: 0 6px;
     	width: auto;
 	}
-	:host .product {
+	:host .product,
+	.upscale-medium-width :host .product {
 		width: 25%;
+		padding: 14px 6px;
 	}
 }
 
