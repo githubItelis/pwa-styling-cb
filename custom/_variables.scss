@@ -330,7 +330,8 @@ button,
 .section__button,
 .create-address-btn,
 .account__logout,
-#upscale .image-component-link-button {
+#upscale .image-component-link-button,
+.date-picker-input-wrapper-actions .button {
 	background-color: var(--cx-color-blue) !important;
 	color: var(--cx-color-white) !important;
 	border: solid 2px var(--cx-color-blue) !important;    
@@ -352,7 +353,8 @@ button,
 .cart-empty__start-shopping-button:hover,
 .section__button:hover,
 .create-address-btn:hover,
-.account__logout:hover {
+.account__logout:hover,
+.date-picker-input-wrapper-actions .button:hover {
 	color: var(--cx-color-blue) !important;    
     background-color: var(--cx-color-white) !important;
 }
@@ -1591,7 +1593,7 @@ upscale-product-details .product-detail-content upscale-generic-image .img img.c
 }
 
 .label {
-	border: 2px solid var(--cx-color-greyborder) !important;
+	border: 2px solid var(--cx-color-grey-border) !important;
 }
 
 .order-listing {
@@ -1619,6 +1621,40 @@ upscale-product-details .product-detail-content upscale-generic-image .img img.c
 
 .order-line__product {
 	padding: 12px !important;
+}
+
+.upscale-mobile .content .manage-account__formgroup .formgroup__actions .formgroup__button,
+.upscale-mobile .content .section__button--edit,
+.upscale-mobile .actions .section__button {
+	min-width: 196px !important;
+}
+
+.date-picker-input-wrapper-actions .button {
+	font-size: $font-size-14 !important;
+	color: var(--cx-color-almostblack) !important;
+    height: 30px !important;
+    padding: 0 20px !important;
+	font-weight: 700 !important;
+}
+
+.date-picker-input-wrapper-actions .button.cancel {
+	border: none !important;
+    color: var(--cx-color-almostblack) !important;
+    padding: 0 !important;
+    height: auto !important;
+    font-weight: 400 !important;
+    font-size: $font-size-12 !important;
+}
+
+owl-date-time-container .owl-dt-calendar-table .owl-dt-calendar-cell-selected {
+    background-color: var(--cx-color-almostblack) !important;
+}
+.owl-dt-control-button {
+	color: var(--cx-color-almostblack) !important;
+}
+
+.date-picker-input-wrapper-actions .button.cancel:hover {
+	color: var(--cx-color-green) !important;
 }
 
 @media (max-width: 768px){
