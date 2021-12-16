@@ -4,6 +4,8 @@
 	.account {
 		width: 85%;
     	margin: 0 auto;
+		padding-left: 0;
+    	padding-right: 0;
 	}
 	
 	.account__link {
@@ -11,15 +13,16 @@
 		width: 50%;
 		margin-left: 100px;
 		max-width: 418px;
+		padding: 0;
 	}
 	
-	.account__separator[_ngcontent-serverApp-c142] {
+	.account__separator {
     	width: 50%;
     	margin-left: 89px;
     	max-width: 470px;
 	}
 	
 	.account__logout {
-		margin-left: 111px;
+		margin-left: 100px;
 	}
 }
