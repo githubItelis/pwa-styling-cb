@@ -724,8 +724,8 @@ upscale-attribute-set-label {
     padding-top: 20px !important;
     padding-bottom: 20px !important;
 	margin-top: 0 !important;
-	padding-left: 24px !important;
-    padding-right: 24px !important;
+	padding-left: 12px !important;
+    padding-right: 12px !important;
 }
 
 .order-line__product-info .order-line__product-name,
@@ -1220,7 +1220,8 @@ select,
 }
 
 .date-picker-input .make-selection {
-	font-size: $font-size-14 !important;
+	font-size: $font-size-12 !important;
+	color: var(--cx-color-almostblack) !important;
 }
 
 /*.default .image {
@@ -1352,7 +1353,7 @@ upscale-explicit-consent a:hover {
 }
 
 .details-header .order-details .section-header{
-	padding: 12px 24px !important;
+	padding: 12px !important;
 }
 
 .order-details-cancel {
@@ -1471,8 +1472,8 @@ upscale-product-details .product-detail-content upscale-generic-image .img img.c
 }
 
  .manage-account__formgroup .formgroup__actions .formgroup__cancel {
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
 }
 
 .formgroup__container-row,
@@ -1521,6 +1522,10 @@ upscale-product-details .product-detail-content upscale-generic-image .img img.c
 .toggle,
 .dropdown .select {
 	max-width: 250px;
+}
+
+.toggle {
+	margin: 20px 0 10px 0;
 }
 
 .recap {
@@ -1612,6 +1617,9 @@ upscale-product-details .product-detail-content upscale-generic-image .img img.c
     font-weight: 700 !important;
 }
 
+.order-line__product {
+	padding: 12px !important;
+}
 
 @media (max-width: 768px){
 	#upscale .image-component-overlay {
