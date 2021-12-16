@@ -1219,9 +1219,9 @@ select,
 	font-size: $font-size-14 !important;
 }
 
-.default .image {
+/*.default .image {
 	height: 100px !important;
-}
+}*/
 
 upscale-category-tile.browse-category-card-color picture {
 	display: inline-block;
@@ -1456,7 +1456,14 @@ upscale-product-details .product-detail-content upscale-generic-image .img img.c
 
 #upscale.upscale-small .storybook-component-headline,
 #upscale.upscale-extra-small .storybook-component-headline {
-    padding: 0 !important;
+	padding: 0 !important;
+}
+
+#upscale .browse-category-card-selected-color {
+	background-color: transparent !important;
+}
+#upscale .browse-category-name-selected {
+	color: var(--cx-color-green) !important;
 }
 
 @media (max-width: 768px){
