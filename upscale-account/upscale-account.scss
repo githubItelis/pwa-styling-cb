@@ -1,0 +1,25 @@
+@import "../styles.scss";
+
+:host {
+	.account {
+		width: 85%;
+    	margin: 0 auto;
+	}
+	
+	.account__link {
+		border-radius: 0;		
+		width: 50%;
+		margin-left: 100px;
+		max-width: 418px;
+	}
+	
+	.account__separator[_ngcontent-serverApp-c142] {
+    	width: 50%;
+    	margin-left: 89px;
+    	max-width: 470px;
+	}
+	
+	.account__logout {
+		margin-left: 111px;
+	}
+}
