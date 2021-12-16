@@ -10,9 +10,9 @@
 		max-width: 160px;
 	}
 	
-	.products {
+	/*.products {
 		justify-content: space-between;
-	}
+	}*/
 	
 	.product {
 		padding: 14px 6px;			
@@ -21,10 +21,10 @@
 	.product-tile .name {
 		text-align: center;
 	}
-	
+	/*
 	.products .product:last-child {
 		margin-right: auto;
-	}
+	}*/
 }
 
 @media (min-width: 600px) and (max-width: 899px){
