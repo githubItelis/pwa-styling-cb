@@ -1498,11 +1498,24 @@ upscale-product-details .product-detail-content upscale-generic-image .img img.c
 	width: 100% !important;
 }
 
-.date-picker-input .make-selection {
+.date-picker-input .make-selection,
+.date-picker-input__selected {
 	height: 30px !important;
 	width: auto !important;
     min-width: 250px !important;
     border-color: var(--cx-color-lightgrey) !important;
+	border-radius: 0 !important;
+	padding: 0 !important;
+	max-width: 250px;
+}
+
+.date-picker-input__selected {
+	color: var(--cx-color-almostblack) !important;
+	line-height: 30px !important;
+}
+
+.numeric-input label {
+	color: var(--cx-color-almostblack) !important;
 }
 
 .toggle,
@@ -1543,6 +1556,36 @@ upscale-product-details .product-detail-content upscale-generic-image .img img.c
 .upscale-small .custom-attribute,
 .upscale-extra-small .custom-attribute {
 	padding-left: 24px !important;
+}
+
+.content .manage-account upscale-attribute-set .body {
+	margin-bottom: 50px;
+}
+
+.content .manage-account__delete {
+    background-color: transparent !important;
+    border: none !important;
+    color: var(--cx-color-almostblack) !important;
+    font-weight: 400 !important;
+    font-size: $font-size-12 !important;
+    width: auto !important;
+    height: auto !important;
+    margin-right: 0 !important;
+}
+
+.label.selected,
+.label:hover {
+	border-color: var(--cx-color-blue) !important;
+}
+
+.code:hover, 
+.icon:hover,
+.label:hover {
+	background-color: var(--cx-color-white) !important;
+}
+
+.label {
+	border: 2px solid var(--cx-color-greyborder) !important;
 }
 
 @media (max-width: 768px){
