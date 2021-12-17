@@ -4,4 +4,57 @@
 	.content .create-address-btn {
 		margin-left: 0;
 	}
+	/*
+	.content .address-listing__address {
+		display: flex;
+    	flex-direction: column;
+    	justify-content: flex-end;
+	}
+	*/
+	
+	.content .address-listing__address {
+		border-radius: 0;
+		border: none;
+	}
+
+	.content .address-listing__address__row {
+		position: relative;
+	}
+	
+	.content .address-listing__address__default {
+		position: absolute;
+    	right: 0;
+		font-size: $font-size-12;
+	}
+	
+	.content .address-listing__buttons {
+		justify-content: space-between;
+	}
+	
+	.content .address-listing__buttons__delete {
+		border: none;
+		width: auto;
+		font-size: $font-size-12;
+		font-weight: 400;		
+	}
+	
+	.content .address-listing__buttons__edit {
+		font-weight: 700;
+		letter-spacing: 0.5px;		
+		font-size: $font-size-14;
+		width: 200px;
+		border: 2px solid var(--cx-color-blue);
+		background-color: var(--cx-color-blue);
+		color: var(--cx-color-white);
+	}	
+	
+	.content .address-listing__buttons__edit:hover {
+		background-color: var(--cx-color-white);
+		color: var(--cx-color-blue);
+	}
+	
+	.select-input.country,
+	.input-row [name=address-line2] {
+		display: none;
+	}
 }
