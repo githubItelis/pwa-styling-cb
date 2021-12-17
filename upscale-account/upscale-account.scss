@@ -25,6 +25,10 @@
 			&-text {
 				letter-spacing: 0.5px;
 			}
+			
+			&-arrow {
+				border-color: var(--cx-color-almostblack);
+			}
 		}				
 
 		&__orders {
@@ -42,11 +46,9 @@
 			margin-left: 110px;
 			margin-top: 40px;
 		}
-	}
 	
-	&__link:hover .account__link-arrow:after {
-		border-right: 2px solid var(--cx-color-green);
-		border-bottom: 2px solid var(--cx-color-green);
+		&__link:hover .account__link-arrow:after {
+			border-color: var(--cx-color-green);
+		}
 	}
-	
 }
