@@ -1,0 +1,7 @@
+@import "../styles.scss";
+
+:host {
+	.body .action-button.default-cursor {
+		border-bottom: 1px solid var(--cx-color-lightgrey);
+	}
+}
