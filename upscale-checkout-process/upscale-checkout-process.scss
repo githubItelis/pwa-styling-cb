@@ -1,0 +1,8 @@
+@import "../styles.scss";
+
+:host {
+	.couponsApplied .couponApplied-name,
+	.couponsApplied .couponApplied-discount {
+		font-size: $font-size-12;
+	}
+}
