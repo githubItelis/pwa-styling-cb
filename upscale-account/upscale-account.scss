@@ -11,22 +11,36 @@
 	.account__link {
 		border-radius: 0;		
 		width: 50%;
-		margin-left: 100px;
+		margin-left: 110px;
 		max-width: 418px;
 		padding: 0;
+		border-bottom: 1px solid var(--cx-color-grey-border);
+		cursor: pointer;
+	}
+	
+	.account__link:hover {
+		background-color: transparent;
+		color: var(--cx-color-green);
 	}
 	
 	.account__link-text {
 		letter-spacing: 0.5px;	
 	}
 	
+	.account__orders {
+		padding-top: 0;
+	}
+	
 	.account__separator {
     	width: 50%;
     	margin-left: 89px;
     	max-width: 470px;
+		display: none;
 	}
 	
 	.account__logout {
-		margin-left: 100px;
+		margin-left: 110px;
+		margin-top: 40px;
 	}
+
 }
