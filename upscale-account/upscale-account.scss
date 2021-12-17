@@ -6,41 +6,47 @@
     	margin: 0 auto;
 		padding-left: 0;
     	padding-right: 0;
-	}
 	
-	.account__link {
-		border-radius: 0;		
-		width: 50%;
-		margin-left: 110px;
-		max-width: 418px;
-		padding: 0;
-		border-bottom: 1px solid var(--cx-color-grey-border);
-		cursor: pointer;
-	}
 	
-	.account__link:hover {
-		background-color: transparent;
-		color: var(--cx-color-green);
-	}
-	
-	.account__link-text {
-		letter-spacing: 0.5px;	
-	}
-	
-	.account__orders {
-		padding-top: 0;
-	}
-	
-	.account__separator {
-    	width: 50%;
-    	margin-left: 89px;
-    	max-width: 470px;
-		display: none;
-	}
-	
-	.account__logout {
-		margin-left: 110px;
-		margin-top: 40px;
-	}
+		&__link {
+			border-radius: 0;		
+			width: 50%;
+			margin-left: 110px;
+			max-width: 418px;
+			padding: 0;
+			border-bottom: 1px solid var(--cx-color-grey-border);
+			cursor: pointer;
+			
+			&:hover {
+				background-color: transparent;
+				color: var(--cx-color-green);
+			}
+			
+			&-text {
+				letter-spacing: 0.5px;
+			}
+		}				
 
+		&__orders {
+			padding-top: 0;
+		}
+
+		&__separator {
+			width: 50%;
+			margin-left: 89px;
+			max-width: 470px;
+			display: none;
+		}
+
+		&__logout {
+			margin-left: 110px;
+			margin-top: 40px;
+		}
+	}
+	
+	&__link:hover .account__link-arrow:after {
+		border-right: 2px solid var(--cx-color-green);
+		border-bottom: 2px solid var(--cx-color-green);
+	}
+	
 }
