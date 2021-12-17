@@ -1,0 +1,15 @@
+@import "../styles.scss";
+
+:host {
+	.generic-alert {
+		&__text {
+			font-size: $font-size-14;
+		}
+		
+		&__button {
+			font-size: $font-size-14;
+			font-weight: 700;
+		}
+		
+	}
+}
