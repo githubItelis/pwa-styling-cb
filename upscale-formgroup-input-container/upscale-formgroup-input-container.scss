@@ -1,0 +1,30 @@
+@import "../styles.scss";
+
+:host {
+	.content .input-profile-container-mode,
+	.content .input-profile-container {
+		padding: 10px 12px;
+	}
+	
+	.content .input-box {
+		width: 90%;
+		padding: 0 5px;
+		border-width: 1px;
+    	border-left: none;
+    	border-right: none;    	
+    	font-size: $font-size-12;
+		color: var(--cx-color-almostblack);
+		height: 30px;
+	}
+	
+	.content .input-label {
+		font-size: $font-size-12;
+		color: var(--cx-color-almostblack);
+		height: 20px;
+	}
+	
+	.shipping-address-list .action-button {
+		font-size: $font-size-14;
+	}
+
+}
