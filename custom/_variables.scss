@@ -1262,7 +1262,12 @@ upscale-category-tile .default .browse-category-name {
     justify-content: flex-start !important;
     padding-left: 25px;
     padding-right: 25px;
-	font-size: $font-size-14 !important;
+	font-size: $font-size-12 !important;
+	border-bottom: 1px solid var(--cx-color-grey-color);
+}
+
+.order-line__cancel:hover {
+	color: var(--cx-color-green);
 }
 
 .card .content {
@@ -1368,7 +1373,7 @@ upscale-explicit-consent a:hover {
 	top: 0;
 	display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
 	left: 10%;
 }
 
@@ -1605,14 +1610,17 @@ upscale-product-details .product-detail-content upscale-generic-image .img img.c
 .order-listing .order-card {
 	width: 85%;
     margin: 0 auto;
+	padding: 0 !important;
 }
 
 .order-listing .order-card .card-holder {    
     width: 50%;
     margin-left: 100px;
-    padding-left: 12px !important;
-	padding-right: 12px !important;
+    padding-left: 10px !important;
+	padding-right: 10px !important;
 	max-width: 470px;
+	padding-bottom: 14px !important;
+    padding-top: 10px !important;
 }
 
 .account__link-text {
@@ -1670,6 +1678,7 @@ owl-date-time-container .owl-dt-calendar-table .owl-dt-calendar-cell-selected {
 .date-picker-input__selected-from {
 	justify-content: center;
 }
+
 
 @media (max-width: 768px){
 	#upscale .image-component-overlay {
