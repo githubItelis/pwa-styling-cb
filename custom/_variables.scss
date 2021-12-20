@@ -1691,6 +1691,65 @@ owl-date-time-container .owl-dt-calendar-table .owl-dt-calendar-cell-selected {
 	font-size: $font-size-12 !important;
 }
 
+.formgroup-input-container .shipping-wrapper .input-row [name=address-line2],
+.formgroup-input-container .shipping-wrapper .select-input.country {
+	display: none;
+}
+
+.addCoupon .addCoupon-button .button-label {
+	color: var(--cx-color-almostblack) !important;
+    min-width: 0 !important;
+}
+
+.addCoupon .addCoupon-button .button-label:hover {
+	background-color: transparent !important;
+	border-color: var(--cx-color-blue) !important;
+	color: var(--cx-color-blue) !important;
+}
+
+.shipping__bold,
+.formgroup__container-header {
+	color: var(--cx-color-almostblack) !important;
+	font-weight: 700 !important;
+	letter-spacing: 0.5px !important;
+}
+
+.formgroup__container-header {
+	font-size: $font-size-20 !important;	
+}
+
+.shipping__bold {
+	font-size: $font-size-16 !important;	
+}
+
+.same-as-shipping,
+.shipping__product-name {
+	font-size: $font-size-14 !important;
+}
+
+.same-as-shipping,
+.summary-info .title {
+	color: var(--cx-color-almostblack) !important;
+}
+
+.shipping__product-card-info {
+	padding: 12px;
+}
+
+.shipping__section-header.shipping__header {
+	display: none;
+}
+
+.shipping__product-info {
+	font-size: $font-size-13 !important;
+}
+
+.upscale-extra-large .cart-list .list-view .product .product-data .info .name,
+.upscale-large .cart-list .list-view .product .product-data .info .name,
+ .cart-list .list-view .product .product-data .info .name {
+	font-size: $font-size-20 !important;
+}
+
 @media (max-width: 768px){
 	#upscale .image-component-overlay {
 		left: 0;
