@@ -24,7 +24,16 @@
 	}
 	
 	.shipping-address-list .action-button {
+		font-size: 0;
+	}
+	
+	.shipping-address-list .actions .action-button:before {
 		font-size: $font-size-14;
+		content: "Spremeni naslov";
+	}
+	
+	.formgroup__actions {
+		margin-left: 10px;
 	}
 
 }
