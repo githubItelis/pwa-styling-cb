@@ -4,4 +4,10 @@
 	.body .action-button.default-cursor {
 		border-bottom: 1px solid var(--cx-color-lightgrey);
 	}
+	
+	.attribute-input .numeric-input .numeric-input-value {
+		font-size: $font-size-12;
+		color: var(--cx-color-almostblack);
+		border: 1px solid var(--cx-color-lightgrey);
+	}
 }
