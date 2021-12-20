@@ -4,5 +4,18 @@
 	.couponsApplied .couponApplied-name,
 	.couponsApplied .couponApplied-discount {
 		font-size: $font-size-12;
+		color: var(--cx-color-blue);
+	}
+	
+	.addCoupon .addCoupon-button .button-label, 
+	.addCoupon .removeCoupon-button .button-label {
+		color: var(--cx-color-almostblack);
+    	font-size: $font-size-12;
+    	height: 30px;
+    	min-width: 0;
+	}
+	
+	.coupon span {
+		font-size: $font-size-14;
 	}
 }
