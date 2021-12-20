@@ -1,0 +1,5 @@
+@import "../styles.scss";
+
+:host:not(.modal) {
+	max-width: 400px;
+}
