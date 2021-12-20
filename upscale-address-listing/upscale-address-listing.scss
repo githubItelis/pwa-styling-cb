@@ -57,4 +57,25 @@
 	.input-row [name=address-line2] {
 		display: none;
 	}
+	
+	.content .nothing-here {
+		font-size: 0;
+		border-top: 1px solid var(--cx-color-lightgrey);
+    	color: var(--cx-color-almostblack);
+	}
+	
+	.content .nothing-here:before {
+		font-size: font-size-14;
+		content: "Shranjenega nimate še nobenega naslova.";
+	}
+	
+	.content .address-listing .create-address-btn {
+		background-color: var(--cx-color-white);
+		color: bar(--cx-color-blue);
+	}
+	
+	.content .address-listing .create-address-btn:hover {
+		background-color: var(--cx-color-blue);
+		color: bar(--cx-color-white);
+	}
 }
