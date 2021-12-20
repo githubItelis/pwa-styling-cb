@@ -1433,6 +1433,15 @@ upscale-article-group .container-content .grouping .article-card {
 
 #upscale .content-slot-component-background {
 	background-color: var(--cx-color-white) !important;
+	max-width: 1500px !important;
+    width: 85%;
+    margin: 0 auto;
+	padding-left: 12px !important;
+    padding-right: 12px !important;
+}
+
+#upscale .content-slot-component-background .headline {
+	font-size: $font-size-20 !important;
 }
 
 .guided-filter[_ngcontent-serverApp-c203] {
@@ -1780,6 +1789,34 @@ form mat-checkbox .mat-checkbox-label {
 	background-color: transparent !important;
 	border-color: var(--cx-color-blue) !important;
 }
+
+.swatch-label,
+.swatch-label-alert,
+.wrap upscale-variant-listing {
+	font-size: $font-size-12 !important;
+}
+
+.formgroup-input-container .shipping-address-list .action-button {
+	font-size: $font-size-14 !important;
+	font-weight: 400 !important;
+	color: var(--cx-color-almostblack) !important;
+}
+
+.formgroup-input-container .shipping-address-list .selected-ship-address .customer-address-default {
+	color: var(--cx-color-green) !important;
+    font-size: $font-size-12 !important;
+    font-weight: 400 !important;
+    border: 1px solid;
+    text-align: center !important;
+    margin-bottom: 10px;
+	letter-spacing: 0.5px !important;
+}
+
+.formgroup-input-container[_ngcontent-serverApp-c215] .shipping-address-list[_ngcontent-serverApp-c215] .action-button[_ngcontent-serverApp-c215]:hover {
+	background-color: transparent !important;
+}
+
+
 
 @media (max-width: 768px){
 	#upscale .image-component-overlay {
