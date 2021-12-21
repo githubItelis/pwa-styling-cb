@@ -329,7 +329,7 @@ button,
 .formgroup__button,
 .cart-empty__start-shopping-button,
 .section__button,
-.create-address-btn,
+.create-address-btn:hover,
 .account__logout,
 #upscale .image-component-link-button,
 .date-picker-input-wrapper-actions .button,
@@ -355,7 +355,7 @@ button,
 .formgroup__button:hover,
 .cart-empty__start-shopping-button:hover,
 .section__button:hover,
-.create-address-btn:hover,
+.create-address-btn,
 .account__logout:hover,
 .date-picker-input-wrapper-actions .button:hover,
 .formgroup-input-container .shipping-address-list .action--button-black:hover,
@@ -1368,10 +1368,6 @@ upscale-explicit-consent a:hover {
 	padding: 12px !important;
 }
 
-.order-details-cancel {
-	margin-left: 24px;
-}
-
 #upscale .image-component-overlay {
 	background-color: transparent !important;
 	max-width: 500px;
@@ -1807,7 +1803,8 @@ form mat-checkbox .mat-checkbox-label {
 	color: var(--cx-color-almostblack) !important;
 }
 
-.formgroup-input-container .shipping-address-list .selected-ship-address .customer-address-default {
+.formgroup-input-container .shipping-address-list .selected-ship-address .customer-address-default,
+upscale-address-listing .content .address-listing__address__default {
 	color: var(--cx-color-green) !important;
     font-size: $font-size-12 !important;
     font-weight: 400 !important;
@@ -1939,6 +1936,51 @@ upscale-browse .breadcrumbs .breadcrumb:nth-of-type(2):before {
 
 upscale-order-confirmation {
 	color: var(--cx-color-almostblack) !important;
+}
+
+.upscale-medium .details-header,
+.upscale-large .details-header,
+.upscale-extra-large .details-header,
+upscale-order-details .details-header,
+upscale-order-details .order-details {
+	max-width: 950px;
+}
+
+.upscale-medium .order-details-cancel,
+.upscale-large .order-details-cancel,
+.upscale-extra-large .order-details-cancel,
+upscale-order-details .order-details-cancel {
+	margin-left: 24px !important;
+}
+
+upscale-address-listing .container-content {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+upscale-address-listing  .content > .address-listing:first-child {
+	width: 100%;
+	order: 2;
+	border-top: 1px solid var(--cx-color-lightgrey);
+    padding-top: 30px;
+}
+
+upscale-address-listing  .content .address-listing .create-address-btn {
+	
+}
+
+upscale-address-listing .address-listing__address .address-listing__address__line:last-of-type {
+    border-bottom: 1px solid var(--cx-color-lightgrey);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+upscale-address-listing .content .address-listing__buttons__delete {
+	height: 20px !important;
+}
+
+upscale-address-listing .content .address-listing__buttons {
+	align-items: flex-start;
 }
 
 @media (max-width: 768px){
