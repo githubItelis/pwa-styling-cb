@@ -146,7 +146,8 @@ upscale-dropdown,
 	color: var(--cx-color-almostblack) !important;
 }
 
-#upscale .storybook-category-content-name {
+#upscale .storybook-category-content-name,
+#upscale .storybook-category-content-name .browse-category-name {
 	font-weight: 300 !important;
 }
 
@@ -331,7 +332,9 @@ button,
 .create-address-btn,
 .account__logout,
 #upscale .image-component-link-button,
-.date-picker-input-wrapper-actions .button {
+.date-picker-input-wrapper-actions .button,
+.formgroup-input-container .shipping-address-list .action--button-black,
+.details-section .shopping-button {
 	background-color: var(--cx-color-blue) !important;
 	color: var(--cx-color-white) !important;
 	border: solid 2px var(--cx-color-blue) !important;    
@@ -354,7 +357,9 @@ button,
 .section__button:hover,
 .create-address-btn:hover,
 .account__logout:hover,
-.date-picker-input-wrapper-actions .button:hover {
+.date-picker-input-wrapper-actions .button:hover,
+.formgroup-input-container .shipping-address-list .action--button-black:hover,
+.details-section .shopping-button:hover {
 	color: var(--cx-color-blue) !important;    
     background-color: var(--cx-color-white) !important;
 }
@@ -381,7 +386,9 @@ button,
 .cart-empty__start-shopping-button,
 .section__button,
 .create-address-btn,
-#upscale .image-component-link-button {
+#upscale .image-component-link-button,
+.formgroup-input-container .shipping-address-list .action--button-black,
+.details-section .shopping-button {
 	min-width: 250px !important;
 	height: 40px !important;
 	font-weight: 700 !important;
@@ -435,7 +442,8 @@ button,
 .upscale-large .title, 
 .upscale-extra-large .title,
 .consents .title-bar .title,
-upscale-attribute-set-label {
+upscale-attribute-set-label,
+.payment-label {
 	font-size: $font-size-14 !important;
 }
 
@@ -715,7 +723,8 @@ upscale-attribute-set-label {
 .order-details__order-line .order-line__product-prices,
 .card .content .division-name,
 .division-info-container,
-.order-details__info-cards .order-details__vat-total {
+.order-details__info-cards .order-details__vat-total,
+.order-details .division-info {
 	display: none !important;
 }
 
@@ -1705,6 +1714,7 @@ owl-date-time-container .owl-dt-calendar-table .owl-dt-calendar-cell-selected {
 }
 
 .formgroup-input-container .shipping-wrapper .input-row [name=address-line2],
+.formgroup-input-container .shipping-wrapper .input-row [name=cc-address-line2],
 .formgroup-input-container .shipping-wrapper .select-input.country {
 	display: none;
 }
@@ -1750,7 +1760,7 @@ owl-date-time-container .owl-dt-calendar-table .owl-dt-calendar-cell-selected {
 }
 
 .shipping__section-header.shipping__header {
-	display: none;
+	display: none !important;
 }
 
 .shipping__product-info {
@@ -1805,6 +1815,7 @@ form mat-checkbox .mat-checkbox-label {
     text-align: center !important;
     margin-bottom: 10px;
 	letter-spacing: 0.5px !important;
+	background-color: transparent !important;
 }
 
 .formgroup-input-container .shipping-address-list .action-button:hover,
@@ -1841,6 +1852,93 @@ upscale-browse .breadcrumbs .breadcrumb:nth-of-type(2){
 upscale-browse .breadcrumbs .breadcrumb:nth-of-type(2):before {
 	font-size: $font-size-13;
 	content: "Seznam";
+}
+
+.footer-link {
+	font-size: $font-size-13 !important;
+}
+
+.footer-link .material-icons {
+	font-size: $font-size-20 !important;
+}
+
+.footer-link:hover,
+.footer-link:hover .footer-text,
+.footer-link:hover .material-icons {
+	color: var(--cx-color-green) !important;
+}
+
+.footer {
+	background-color: transparent !important;
+}
+
+.formgroup-input-container .formgroup__container-content-form.ng-valid .shipping-address-list .selected-ship-address .actions .action-button {
+	font-size: 0 !important;
+}
+
+.formgroup-input-container .formgroup__container-content-form.ng-valid .shipping-address-list .selected-ship-address .actions .action-button:before {
+	content: "Izberi naslov";
+	font-size: $font-size-14;
+}
+
+.formgroup-input-container .shipping-address-list .selected--ship-wrapper {
+	height: auto !important;
+}
+
+.formgroup__container-content-form .consent-section {
+	padding-left: 12px !important;
+	padding-right: 12px !important;
+}
+
+.pay_button {
+	background-color: var(--cx-color-green) !important;
+	border: 2px solid var(--cx-color-green);
+}
+
+.pay_button:hover {
+    background-color: transparent !important;
+    color: var(--cx-color-green);
+}
+
+.quantity .label {
+	border: none !important;
+}
+
+.product-summary .card .product .prices {
+	display: none !important;
+}
+
+.product-summary .card .product .product-data .unit-price {
+	font-weight: 700 !important;
+	margin-top: 10px;
+}
+
+.product-summary .card .product .product-data .unit-price,
+.product-summary .card .product .product-data .quantity,
+.product-summary .card .product .product-data .info .recurrence, 
+.product-summary .card .product .product-data .info .variant-attribute {
+	font-size: $font-size-14 !important;
+}
+
+.product-summary .card .product .product-data .info .variant-attribute--order-status {
+	margin-bottom: 10px;
+}
+
+.overview__sub-headline,
+.overview .address-listing__info-block .address-listing__bold,
+.order-details__banner-headline,
+.product-summary .card .product .product-data .info .name {
+	font-weight: 700 !important;
+	font-size: $font-size-20 !important;
+	color: var(--cx-color-almostblack) !important;
+	letter-spacing: 0.5px !important;
+}
+.overview .address-listing__info-block .address-listing__body {
+	font-size: $font-size-14 !important;
+}
+
+upscale-order-confirmation {
+	color: var(--cx-color-almostblack) !important;
 }
 
 @media (max-width: 768px){
