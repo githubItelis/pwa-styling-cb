@@ -907,7 +907,7 @@ upscale-article-card article .excerpt {
 	max-width: 600px;
 }
 
-.formgroup__container-header,
+.delivery-form .formgroup__container-header,
 #upscale .storybook-product-content-sale-price {
 	color: var(--cx-color-almostblack) !important;
 }
@@ -1158,7 +1158,7 @@ em {
 }
 
 .clear-cart-button {
-	text-decoration: underline !important;
+	text-decoration: none !important;
 }
 
 .clear-cart-button:hover {
@@ -1444,8 +1444,12 @@ upscale-article-group .container-content .grouping .article-card {
 	font-size: $font-size-20 !important;
 }
 
-.guided-filter[_ngcontent-serverApp-c203] {
+.guided-filter {
     background: var(--cx-color-white) !important;
+}
+
+.guided-filter-chip {
+	background-color: var(--cx-color-blue) !important;
 }
 
 upscale-product-details .product-detail-content upscale-generic-image .img img.contain {
@@ -1717,13 +1721,13 @@ owl-date-time-container .owl-dt-calendar-table .owl-dt-calendar-cell-selected {
 }
 
 .shipping__bold,
-.formgroup__container-header {
+.delivery-form .formgroup__container-header {
 	color: var(--cx-color-almostblack) !important;
 	font-weight: 700 !important;
 	letter-spacing: 0.5px !important;
 }
 
-.formgroup__container-header {
+.delivery-form .formgroup__container-header {
 	font-size: $font-size-20 !important;	
 }
 
@@ -1803,8 +1807,10 @@ form mat-checkbox .mat-checkbox-label {
 	letter-spacing: 0.5px !important;
 }
 
-.formgroup-input-container[_ngcontent-serverApp-c215] .shipping-address-list[_ngcontent-serverApp-c215] .action-button[_ngcontent-serverApp-c215]:hover {
+.formgroup-input-container .shipping-address-list .action-button:hover,
+.card .buttons .remove-button:hover {
 	background-color: transparent !important;
+	border-color: var(--cx-color-blue) !important;
 }
 
 .product-detail-content .outOfStock:before {
@@ -1820,6 +1826,22 @@ form mat-checkbox .mat-checkbox-label {
 	display: none;
 }
 
+upscale-template[data-name="Svetovanje"] upscale-breadcrumbs .breadcrumbs__text {
+    font-size: 0 !important;
+}
+upscale-template[data-name="Svetovanje"] upscale-breadcrumbs .breadcrumbs__text:before {
+	content: "Svetovanje";
+	font-size: $font-size-13;
+}
+
+upscale-browse .breadcrumbs .breadcrumb:nth-of-type(2){
+	font-size: 0;
+}
+
+upscale-browse .breadcrumbs .breadcrumb:nth-of-type(2):before {
+	font-size: $font-size-13;
+	content: "Seznam";
+}
 
 @media (max-width: 768px){
 	#upscale .image-component-overlay {
