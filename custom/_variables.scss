@@ -110,7 +110,7 @@ upscale-product-details .product-detail-content .title,
 }
 
 #upscale .pdp-original-price-text {
-	color: var(--cx-color-almostblack) !important;
+	/*color: var(--cx-color-almostblack) !important;*/
     font-size: 20px !important;
     line-height: 1 !important;
     font-weight: 400 !important;
@@ -123,12 +123,12 @@ upscale-product-details .product-detail-content .title,
 .quantity-label__text,
 .quantity-label__max,
 .attribute-details__banner-headline {
-	font-size: 14px;
+	font-size: $font-size-14;
 }
 
 upscale-dropdown,
 .quantity-label__text {
-	font-size: 14px !important;
+	font-size: $font-size-14 !important;
 }
 
 .attribute-details__banner-headline,
@@ -1421,6 +1421,10 @@ upscale-article-group .container-content .grouping .article-card {
 	padding-right: 12px;
 }
 
+#upscale .image-component-content-subheadline {
+	font-size: $font-size-14 !important;
+}
+
 #upscale .carousel-container .image-component-content-headline,
 #upscale .carousel-container .image-component-content-subheadline {
 	color: var(--cx-color-almostblack) !important;
@@ -1834,6 +1838,10 @@ upscale-address-listing .content .address-listing__address__default {
 	display: none;
 }
 
+.upscale-mobile .product-detail-content .outOfStock {
+    padding-left: 12px;
+}
+
 upscale-template[data-name="Svetovanje"] upscale-breadcrumbs .breadcrumbs__text {
     font-size: 0 !important;
 }
@@ -1981,6 +1989,41 @@ upscale-address-listing .content .address-listing__buttons__delete {
 
 upscale-address-listing .content .address-listing__buttons {
 	align-items: flex-start;
+}
+
+#upscale upscale-template[data-name="Order confirmation"] > div > upscale-content-slot .content-slot-component-background {
+	max-width: 950px !important;
+    margin-top: 30px;
+}
+
+#upscale.upscale-mobile upscale-template[data-name="Order confirmation"] > div > upscale-content-slot .content-slot-component-background,
+#upscale.upscale-mobile upscale-template[data-name="Order confirmation"] > div > upscale-order-confirmation {
+	width: 85%;
+}
+
+#upscale.upscale-tablet upscale-template[data-name="Order confirmation"] > div > upscale-content-slot {
+	max-width: 950px;
+}
+
+#upscale.upscale-mobile upscale-template[data-name="Order confirmation"] > div > upscale-content-slot .content-slot-component-background .container .content {
+	padding-left: 0;
+}
+
+upscale-back-in-stock form mat-checkbox .mat-checkbox-inner-container {
+	margin: 7px 10px 9px 10px !important;
+}
+
+.swatch-listing-container {
+	margin-bottom: 20px;
+}
+
+#upscale .price div:first-child.original-price,
+#upscale .price div:first-child.selling-price {
+    color: var(--cx-color-green) !important;
+}
+
+#upscale .price div:nth-child(2).selling-price {
+    color: var(--cx-color-red) !important;
 }
 
 @media (max-width: 768px){
