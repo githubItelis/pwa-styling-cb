@@ -26,6 +26,7 @@ $font-size-26: 26px;
 	--cx-color-almostblack: #434343;
 	--cx-color-lightgrey: #efefef;
 	--cx-color-grey-border: #cfcfcf;
+	--cx-color-bg-account: #f9f9f9;
 	
 	/*
 	&::-webkit-input-placeholder { color: var(--cx-color-white); }
@@ -334,7 +335,8 @@ button,
 #upscale .image-component-link-button,
 .date-picker-input-wrapper-actions .button,
 .formgroup-input-container .shipping-address-list .action--button-black,
-.details-section .shopping-button {
+.details-section .shopping-button,
+.no-content-holder button {
 	background-color: var(--cx-color-blue) !important;
 	color: var(--cx-color-white) !important;
 	border: solid 2px var(--cx-color-blue) !important;    
@@ -359,7 +361,8 @@ button,
 .account__logout:hover,
 .date-picker-input-wrapper-actions .button:hover,
 .formgroup-input-container .shipping-address-list .action--button-black:hover,
-.details-section .shopping-button:hover {
+.details-section .shopping-button:hover,
+.no-content-holder button:hover {
 	color: var(--cx-color-blue) !important;    
     background-color: var(--cx-color-white) !important;
 }
@@ -388,7 +391,8 @@ button,
 .create-address-btn,
 #upscale .image-component-link-button,
 .formgroup-input-container .shipping-address-list .action--button-black,
-.details-section .shopping-button {
+.details-section .shopping-button,
+.no-content-holder button {
 	min-width: 250px !important;
 	height: 40px !important;
 	font-weight: 700 !important;
@@ -1511,7 +1515,7 @@ upscale-product-details .product-detail-content upscale-generic-image .img img.c
 }
 
 .manage-account .formgroup__container-row {
-	border-bottom: 1px solid var(--cx-color-lightgrey);
+	border-bottom: 2px solid var(--cx-color-almostblack);
 }
 
 .content .profile {
@@ -2024,6 +2028,80 @@ upscale-back-in-stock form mat-checkbox .mat-checkbox-inner-container {
 
 #upscale .price div:nth-child(2).selling-price {
     color: var(--cx-color-red) !important;
+}
+
+.checkout-sections upscale-checkout-address-form:first-of-type .formgroup-input-container .formgroup__container .formgroup__container-row .formgroup__container-header:before {
+    content: "1.";
+    margin-right: 5px;
+}
+
+upscale-formgroup-input-container.formgroup-input-container.delivery-form .formgroup__container-header:before {
+    content: "2.";
+    margin-right: 5px;
+}
+
+.checkout-sections upscale-checkout-address-form:nth-of-type(2) .formgroup-input-container .formgroup__container .formgroup__container-row .formgroup__container-header:before {
+    content: "3.";
+    margin-right: 5px;
+}
+
+.checkout-sections upscale-formgroup-input-container:nth-of-type(2).formgroup-input-container .formgroup__container .formgroup__container-row .formgroup__container-header:before {
+    content: "4.";
+    margin-right: 5px;
+}
+
+.checkout-sections upscale-formgroup-input-container:nth-of-type(3).formgroup-input-container .formgroup__container .formgroup__container-row .formgroup__container-header:before {
+    content: "5.";
+    margin-right: 5px;
+}
+/* fake št naročila */
+/*
+.details-header__order-id {
+	width: 115px;
+    overflow: hidden;
+    white-space: nowrap;
+    /*text-align: right;*/
+/*
+    padding-left: 17px;
+    position: relative;
+}
+.details-header__order-id:before {
+    content: "Naročilo št. ";
+    position: absolute;
+    background: white;
+    width: 65px;
+    left: 0;
+    /*text-align: left;*/
+	/*
+}*/
+
+.mat-accent .mat-pseudo-checkbox-checked, 
+.mat-accent .mat-pseudo-checkbox-indeterminate, 
+.mat-accent .mat-slider-thumb, 
+.mat-accent .mat-slider-thumb-label, 
+.mat-accent .mat-slider-track-fill, 
+.mat-checkbox-checked.mat-accent .mat-checkbox-background, 
+.mat-checkbox-checked:not(.mat-checkbox-disabled).mat-accent .mat-ripple-element, 
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, 
+.mat-checkbox:active:not(.mat-checkbox-disabled).mat-accent .mat-ripple-element, 
+.mat-pseudo-checkbox-checked, 
+.mat-pseudo-checkbox-indeterminate,
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple,
+.mat-radio-button.mat-accent .mat-radio-inner-circle, 
+.mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple), 
+.mat-radio-button.mat-accent:active .mat-radio-persistent-ripple {
+	background: var(--cx-color-blue) !important;
+}
+
+.mat-list-base .mat-list-item.mat-list-item-with-avatar .mat-list-item-content .mat-list-text, 
+.mat-list-base .mat-list-item.mat-list-option .mat-list-item-content .mat-list-text,
+.mat-list-base .mat-list-option.mat-list-item-with-avatar .mat-list-item-content .mat-list-text,
+.mat-list-base .mat-list-option.mat-list-option .mat-list-item-content .mat-list-text {
+	padding-left: 8px !important;
+}
+
+.owl-dt-control-period-button:hover>.owl-dt-control-button-content {
+	background-color: transparent !important;
 }
 
 @media (max-width: 768px){

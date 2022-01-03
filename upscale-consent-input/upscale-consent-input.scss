@@ -15,13 +15,19 @@
 		color: var(--cx-color-green);
 	}
 	
-	.showSettings .content {
+	.showSettings .content,
+	.content {
 		font-size: $font-size-12;
 		color: var(--cx-color-almostblack);
 	}
 	
-	.unsubscribed {
+	.unsubscribed {		
 		color: var(--cx-color-green);
+	}
+	
+	.unsubscribed,
+	.link {
+		font-size: $font-size-12;
 	}
 	
 }
