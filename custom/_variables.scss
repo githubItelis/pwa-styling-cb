@@ -2104,6 +2104,10 @@ upscale-formgroup-input-container.formgroup-input-container.delivery-form .formg
 	background-color: transparent !important;
 }
 
+upscale-formgroup-input-container.formgroup-inputs__registration .formgroup__container-row {
+    padding: 0 !important;
+}
+
 @media (max-width: 768px){
 	#upscale .image-component-overlay {
 		left: 0;
