@@ -1,7 +1,8 @@
 @import "../styles.scss";
 
 :host {
-	.shipping__products-single-column {
+	.shipping__products-single-column,
+	.shipping__products-double-column {
 		display: none;
 	}
 }
