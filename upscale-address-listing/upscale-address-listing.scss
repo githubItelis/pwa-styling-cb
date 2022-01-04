@@ -37,6 +37,9 @@
 		font-size: $font-size-12;
 		font-weight: 400;		
 	}
+	.content .address-listing__buttons__delete:hover {
+		color: var(--cx-color-green);
+	}
 	
 	.content .address-listing__buttons__edit {
 		font-weight: 700;
@@ -72,10 +75,23 @@
 	.content .address-listing .create-address-btn {
 		background-color: var(--cx-color-white);
 		color: bar(--cx-color-blue);
+		border: 2px solid var(--cx-color-blue);
 	}
 	
 	.content .address-listing .create-address-btn:hover {
 		background-color: var(--cx-color-blue);
 		color: bar(--cx-color-white);
 	}
+	
+	.content .address-listing .formgroup__cancel {
+		border: none;
+		font-size: 0;
+	}
+	.content .address-listing .formgroup__cancel:before {
+		content: "Prekliči";
+		font-size: $font-size-14;
+	}
+	.content .address-listing .formgroup__cancel:hover {
+		color: var(--cx-color-green);
+	}	
 }
