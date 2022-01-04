@@ -13,28 +13,28 @@
 		}				
 	}
 	
-	.content upscale-formgroup-input-container.manage-account__formgroup .formgroup__container {
+	.content .manage-account__formgroup .formgroup__container {
 		padding: 20px;						
 	}
 	
-	.content upscale-formgroup-input-container.manage-account__formgroup .formgroup__container,
-	.content upscale-formgroup-input-container.manage-account__formgroup .formgroup__container-row,
-	.content upscale-formgroup-input-container.manage-account__formgroup .formgroup__container-header-arrow,
-	.content upscale-formgroup-input-container.manage-account__formgroup .formgroup__container .formgroup__container-content .input-profile-container-mode,
-	.content upscale-formgroup-input-container.manage-account__formgroup .formgroup__container .formgroup__container-content .input-profile-container,
+	.content .manage-account__formgroup .formgroup__container,
+	.content .manage-account__formgroup .formgroup__container-row,
+	.content .manage-account__formgroup .formgroup__container-header-arrow,
+	.content .manage-account__formgroup .formgroup__container .formgroup__container-content .input-profile-container-mode,
+	.content .manage-account__formgroup .formgroup__container .formgroup__container-content .input-profile-container,
 	.content .manage-account upscale-attribute-set .body {
 		background: var(--cx-color-bg-account);
 	}
 	
-	.content upscale-formgroup-input-container.manage-account__formgroup .formgroup__container .formgroup__container-content .input-profile-container-mode,
-	.content upscale-formgroup-input-container.manage-account__formgroup .formgroup__container .formgroup__container-content .input-profile-container {
+	.content .manage-account__formgroup .formgroup__container .formgroup__container-content .input-profile-container-mode,
+	.content .manage-account__formgroup .formgroup__container .formgroup__container-content .input-profile-container {
 		grid-template-rows: auto;
 		padding: 12px;
 		display: flex;
 		flex-direction: column;
 	}
 	
-	.content upscale-formgroup-input-container.manage-account__formgroup .formgroup__container .formgroup__container-content .input-profile-container-mode .input-label {
+	.content .manage-account__formgroup .formgroup__container .formgroup__container-content .input-profile-container-mode .input-label {
 		height: 20px;
 		margin-bottom: 10px;
 	}
