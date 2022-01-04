@@ -27,7 +27,6 @@ $font-size-26: 26px;
 	--cx-color-lightgrey: #efefef;
 	--cx-color-grey-border: #cfcfcf;
 	--cx-color-bg-account: #f9f9f9;
-	
 	/*
 	&::-webkit-input-placeholder { color: var(--cx-color-white); }
   	&::-moz-placeholder { color: var(--cx-color-white); } */ /* Firefox 19+ */
@@ -1647,7 +1646,7 @@ upscale-product-details .product-detail-content upscale-generic-image .img img.c
 }
 
 .account__link-text {
-	font-size: $font-size-14 !important;
+	/*font-size: $font-size-14 !important;*/
     font-weight: 700 !important;
 }
 
@@ -2030,6 +2029,12 @@ upscale-back-in-stock form mat-checkbox .mat-checkbox-inner-container {
 
 #upscale .price div:nth-child(2).selling-price {
     color: var(--cx-color-red) !important;
+}
+
+.formgroup__container-header {
+	color: var(--cx-color-almostblack) !important;
+	font-weight: 700 !important;
+	letter-spacing: 0.5px !important;
 }
 
 .checkout-sections upscale-checkout-address-form:first-of-type .formgroup-input-container .formgroup__container .formgroup__container-row .formgroup__container-header:before {
