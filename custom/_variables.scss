@@ -1,5 +1,6 @@
 $font-size-text: 12px;
-$font-size-12: 12px;
+/*$font-size-12: 12px;*/
+$font-size-12: 13px;
 $font-size-13: 13px;
 $font-size-medium-small: 13px;
 $font-size-medium: 14px;
@@ -1887,6 +1888,16 @@ upscale-browse .breadcrumbs .breadcrumb:nth-of-type(2):before {
 .footer {
 	background-color: transparent !important;
 }
+
+/*
+.formgroup-input-container .formgroup__container-content-form .shipping-address-list .selected--ship-wrapper .selected-ship-address .actions .action-button:last-child {
+	font-size: 0 !important;
+}
+
+.formgroup-input-container .formgroup__container-content-form .shipping-address-list .selected--ship-wrapper .selected-ship-address .actions .action-button:last-child:before {
+	content: "Izberi";
+	font-size: $font-size-14;
+}*/
 
 .formgroup-input-container .formgroup__container-content-form.ng-valid .shipping-address-list .selected-ship-address .actions .action-button {
 	font-size: 0 !important;
