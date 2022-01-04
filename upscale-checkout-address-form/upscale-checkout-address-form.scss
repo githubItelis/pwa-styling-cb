@@ -1,11 +1,6 @@
 @import "../styles.scss";
 
 :host {
-	.formgroup-input-container .formgroup__container-header {
-		border-bottom: 2px solid var(--cx-color-almostblack);
-    	color: var(--cx-color-almostblack);
-	}
-	
 	.formgroup-input-container .save-address-container {
 		padding-left: 0;
 	}
