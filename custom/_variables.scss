@@ -2141,89 +2141,88 @@ upscale-formgroup-input-container.formgroup-inputs__registration .formgroup__con
 }
 
 upscale-manage-account .content .manage-account {
-		max-width: 500px;
-		
-		&__formgroup {
-			margin-bottom: 50px;						
-		}
-		
-		&__componentseparator {
-			display: none;
-		}				
+	max-width: 500px;
+
+	&__formgroup {
+		margin-bottom: 50px;						
 	}
+
+	&__componentseparator {
+		display: none;
+	}				
+}
 	
-	.content .manage-account__formgroup .formgroup__container {
-		padding: 20px;						
-	}	
+upscale-manage-account	.content .manage-account__formgroup .formgroup__container {
+	padding: 20px;						
+}	
 	
-	.content .manage-account__formgroup .formgroup__container,
-	.content .manage-account__formgroup .formgroup__container-row,
-	.content .manage-account__formgroup .formgroup__container-header-arrow,
-	.content .manage-account__formgroup .formgroup__container .formgroup__container-content .input-profile-container-mode,
-	.content .manage-account__formgroup .formgroup__container .formgroup__container-content .input-profile-container,
-	.content .manage-account upscale-attribute-set .body {
-		background: var(--cx-color-bg-account);
-	}
-	
-	.content .manage-account__formgroup .formgroup__container .formgroup__container-content .input-profile-container-mode,
-	.content .manage-account__formgroup .formgroup__container .formgroup__container-content .input-profile-container {
-		grid-template-rows: auto;
-		padding: 12px;
-		display: flex;
-		flex-direction: column;
-	}
-	
-	.content .manage-account__formgroup .formgroup__container .formgroup__container-content .input-profile-container-mode .input-label {
-		height: 20px;
-		margin-bottom: 10px;
-	}
-	
-	.content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-dropdown .column,
-	.content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column,
-	.content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-numeric-input .column,
-	.content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-resizable-input .column {
-		flex-direction: row;
-		align-items: baseline;
-	}
-	
-	.content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-dropdown .column upscale-attribute-set-label,
-	.content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column upscale-attribute-set-label,
-	.content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-numeric-input .column upscale-attribute-set-label {
-		color: var(--cx-color-almostblack);
-		width: 160px;
-		font-weight: 400;
-		font-size: $font-size-12 !important;
-	}
-	
-	.content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-dropdown .column .resizable-input-wrapper,
-	.content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input {
-		width: 150px;
-	}	
-	.content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column.date-picker-input {
-		width: auto;
-	}
-	.content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input .make-selection {
-		min-width: 150px !important;
-	}
-	.content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-checkbox-group mat-selection-list mat-list-option .mat-list-item-content mat-pseudo-checkbox.mat-pseudo-checkbox {
-		width: 11px;
-    	height: 11px;
-    	border: 1px solid var(--cx-color-grey-border);
-		border-radius: 0;
-	}
-	
-	.content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-checkbox-group mat-selection-list mat-list-option .mat-list-item-content mat-pseudo-checkbox.mat-pseudo-checkbox-checked::after {
-		top: 1px;
-    	left: 0;
-	}
-	
-	.content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-checkbox-group mat-selection-list.mat-list-base mat-list-option.mat-list-item {
-		height: 22px !important;
-	}
-	
-	.content .manage-account upscale-attribute-set .body .action-button .attribute-set-headline {
-		font-weight: 700;
-	}
+upscale-manage-account .content .manage-account__formgroup .formgroup__container,
+upscale-manage-account .content .manage-account__formgroup .formgroup__container-row,
+upscale-manage-account .content .manage-account__formgroup .formgroup__container-header-arrow,
+upscale-manage-account .content .manage-account__formgroup .formgroup__container .formgroup__container-content .input-profile-container-mode,
+upscale-manage-account .content .manage-account__formgroup .formgroup__container .formgroup__container-content .input-profile-container,
+upscale-manage-account .content .manage-account upscale-attribute-set .body {
+	background: var(--cx-color-bg-account);
+}
+
+upscale-manage-account .content .manage-account__formgroup .formgroup__container .formgroup__container-content .input-profile-container-mode,
+upscale-manage-account .content .manage-account__formgroup .formgroup__container .formgroup__container-content .input-profile-container {
+	grid-template-rows: auto;
+	padding: 12px;
+	display: flex;
+	flex-direction: column;
+}
+
+upscale-manage-account .content .manage-account__formgroup .formgroup__container .formgroup__container-content .input-profile-container-mode .input-label {
+	height: 20px;
+	margin-bottom: 10px;
+}
+
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-dropdown .column,
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column,
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-numeric-input .column,
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-resizable-input .column {
+	flex-direction: row;
+	align-items: baseline;
+}
+
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-dropdown .column upscale-attribute-set-label,
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column upscale-attribute-set-label,
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-numeric-input .column upscale-attribute-set-label {
+	color: var(--cx-color-almostblack);
+	width: 160px;
+	font-weight: 400;
+	font-size: $font-size-12 !important;
+}
+
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-dropdown .column .resizable-input-wrapper,
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input {
+	width: 150px;
+}	
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column.date-picker-input {
+	width: auto;
+}
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input .make-selection {
+	min-width: 150px !important;
+}
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-checkbox-group mat-selection-list mat-list-option .mat-list-item-content mat-pseudo-checkbox.mat-pseudo-checkbox {
+	width: 11px;
+	height: 11px;
+	border: 1px solid var(--cx-color-grey-border);
+	border-radius: 0;
+}
+
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-checkbox-group mat-selection-list mat-list-option .mat-list-item-content mat-pseudo-checkbox.mat-pseudo-checkbox-checked::after {
+	top: 1px;
+	left: 0;
+}
+
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-checkbox-group mat-selection-list.mat-list-base mat-list-option.mat-list-item {
+	height: 22px !important;
+}
+
+upscale-manage-account .content .manage-account upscale-attribute-set .body .action-button .attribute-set-headline {
+	font-weight: 700;
 }
 
 @media (max-width: 768px){
