@@ -143,7 +143,8 @@ upscale-dropdown,
 #upscale .storybook-category-content-name,
 #upscale .browse-category-name,
 #upscale .storybook-component-headline,
-.product-detail-content .title {
+.product-detail-content .title,
+.formgroup__container-header {
 	color: var(--cx-color-almostblack) !important;
 }
 
@@ -1907,6 +1908,7 @@ upscale-browse .breadcrumbs .breadcrumb:nth-of-type(2):before {
 .pay_button:hover {
     background-color: transparent !important;
     color: var(--cx-color-green);
+	border: 2px solid var(--cx-color-green);
 }
 
 .quantity .label {
