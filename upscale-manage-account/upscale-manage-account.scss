@@ -15,7 +15,7 @@
 	
 	.content .manage-account__formgroup .formgroup__container {
 		padding: 20px;						
-	}
+	}	
 	
 	.content .manage-account__formgroup .formgroup__container,
 	.content .manage-account__formgroup .formgroup__container-row,
@@ -80,5 +80,13 @@
 	
 	.content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-checkbox-group mat-selection-list.mat-list-base mat-list-option.mat-list-item {
 		height: 22px !important;
-	}	
+	}
+	
+	.content .manage-account upscale-attribute-set .body .action-button .attribute-set-headline {
+		font-weight: 700;
+	}
+}
+
+.content .manage-account upscale-attribute-set .body .action-button .attribute-set-headline {
+	font-weight: 700;
 }
