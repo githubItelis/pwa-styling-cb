@@ -314,6 +314,13 @@ button,
 	border-radius: 0 !important;
 }
 
+#upscale .storybook-category-content-name,
+#upscale .storybook-component-headline,
+.headline,
+#upscale .image-component-link-button {
+	letter-spacing: 0.5px !important;	
+}
+
 .login .login-content .buttons .login-button,
 .register-content .register-buttons .register-button,
 .formgroup__button,
