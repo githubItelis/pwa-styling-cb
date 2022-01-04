@@ -40,3 +40,9 @@
 		color: var(--cx-color-almostblack);
 	}		
 }
+
+:host.show-as-modal.formgroup-input-container {
+	.formgroup__actions .formgroup__cancel {
+		border: none;
+	}
+}
