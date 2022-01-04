@@ -3,3 +3,7 @@
 :host.browse-category-card-color.default {
 	min-height: 145px;
 }
+:host.browse-category-card-color.default .browse-category-name {
+	font-size: $font-size-14;
+	letter-spacing: 0.5px;
+}
