@@ -2198,7 +2198,13 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .bod
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-dropdown .column .resizable-input-wrapper,
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input {
 	width: 150px;
-}	
+}
+
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .date-picker-input .make-selection
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-dropdown .column .mat-select {
+	border: 1px solid var(--cx-color-grey-border) !important;
+}
+
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column.date-picker-input {
 	width: auto;
 }
@@ -2224,6 +2230,12 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .bod
 upscale-manage-account .content .manage-account upscale-attribute-set .body .action-button .attribute-set-headline {
 	font-weight: 700;
 }
+
+upscale-checkout .checkout-sections .formgroup-input-container .formgroup__container-header {
+	border-bottom: 2px solid var(--cx-color-almostblack);
+	color: var(--cx-color-almostblack);
+}
+
 
 @media (max-width: 768px){
 	#upscale .image-component-overlay {
