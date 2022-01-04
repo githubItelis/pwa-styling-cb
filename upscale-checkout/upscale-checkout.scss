@@ -1,0 +1,8 @@
+@import "../styles.scss";
+
+:host {
+	.checkout-sections > upscale-formgroup-input-container.formgroup-input-container:nth-of-type(2) .formgroup__container-header,
+	.checkout-sections > upscale-formgroup-input-container.formgroup-input-container:nth-of-type(3) .formgroup__container-header {
+		border-bottom: 2px solid var(--cx-color-almostblack);
+	}
+}
