@@ -1,0 +1,10 @@
+@import "../styles.scss";
+
+:host {
+	.order-details .divison-spacer {
+		display: none;
+	}
+	.order-details .order-line__cancel {
+		border-bottom: 1px solid var(--cx-color-green);
+	}
+}
