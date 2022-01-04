@@ -16,6 +16,7 @@
 			padding: 0;
 			border-bottom: 1px solid var(--cx-color-grey-border);
 			cursor: pointer;
+			height: 50px;
 			
 			&:hover {
 				background-color: transparent;
@@ -24,6 +25,7 @@
 			
 			&-text {
 				letter-spacing: 0.5px;
+				font-size: $font-size-20;
 			}
 			
 			&-arrow {
