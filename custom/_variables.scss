@@ -74,6 +74,9 @@ html, body, #upscale {
 #upscale .storybook-component-headline {
 	padding: 0 12px !important;
 }
+#upscale .storybook-component-headline.title-custom-aa {
+	padding-left: 0 !important;
+}
 /*
 .storybook-component-headline {
 	font-size: 26px;
@@ -1716,7 +1719,7 @@ owl-date-time-container .owl-dt-calendar-table .owl-dt-calendar-cell-selected {
 }
 
 .order-card .card-holder:hover {
-    background-color: transparent;
+    background-color: transparent !important;
     border-color: var(--cx-color-green);
 }
 
@@ -2131,6 +2134,10 @@ upscale-formgroup-input-container.formgroup-input-container.delivery-form .formg
 
 upscale-formgroup-input-container.formgroup-inputs__registration .formgroup__container-row {
     padding: 0 !important;
+}
+
+#upscale.upscale-mobile .content-slot-component-background {
+	width: 95%;
 }
 
 @media (max-width: 768px){
