@@ -1730,7 +1730,10 @@ owl-date-time-container .owl-dt-calendar-table .owl-dt-calendar-cell-selected {
 
 .formgroup-input-container .shipping-wrapper .input-row [name=address-line2],
 .formgroup-input-container .shipping-wrapper .input-row [name=cc-address-line2],
-.formgroup-input-container .shipping-wrapper .select-input.country {
+.cdk-overlay-pane .formgroup-input-container .shipping-wrapper .select-input.country,
+.formgroup-input-container .shipping-wrapper .select-input.country select option[value="HR"]
+ /* samo hrvaška .formgroup-input-container .shipping-wrapper .select-input.country select option:nth-child(2) */
+/*.formgroup-input-container .shipping-wrapper .select-input.country*/ {
 	display: none;
 }
 
