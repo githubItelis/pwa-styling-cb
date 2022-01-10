@@ -2241,6 +2241,9 @@ upscale-checkout .checkout-sections .formgroup-input-container .formgroup__conta
 	color: var(--cx-color-almostblack);
 }
 
+#upscale .storybook-category-content-background-overlay {
+	background-color: rgba(0, 0, 0, 0) !important;
+}
 
 @media (max-width: 768px){
 	#upscale .image-component-overlay {
