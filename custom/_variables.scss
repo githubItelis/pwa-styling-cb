@@ -206,6 +206,7 @@ upscale-navigation-bar upscale-navigation-search .search-bar__input {
     height: 130px !important;
 }
 */
+upscale-template upscale-storybook:nth-of-type(1) upscale-ui-carousel .storybook-content a.disabled-link,
 [data-component-id="9dab67c8-cfb4-4454-b16d-554a6c871df9"] upscale-ui-carousel .storybook-content a.disabled-link {
 	padding-top: 0 !important;
 }
@@ -1412,6 +1413,7 @@ upscale-storybook-content .storybook-content a {
 	padding-left: 12px !important;
 }
 
+upscale-template upscale-storybook:nth-of-type(1) upscale-storybook-content .storybook-content a,
 [data-component-id="9dab67c8-cfb4-4454-b16d-554a6c871df9"] upscale-storybook-content .storybook-content a {
 	padding-left: 0 !important;
 	width: 100% !important;
