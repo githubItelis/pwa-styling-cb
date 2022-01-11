@@ -1369,7 +1369,7 @@ upscale-explicit-consent a:hover {
 }
 
 .resizable-input-value.mini {
-	width: 250px !important;
+	width: auto !important;
 }
 
 .resizable-input-value {
@@ -2165,16 +2165,19 @@ upscale-manage-account	.content .manage-account__formgroup .formgroup__container
 }	
 	
 /*upscale-manage-account .content .manage-account__formgroup .formgroup__container,
-upscale-manage-account .content .manage-account__formgroup .formgroup__container-row,
-upscale-manage-account .content .manage-account__formgroup .formgroup__container-header-arrow,
 upscale-manage-account .content .manage-account__formgroup .formgroup__container .formgroup__container-content .input-profile-container-mode,
 upscale-manage-account .content .manage-account__formgroup .formgroup__container .formgroup__container-content .input-profile-container,
 upscale-manage-account .content .manage-account upscale-attribute-set .body*/
 upscale-manage-account .content .manage-account__formgroup,
+upscale-manage-account .content .manage-account__formgroup .formgroup__container-row,
+upscale-manage-account .content .manage-account__formgroup .formgroup__container-header-arrow,
+upscale-manage-account .content .manage-account__formgroup .formgroup__container .formgroup__container-content .input-profile-container-mode,
+upscale-manage-account .content .manage-account__formgroup .formgroup__container .formgroup__container-content .input-profile-container,
 upscale-manage-account .content .input,
 upscale-manage-account .content .input-box:disabled,
 upscale-manage-account .content .input-profile-container-edit,
-upscale-manage-account .content .manage-account upscale-attribute-set .body {
+upscale-manage-account .content .manage-account upscale-attribute-set .body,
+upscale-manage-account .content .manage-account upscale-attribute-set .body > button.action-button {
 	background-color: var(--cx-color-bg-account) !important;
 }
 
@@ -2203,7 +2206,8 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .bod
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-dropdown .column upscale-attribute-set-label,
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column upscale-attribute-set-label,
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-numeric-input .column upscale-attribute-set-label,
-upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content .resizable-input .column upscale-attribute-set-label {
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content .resizable-input .column upscale-attribute-set-label,
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-toggle upscale-attribute-set-label {
 	color: var(--cx-color-almostblack);
 	width: 200px;
 	font-weight: 400;
@@ -2216,7 +2220,9 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .bod
 }
 
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .date-picker-input .make-selection
-upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-dropdown .column .mat-select {
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-dropdown .column .mat-select,
+upscale-manage-account .content .manage-account .numeric-input-value,
+upscale-manage-account .content .manage-account .dropdown .select {
 	border: 1px solid var(--cx-color-grey-border) !important;
 }
 
@@ -2305,7 +2311,8 @@ upscale-manage-account .content .manage-account__formgroup .formgroup__container
 	border-right: none !important;
 	border-top: none !important;
 	margin-bottom: 10px;
-	border-width: 1px;
+	border-bottom: 1px solid var(--cx-color-lightgrey) !important;
+    height: 20px;
 }
 
 upscale-manage-account .content .input-profile-container-edit {
@@ -2326,7 +2333,7 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .bod
 upscale-manage-account .content .input-profile-container-edit .section__button.change:hover,
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions .cancel:hover,
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions .cancel:hover:before,
-upscale-manage-account .content .manage-account__delete {
+upscale-manage-account .content .manage-account__delete:hover {
 	color: var(--cx-color-green) !important;
 }
 upscale-manage-account .content .input-profile-container-edit .section__button.change {
@@ -2343,7 +2350,8 @@ upscale-manage-account .resizable-input label.resizable-input-limit {
 upscale-attribute-set-label,
 upscale-attribute-set-label label,
 upscale-manage-account .mat-list-base .mat-list-item, 
-upscale-manage-account .mat-list-base .mat-list-option {
+upscale-manage-account .mat-list-base .mat-list-option,
+upscale-manage-account .resizable-input label {
 	color: var(--cx-color-almostblack) !important;
 	font-size: $font-size-12 !important;
 	font-weight: 300 !important;
@@ -2375,14 +2383,15 @@ upscale-manage-account upscale-attribute-set .body {
 	padding: 20px !important;
 }
 
-.recap {
+.recap,
+.numeric-input-value {
 	font-size: $font-size-12 !important;
 	font-weight: 300 !important;
 	color: var(--cx-color-almostblack) !important;
 }
 
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions .cancel {
-	font-size: 0;
+	font-size: 0 !important;
 }
 
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions .cancel:before {
@@ -2396,6 +2405,14 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .bod
 
 upscale-manage-account .attribute-input .column {
 	margin-top: 20px !important;
+}
+
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions button {
+	min-width: 150px !important;
+}
+
+.mat-select-placeholder {
+	color: var(--cx-color-almostblack) !important;
 }
 /*
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions {
