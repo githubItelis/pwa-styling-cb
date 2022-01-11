@@ -2201,7 +2201,7 @@ upscale-manage-account .content .manage-account__formgroup .formgroup__container
 
 upscale-manage-account .content .manage-account__formgroup .formgroup__container .formgroup__container-content .input-profile-container-mode .input-label {
 	height: 20px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-dropdown .column,
@@ -2218,7 +2218,8 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .bod
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column upscale-attribute-set-label,
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-numeric-input .column upscale-attribute-set-label,
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content .resizable-input .column upscale-attribute-set-label,
-upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-toggle upscale-attribute-set-label {
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-toggle upscale-attribute-set-label,
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-label {
 	color: var(--cx-color-almostblack);
 	width: 200px;
 	min-width: 200px !important;
@@ -2423,6 +2424,8 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .bod
 }*/
 
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-dropdown .column,
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-checkbox-group .column,
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content .column,
 upscale-manage-account .attribute-input .column {
 	margin-top: 20px !important;
 }
@@ -2534,8 +2537,9 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .res
 	width: auto !important;
 }
 
-upscale-manage-account .content .manage-account upscale-attribute-set-toggle .toggle.review {
-	flex-direction: row;
+upscale-manage-account .content .manage-account upscale-attribute-set-toggle .toggle.review,
+upscale-manage-account .content .manage-account upscale-attribute-set-checkbox-group .checkbox-group .column {
+	flex-direction: row !important;
 }
 
 /*
