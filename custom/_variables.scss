@@ -2317,6 +2317,8 @@ upscale-manage-account .content .manage-account__formgroup .formgroup__container
 	height: 20px !important;
 	border-bottom: none !important;
 	margin-bottom: 0 !important;
+	font-weight: 300 !important;
+	color: var(--cx-color-almostblack) !important;
 }
 
 upscale-manage-account .content .manage-account__formgroup .formgroup__container-content-form .input-profile-container .input-box {
@@ -2531,6 +2533,7 @@ upscale-address-listing .content .address-listing__address {
 
 upscale-manage-account .content .manage-account upscale-attribute-set .body upscale-attribute-set-date-time-picker .date-picker-input .date-picker-input__selected {
 	min-width: 200px !important;
+	border-width: 1px;
 }
 
 upscale-manage-account .content .manage-account upscale-attribute-set .body .resizable-input label {
