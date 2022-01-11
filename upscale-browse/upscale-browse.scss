@@ -1,11 +1,21 @@
 @import "../styles.scss";
 
 :host {
-	/*font-family: $font-family;*/
+	.search__text {
+		color: var(--cx-color-almostblack);
+		font-size: $font-size-20;
+		letter-spacing: 0.5px;
+	}
+	.search__text-result {
+		font-weight: 700;
+	}
+}
+
+:host .search {
+	margin: 24px 12px;
 }
 
 .breadcrumbs {
-	/*font-family: $font-family;*/
 	width: 85%;
 	font-size: $font-size-13;
 }

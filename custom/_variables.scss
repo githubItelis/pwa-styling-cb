@@ -481,12 +481,11 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .bod
 	font-size: $font-size-20 !important;
 }
 
-.register-content .formgroup__container-header {
+.login-container .register-content upscale-formgroup-input-container .formgroup__container-header {
 	font-size: $font-size-16 !important;
 }
 
-
-.register-content .formgroup__container-header {
+.login-container .register-content upscale-formgroup-input-container .formgroup__container-header {
 	color: var(--cx-color-green) !important;
 }
 	
