@@ -2333,7 +2333,8 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .bod
 upscale-manage-account .content .input-profile-container-edit .section__button.change:hover,
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions .cancel:hover,
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions .cancel:hover:before,
-upscale-manage-account .content .manage-account__delete:hover {
+upscale-manage-account .content .manage-account__delete:hover,
+upscale-order-details .order-line__cancel:hover {
 	color: var(--cx-color-green) !important;
 }
 upscale-manage-account .content .input-profile-container-edit .section__button.change {
@@ -2351,7 +2352,8 @@ upscale-attribute-set-label,
 upscale-attribute-set-label label,
 upscale-manage-account .mat-list-base .mat-list-item, 
 upscale-manage-account .mat-list-base .mat-list-option,
-upscale-manage-account .resizable-input label {
+upscale-manage-account .resizable-input label,
+.cancel {
 	color: var(--cx-color-almostblack) !important;
 	font-size: $font-size-12 !important;
 	font-weight: 300 !important;
@@ -2370,7 +2372,8 @@ upscale-manage-account .mat-slide-toggle {
 }
 
 .mat-list-base .mat-list-item, 
-.mat-list-base .mat-list-option {
+.mat-list-base .mat-list-option,
+.mat-dialog-container {
 	color: var(--cx-color-almostblack) !important;
 }
 
@@ -2427,6 +2430,28 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .bod
 .upscale-small upscale-manage-account .content .manage-account upscale-attribute-set .body {
 	width: 100% !important;
 }
+
+upscale-order-details .order-details.container-content > div:nth-last-of-type(3) {
+	border-top: 1px solid var(--cx-color-green) !important;
+    margin-top: -13px;
+}
+
+upscale-confirm-dialog .header-text {
+	font-size: $font-size-20 !important;
+}
+upscale-confirm-dialog .cancel-reason__title {
+	font-size: $font-size-14 !important;
+		font-weight: 400 !important;
+}
+upscale-confirm-dialog .cancel-reason__radio-name {
+	font-size: $font-size-12 !important;
+}
+upscale-confirm-dialog .cancel,	
+upscale-confirm-dialog .confirm {
+	font-size: $font-size-14 !important;
+	height: 40px !important;
+}
+
 /*
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions {
 	align-items: flex-start;
