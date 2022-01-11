@@ -151,12 +151,13 @@ upscale-dropdown,
 input[type=text],
 select,
 textarea,
-upscale-manage-account .content .input-profile-container-mode {
+upscale-manage-account .content .manage-account .input-profile-container-mode {
 	color: var(--cx-color-almostblack) !important;
 }
 
 #upscale .storybook-category-content-name,
-#upscale .storybook-category-content-name .browse-category-name {
+#upscale .storybook-category-content-name .browse-category-name,
+upscale-manage-account .content .manage-account .input-profile-container-mode {
 	font-weight: 300 !important;
 }
 
@@ -1176,7 +1177,9 @@ em {
 	border-width: 1px !important;
 }
 
-.variant-selector-dialog .dialog-content .img-container .thumbnail-collection .thumbnail .image.selected {
+.variant-selector-dialog .dialog-content .img-container .thumbnail-collection .thumbnail .image.selected,
+upscale-checkout-process .summary-info .addCoupon .addCoupon-button, 
+upscale-checkout-process .summary-info .addCoupon .removeCoupon-button {
 	border: 1px solid var(--cx-color-grey-border) !important;
 }
 
@@ -2216,6 +2219,7 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .bod
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-toggle upscale-attribute-set-label {
 	color: var(--cx-color-almostblack);
 	width: 200px;
+	min-width: 200px !important;
 	font-weight: 400;
 	font-size: $font-size-12 !important;
 }
@@ -2358,7 +2362,8 @@ upscale-attribute-set-label label,
 upscale-manage-account .mat-list-base .mat-list-item, 
 upscale-manage-account .mat-list-base .mat-list-option,
 upscale-manage-account .resizable-input label,
-.cancel {
+.cancel,
+upscale-attribute-set .body .dropdown label {
 	color: var(--cx-color-almostblack) !important;
 	font-size: $font-size-12 !important;
 	font-weight: 300 !important;
@@ -2392,7 +2397,8 @@ upscale-manage-account upscale-attribute-set .body {
 }
 
 .recap,
-.numeric-input-value {
+.numeric-input-value,
+upscale-manage-account .content .manage-account upscale-attribute-set-checkbox-group .checkbox-group label {
 	font-size: $font-size-12 !important;
 	font-weight: 300 !important;
 	color: var(--cx-color-almostblack) !important;
@@ -2411,6 +2417,7 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .bod
 	padding-top: 20px !important;
 }*/
 
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-dropdown .column,
 upscale-manage-account .attribute-input .column {
 	margin-top: 20px !important;
 }
@@ -2502,6 +2509,26 @@ upscale-address-listing .content .address-listing__address {
 	min-width: 0 !important;
 	margin-right:  auto !important;
 }
+
+.cart-notification__warning {
+	color: var(--cx-color-red) !important;
+	font-size: $font-size-14 !important;
+	font-weight: 700 !important;
+}
+
+.cart-notification__removals {
+	font-size: $font-size-14 !important;
+	margin-top: 10px !important;
+}
+
+upscale-manage-account .content .manage-account upscale-attribute-set .body upscale-attribute-set-date-time-picker .date-picker-input .date-picker-input__selected {
+	min-width: 200px !important;
+}
+
+upscale-manage-account .content .manage-account upscale-attribute-set .body .resizable-input label {
+	width: auto !important;
+}
+
 /*
 .upscale-small upscale-checkout-address-form .formgroup-input-container.show-as-modal .formgroup__actions .formgroup__button,
 .upscale-extra-small upscale-checkout-address-form .formgroup-input-container.show-as-modal .formgroup__actions .formgroup__button {
