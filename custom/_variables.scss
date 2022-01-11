@@ -348,7 +348,8 @@ button,
 .date-picker-input-wrapper-actions .button,
 .formgroup-input-container .shipping-address-list .action--button-black,
 .details-section .shopping-button,
-.no-content-holder button {
+.no-content-holder button,
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions button {
 	background-color: var(--cx-color-blue) !important;
 	color: var(--cx-color-white) !important;
 	border: solid 2px var(--cx-color-blue) !important;    
@@ -374,7 +375,8 @@ button,
 .date-picker-input-wrapper-actions .button:hover,
 .formgroup-input-container .shipping-address-list .action--button-black:hover,
 .details-section .shopping-button:hover,
-.no-content-holder button:hover {
+.no-content-holder button:hover,
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions button:hover {
 	color: var(--cx-color-blue) !important;    
     background-color: var(--cx-color-white) !important;
 }
@@ -404,7 +406,8 @@ button,
 #upscale .image-component-link-button,
 .formgroup-input-container .shipping-address-list .action--button-black,
 .details-section .shopping-button,
-.no-content-holder button {
+.no-content-holder button,
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions button {
 	min-width: 250px !important;
 	height: 40px !important;
 	font-weight: 700 !important;
@@ -458,7 +461,6 @@ button,
 .upscale-large .title, 
 .upscale-extra-large .title,
 .consents .title-bar .title,
-upscale-attribute-set-label,
 .payment-label {
 	font-size: $font-size-14 !important;
 }
@@ -615,7 +617,8 @@ upscale-attribute-set-label,
 
 .register-content .input,
 .register-content .formgroup__messages,
-.formgroup__messages {
+.formgroup__messages,
+upscale-attribute-set-label {
 	font-size: $font-size-12 !important;
 }
 
@@ -2161,13 +2164,18 @@ upscale-manage-account	.content .manage-account__formgroup .formgroup__container
 	padding: 20px;						
 }	
 	
-upscale-manage-account .content .manage-account__formgroup .formgroup__container,
+/*upscale-manage-account .content .manage-account__formgroup .formgroup__container,
 upscale-manage-account .content .manage-account__formgroup .formgroup__container-row,
 upscale-manage-account .content .manage-account__formgroup .formgroup__container-header-arrow,
 upscale-manage-account .content .manage-account__formgroup .formgroup__container .formgroup__container-content .input-profile-container-mode,
 upscale-manage-account .content .manage-account__formgroup .formgroup__container .formgroup__container-content .input-profile-container,
+upscale-manage-account .content .manage-account upscale-attribute-set .body*/
+upscale-manage-account .content .manage-account__formgroup,
+upscale-manage-account .content .input,
+upscale-manage-account .content .input-box:disabled,
+upscale-manage-account .content .input-profile-container-edit,
 upscale-manage-account .content .manage-account upscale-attribute-set .body {
-	background: var(--cx-color-bg-account);
+	background-color: var(--cx-color-bg-account) !important;
 }
 
 upscale-manage-account .content .manage-account__formgroup .formgroup__container .formgroup__container-content .input-profile-container-mode,
@@ -2188,14 +2196,16 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .bod
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-numeric-input .column,
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-resizable-input .column {
 	flex-direction: row;
-	align-items: baseline;
+	/*align-items: baseline;*/
+	align-items: flex-start;
 }
 
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-dropdown .column upscale-attribute-set-label,
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column upscale-attribute-set-label,
-upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-numeric-input .column upscale-attribute-set-label {
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-numeric-input .column upscale-attribute-set-label,
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content .resizable-input .column upscale-attribute-set-label {
 	color: var(--cx-color-almostblack);
-	width: 160px;
+	width: 200px;
 	font-weight: 400;
 	font-size: $font-size-12 !important;
 }
@@ -2216,6 +2226,10 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .bod
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input .make-selection {
 	min-width: 150px !important;
 }
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input .make-selection,
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-resizable-input .column .resizable-input-value {
+	border-width: 1px !important;
+}
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-checkbox-group mat-selection-list mat-list-option .mat-list-item-content mat-pseudo-checkbox.mat-pseudo-checkbox {
 	width: 11px;
 	height: 11px;
@@ -2233,17 +2247,152 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .bod
 }
 
 upscale-manage-account .content .manage-account upscale-attribute-set .body .action-button .attribute-set-headline {
-	font-weight: 700;
+	font-weight: 700 !important;
 }
 
-upscale-checkout .checkout-sections .formgroup-input-container .formgroup__container-header {
-	border-bottom: 2px solid var(--cx-color-almostblack);
-	color: var(--cx-color-almostblack);
+upscale-checkout .checkout-sections .formgroup-input-container .formgroup__container-header,
+upscale-manage-account .content .manage-account upscale-attribute-set .body > button.action-button {
+	border-bottom: 2px solid var(--cx-color-almostblack) !important;
+	color: var(--cx-color-almostblack) !important;
 }
 
 #upscale .storybook-category-content-background-overlay {
 	background-color: rgba(0, 0, 0, 0) !important;
 }
+
+#upscale .overview__headline {
+	font-size: $font-size-20 !important;
+}
+
+upscale-formgroup-input-container .formgroup__actions {
+	margin-left: 0 !important;
+}
+
+upscale-formgroup-input-container .formgroup__actions .formgroup__cancel {
+	padding-left: 12px !important;
+}
+
+upscale-manage-account .content .manage-account__formgroup .formgroup__actions .formgroup__button {
+	margin-right: 20px !important;
+}
+
+upscale-manage-account .content .manage-account__formgroup {
+	padding-bottom: 20px !important;
+}
+
+.formgroup__messages .formgroup__message,
+upscale-manage-account .content .profile {
+	font-weight: 300 !important;
+}
+
+/*upscale-manage-account .content .manage-account__formgroup .formgroup__container .formgroup__container-content .input-profile-container {
+	flex-direction: row !important;
+	flex-wrap: wrap !important;
+}*/
+
+upscale-manage-account .content .input-box {
+	border: 1px solid var(--cx-color-lightrey) !important;
+}
+
+upscale-manage-account .content .manage-account__formgroup .formgroup__container-content-form .input-profile-container .input-label {
+	height: 20px !important;
+	border-bottom: none !important;
+	margin-bottom: 0 !important;
+}
+
+upscale-manage-account .content .manage-account__formgroup .formgroup__container-content-form .input-profile-container .input-box {
+	border-left: none !important;
+	border-right: none !important;
+	border-top: none !important;
+	margin-bottom: 10px;
+	border-width: 1px;
+}
+
+upscale-manage-account .content .input-profile-container-edit {
+	align-items: start !important;
+}
+
+upscale-manage-account .content .input-profile-container-edit .section__button.change,
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions .cancel {
+	color: var(--cx-color-almostblack) !important;
+	padding: 0 !important;
+	height: auto !important;
+	font-weight: 400 !important;
+	border: none !important;
+	background-color: transparent !important;
+	min-width: 0 !important;
+	font-size: $font-size-12 !important;
+}
+upscale-manage-account .content .input-profile-container-edit .section__button.change:hover,
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions .cancel:hover,
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions .cancel:hover:before,
+upscale-manage-account .content .manage-account__delete {
+	color: var(--cx-color-green) !important;
+}
+upscale-manage-account .content .input-profile-container-edit .section__button.change {
+	margin-left: auto !important;
+}	
+
+upscale-manage-account .resizable-input label.resizable-input-limit {
+	font-weight: 300 !important;
+	color: var(--cx-color-almostblack) !important;
+	font-size: $font-size-12 !important;
+	display: none !important;
+}
+
+upscale-attribute-set-label,
+upscale-attribute-set-label label,
+upscale-manage-account .mat-list-base .mat-list-item, 
+upscale-manage-account .mat-list-base .mat-list-option {
+	color: var(--cx-color-almostblack) !important;
+	font-size: $font-size-12 !important;
+	font-weight: 300 !important;
+}
+
+.dropdown .select, .toggle {
+	max-width: none !important;
+}
+
+upscale-manage-account upscale-attribute-set-label {
+	max-width: 250px !important;
+}
+
+upscale-manage-account .mat-slide-toggle {
+	margin-right: auto !important;
+}
+
+.mat-list-base .mat-list-item, 
+.mat-list-base .mat-list-option {
+	color: var(--cx-color-almostblack) !important;
+}
+
+upscale-attribute-set {
+	width: 100% !important;
+	display: flex !important;
+}
+
+upscale-manage-account upscale-attribute-set .body {
+	padding: 20px !important;
+}
+
+.recap {
+	font-size: $font-size-12 !important;
+	font-weight: 300 !important;
+	color: var(--cx-color-almostblack) !important;
+}
+
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions .cancel {
+	font-size: 0;
+}
+
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions .cancel:before {
+	font-size: $font-size-12;
+	content: "Prekliči";
+}
+/*
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions {
+	align-items: flex-start;
+}*/
 
 @media (max-width: 768px){
 	#upscale .image-component-overlay {
