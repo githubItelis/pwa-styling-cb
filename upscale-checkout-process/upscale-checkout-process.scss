@@ -18,8 +18,50 @@
 	.coupon span {
 		font-size: $font-size-14;
 	}
-	
-	.addCoupon-input {
-		color: var(--cx-color-almostblack);
-	}
+}
+
+:host .addCoupon-input {
+	color: var(--cx-color-almostblack);	
+	border: 1px solid var(--cx-color-grey-border);
+    padding: 0 5px;
+}
+
+:host .addCoupon .addCoupon-button {
+	padding: 0;
+	background-color: transparent;
+}
+
+:host .addCoupon .addCoupon-button:hover,
+:host .addCoupon .removeCoupon-button:hover {
+	background-color: transparent;	
+}
+:host .addCoupon .addCoupon-button {
+	border: 1px solid var(--cx-color-grey-border);    
+}
+:host .addCoupon .addCoupon-button:hover {
+	border: 1px solid var(--cx-color-blue) !important;
+}
+
+:host .addCoupon .removeCoupon-button:hover {
+	border: none;
+}
+
+:host .addCoupon .addCoupon-button .button-label,
+:host .addCoupon .removeCoupon-button .button-label {
+	height: 35px !important;
+}
+
+:host .addCoupon .removeCoupon-button .remove {
+	text-decoration: none;
+}
+
+:host .addCoupon .removeCoupon-button:hover .remove {
+	color: var(--cx-color-green);
+}
+
+:host .coupon.error-coupon {
+  	font-size: $font-size-14;  	
+  	font-weight: 500;
+	color: var(--cx-color-red);
+	padding: 12px 6px 12px 8px;
 }
