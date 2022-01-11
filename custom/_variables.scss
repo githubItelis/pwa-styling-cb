@@ -1713,6 +1713,7 @@ owl-date-time-container .owl-dt-calendar-table .owl-dt-calendar-cell-selected {
 	color: var(--cx-color-green) !important;
 }
 
+
 .date-picker-input__selected span {
 	font-size: $font-size-12 !important;
 	color: var(--cx-color-almostblack) !important;
@@ -2207,6 +2208,7 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .bod
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column,
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-numeric-input .column,
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-resizable-input .column {
+
 	flex-direction: row;
 	align-items: baseline;
 	/*align-items: flex-start;*/
@@ -2362,8 +2364,7 @@ upscale-attribute-set-label label,
 upscale-manage-account .mat-list-base .mat-list-item, 
 upscale-manage-account .mat-list-base .mat-list-option,
 upscale-manage-account .resizable-input label,
-.cancel,
-upscale-attribute-set .body .dropdown label {
+.cancel {
 	color: var(--cx-color-almostblack) !important;
 	font-size: $font-size-12 !important;
 	font-weight: 300 !important;
@@ -2398,7 +2399,11 @@ upscale-manage-account upscale-attribute-set .body {
 
 .recap,
 .numeric-input-value,
-upscale-manage-account .content .manage-account upscale-attribute-set-checkbox-group .checkbox-group label {
+upscale-manage-account .content .manage-account upscale-attribute-set-checkbox-group .checkbox-group label,
+upscale-manage-account .content .manage-account upscale-attribute-set-toggle .toggle label,
+.mat-select-value,
+upscale-manage-account .content .manage-account upscale-attribute-set upscale-attribute-set-dropdown .dropdown .select .mat-select-value-text,
+upscale-manage-account .content .manage-account upscale-attribute-set .body .dropdown label {
 	font-size: $font-size-12 !important;
 	font-weight: 300 !important;
 	color: var(--cx-color-almostblack) !important;
@@ -2527,6 +2532,10 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body upsc
 
 upscale-manage-account .content .manage-account upscale-attribute-set .body .resizable-input label {
 	width: auto !important;
+}
+
+upscale-manage-account .content .manage-account upscale-attribute-set-toggle .toggle.review {
+	flex-direction: row;
 }
 
 /*
