@@ -50,7 +50,7 @@ $font-size-26: 26px;
 */
 
 html, body {
-	font-size: 12px !important;	
+	font-size: $font-size-12 !important;	
 }
 
 body {
@@ -185,7 +185,7 @@ textarea {
 /*upscale-navigation-bar upscale-navigation-search .search-bar__input,*/
 .attribute-details__body,
 .attribute-details__body-html .html-container {
-	font-size: 12px !important;
+	font-size: $font-size-12 !important;
 }
 /*
 upscale-navigation-bar upscale-navigation-search {
@@ -1003,7 +1003,7 @@ upscale-account {
 	font-weight: 400 !important;
 	min-width: 0 !important;
 	color: var(--cx-color-almostblack) !important;
-	font-size: 12px !important;
+	font-size: $font-size-12 !important;
 	letter-spacing: normal !important;
 }
 
@@ -2459,6 +2459,10 @@ upscale-checkout-address-form-dialog .header > div {
 	font-size: $font-size-20 !important;
 }
 
+upscale-checkout-address-form-dialog .header {
+	width: 100%;
+}
+
 .mat-dialog-container {
 	border-radius: 0 !important;
 }
@@ -2472,6 +2476,36 @@ upscale-manage-account .manage-account .formgroup__actions,
 upscale-attribute-set .actions {
     margin-top: 20px !important;
 }
+
+
+upscale-address-listing .content .address-listing__address {
+	margin-right: 100px !important;
+	margin-bottom: 40px !important;
+}
+
+.upscale-small upscale-address-listing .content .address-listing__address, 
+.upscale-extra-small upscale-address-listing .content .address-listing__address {
+    width: 100% !important;
+    margin-right: 0 !important;
+    max-width: 330px;
+}
+
+.upscale-small upscale-checkout-address-form .formgroup-input-container.show-as-modal .formgroup__actions,
+.upscale-extra-small upscale-checkout-address-form .formgroup-input-container.show-as-modal .formgroup__actions {
+	align-items: flex-start !important;
+}
+
+.upscale-small upscale-checkout-address-form .formgroup-input-container.show-as-modal .formgroup__actions .formgroup__cancel,
+.upscale-extra-small upscale-checkout-address-form .formgroup-input-container.show-as-modal .formgroup__actions .formgroup__cancel {
+	min-width: 0 !important;
+	margin-right:  auto !important;
+}
+/*
+.upscale-small upscale-checkout-address-form .formgroup-input-container.show-as-modal .formgroup__actions .formgroup__button,
+.upscale-extra-small upscale-checkout-address-form .formgroup-input-container.show-as-modal .formgroup__actions .formgroup__button {
+	max-width: 250px;
+    margin: 0 auto;
+}*/
 
 @media (max-width: 768px){
 	#upscale .image-component-overlay {
