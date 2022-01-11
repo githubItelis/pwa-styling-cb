@@ -1673,7 +1673,7 @@ upscale-product-details .product-detail-content upscale-generic-image .img img.c
 .upscale-mobile .content .manage-account__formgroup .formgroup__actions .formgroup__button,
 .upscale-mobile .content .section__button--edit,
 .upscale-mobile .actions .section__button {
-	min-width: 196px !important;
+	min-width: 160px !important;
 }
 
 .date-picker-input-wrapper-actions .button {
@@ -2413,6 +2413,19 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .bod
 
 .mat-select-placeholder {
 	color: var(--cx-color-almostblack) !important;
+}
+
+.upscale-extra-small.upscale-mobile upscale-manage-account .body.show,
+.upscale-small.upscale-mobile upscale-manage-account .body.show {
+	width: 100% !important;
+}
+
+.upscale-small upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-dropdown .colum {
+	flex-direction: column !important;
+}
+
+.upscale-small upscale-manage-account .content .manage-account upscale-attribute-set .body {
+	width: 100% !important;
 }
 /*
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions {
