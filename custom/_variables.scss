@@ -150,7 +150,8 @@ upscale-dropdown,
 .formgroup__container-header,
 input[type=text],
 select,
-textarea {
+textarea,
+upscale-manage-account .content .input-profile-container-mode {
 	color: var(--cx-color-almostblack) !important;
 }
 
@@ -2336,9 +2337,11 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .bod
 upscale-manage-account .content .input-profile-container-edit .section__button.change:hover,
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions .cancel:hover,
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions .cancel:hover:before,
-upscale-manage-account .content .manage-account__delete:hover,
 upscale-order-details .order-line__cancel:hover {
 	color: var(--cx-color-green) !important;
+}
+upscale-manage-account .content .manage-account .manage-account__delete:hover {
+	color: var(--cx-color-red) !important;
 }
 upscale-manage-account .content .input-profile-container-edit .section__button.change {
 	margin-left: auto !important;
