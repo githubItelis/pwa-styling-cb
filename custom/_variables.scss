@@ -147,7 +147,10 @@ upscale-dropdown,
 #upscale .browse-category-name,
 #upscale .storybook-component-headline,
 .product-detail-content .title,
-.formgroup__container-header {
+.formgroup__container-header,
+input[type=text],
+select,
+textarea {
 	color: var(--cx-color-almostblack) !important;
 }
 
@@ -2223,7 +2226,7 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .bod
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-dropdown .column .mat-select,
 upscale-manage-account .content .manage-account .numeric-input-value,
 upscale-manage-account .content .manage-account .dropdown .select {
-	border: 1px solid var(--cx-color-grey-border) !important;
+	border: 1px solid var(--cx-color-lightgrey) !important;
 }
 
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column.date-picker-input {
@@ -2452,6 +2455,13 @@ upscale-confirm-dialog .confirm {
 	height: 40px !important;
 }
 
+upscale-checkout-address-form-dialog .header > div {
+	font-size: $font-size-20 !important;
+}
+
+.mat-dialog-container {
+	border-radius: 0 !important;
+}
 /*
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions {
 	align-items: flex-start;
