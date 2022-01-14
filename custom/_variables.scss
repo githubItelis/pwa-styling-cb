@@ -1720,6 +1720,8 @@ owl-date-time-container .owl-dt-calendar-table .owl-dt-calendar-cell-selected {
 .addCoupon .addCoupon-button .button-label {
 	color: var(--cx-color-almostblack) !important;
     min-width: 0 !important;
+
+
 }
 
 .addCoupon .addCoupon-button .button-label:hover {
@@ -1873,6 +1875,11 @@ html[lang="sl-SI"] .formgroup-input-container .formgroup__container-content-form
 html[lang="sl-SI"] upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions .cancel:before {
 	content: "Prekliči";
 }
+
+html[lang="sl-SI"] upscale-global-consent upscale-consent-input .unsubscribed:before {
+	content: "Odjavili ste se od promocijskih informacij.";
+}
+
 /* end slo */
 /* hr */
 html[lang="hr-HR"] .login .login-content .description:before {
@@ -1915,6 +1922,11 @@ html[lang="hr-HR"] .formgroup-input-container .formgroup__container-content-form
 html[lang="hr-HR"] upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions .cancel:before {
 	content: "Otkazati";
 }
+
+html[lang="hr-HR"] upscale-global-consent upscale-consent-input .unsubscribed:before {
+	content: "Odjavili ste se s promotivnih informacija.";
+}
+
 /* end hr */
 
 .manage-account__formgroup .input-profile-container-mode .input-label:nth-child(3) .profile,
@@ -1923,11 +1935,13 @@ html[lang="hr-HR"] upscale-manage-account .content .manage-account upscale-attri
 }
 
 .manage-account__formgroup .input-profile-container-mode .input-label:nth-child(3) .profile:before,
-.manage-account__formgroup .formgroup__container-content .formgroup__container-content-form .input-profile-container .input-label:nth-of-type(3):before {
+.manage-account__formgroup .formgroup__container-content .formgroup__container-content-form .input-profile-container .input-label:nth-of-type(3):before,
+upscale-global-consent upscale-consent-input .unsubscribed:before{
 	font-size: $font-size-12 !important;	
 }
 
-.cancel-text {
+.cancel-text,
+upscale-global-consent upscale-consent-input .unsubscribed {
 	font-size: 0 !important;
 }
 .cancel-text:before {
@@ -2044,7 +2058,16 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .bod
 .product-summary .card .product .product-data .unit-price,
 .product-summary .card .product .product-data .quantity,
 .product-summary .card .product .product-data .info .recurrence, 
-.product-summary .card .product .product-data .info .variant-attribute {
+.product-summary .card .product .product-data .info .variant-attribute,
+.blank-list,
+.upscale-extra-large .cart-list .list-view .button-holder .buttons .button-label,
+.upscale-large .cart-list .list-view .button-holder .buttons .button-label,
+.cart-list .list-view .button-holder .buttons .button-label,
+.card .buttons .button-label,
+.upscale-medium .cart-list .list-view .product .product-data .info .recurrence,
+.upscale-medium .cart-list .list-view .product .product-data .info .quantity,
+.upscale-medium .cart-list .list-view .product .product-data .info .unit-price,
+.upscale-medium .cart-list .list-view .product .product-data .info .variant-attribute {
 	font-size: $font-size-14 !important;
 }
 
@@ -2613,6 +2636,74 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .res
 upscale-manage-account .content .manage-account upscale-attribute-set-toggle .toggle.review,
 upscale-manage-account .content .manage-account upscale-attribute-set-checkbox-group .checkbox-group .column {
 	flex-direction: row !important;
+}
+
+.upscale-small .cart-list .list-view .product .product-data .prices,
+.upscale-extra-small .cart-list .list-view .product .product-data .prices,
+.upscale-small .cart-list .list-view .product .product-data .info .recurrence,
+.upscale-small .cart-list .list-view .product .product-data .info .quantity, 
+.upscale-small .cart-list .list-view .product .product-data .info .unit-price,
+.upscale-small .cart-list .list-view .product .product-data .info .variant-attribute,
+.upscale-extra-small .cart-list .list-view .product .product-data .info .recurrence,
+.upscale-extra-small .cart-list .list-view .product .product-data .info .quantity,
+.upscale-extra-small .cart-list .list-view .product .product-data .info .unit-price, 
+.upscale-extra-small .cart-list .list-view .product .product-data .info .variant-attribute {
+	font-size: $font-size-12 !important;
+}
+
+upscale-navigation-slideout .link-name {
+	font-size: $font-size-20 !important;
+	font-weight: 300 !important;
+	color: var(--cx-color-almostblack) !important;
+}
+
+.upscale-small .cart-list .list-view .product .product-data .prices,
+.upscale-extra-small .cart-list .list-view .product .product-data .prices,
+.cart-list .list-view .product .product-data .prices {
+	font-weight: 700 !important;
+}
+
+.upscale-extra-large .cart-list .list-view .button-holder .buttons .button-label,
+.upscale-large .cart-list .list-view .button-holder .buttons .button-label,
+.cart-list .list-view .button-holder .buttons .button-label,
+upscale-cart .card .buttons .button-label {
+	font-weight: 400 !important;
+}
+
+.upscale-mobile upscale-checkout upscale-checkout-address-form:first-of-type upscale-formgroup-input-container.formgroup-input-container,
+.upscale-tablet upscale-checkout upscale-checkout-address-form:first-of-type upscale-formgroup-input-container.formgroup-input-container {
+	margin-bottom: 50px !important;
+}
+
+upscale-checkout .checkout-sections .formgroup-input-container .formgroup__container-row {
+	height: auto !important;
+	margin-top: 20px !important;
+}
+
+upscale-checkout .checkout-sections .formgroup-input-container .formgroup__container-header {
+    line-height: 1.2 !important;
+    align-items: flex-start !important;
+}
+
+.upscale-small upscale-account .account__link,
+.upscale-small upscale-account .account__logout,
+.upscale-extra-small upscale-account .account__link,
+.upscale-extra-small upscale-account .account__logout {
+	margin-left: 0 !important;
+}
+
+.upscale-small upscale-account .account__link,
+.upscale-small upscale-account .account,
+.upscale-extra-small upscale-account .account__link,
+.upscale-extra-small upscale-account .account {
+    width: 100%;	
+}
+
+.upscale-small upscale-account .account__link,
+.upscale-small upscale-account .account__link,
+.upscale-extra-small upscale-account .account__link,
+.upscale-extra-small upscale-account .account__link {
+	margin-bottom: 20px;
 }
 
 /*
