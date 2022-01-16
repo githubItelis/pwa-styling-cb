@@ -1,4 +1,4 @@
-/*@import "../styles.scss";*/
+@import "../styles.scss";
 
 .footer,
 .hero-image-context,
@@ -6,4 +6,65 @@
     max-width: 1500px;
     width: 85%;
 	margin: 0 auto;
+}
+
+.footer {
+	height: auto;
+}
+
+.footer-divider {
+	border-right: 1px solid var(--cx-color-white);
+}
+
+.footer-link {
+	background-color: var(--cx-color-green);
+	color: var(--cx-color-white);	
+	padding-top: 20px;
+    padding-bottom: 20px;
+	align-items: center;	
+}
+
+.footer-text {
+	font-size: $font-size-16;
+	font-weight: 700;
+	text-overflow: clip;
+    white-space: normal;
+	line-height: 1.2;
+}
+
+.footer-link .mat-icon {
+	width: 21px;
+	height: 21px;
+}
+
+.footer-link.prev .footer-icon {
+	left: 24px;
+}
+
+.footer-link.prev .footer-text {
+	margin-left: 52px;
+}
+
+.footer-link.next .footer-icon {
+	right: 24px;
+}
+
+.footer-link.next .footer-text {
+	margin-right: 52px;
+}
+
+@media (max-width: 899px){
+	.footer {
+		width: 95%;
+	}
+}
+
+@media (max-width: 768px){
+	.footer {
+		flex-direction: column;
+	}
+	.footer-divider {
+		border-right: none;
+		border-bottom: 1px solid var(--cx-color-white);
+	}
 }
