@@ -2723,10 +2723,10 @@ upscale-article-details .content .text a {
 }
 
 #upscale upscale-template[data-templatetype="BLANK"] upscale-content-slot .configuration .text a:hover,
-#upscale upscale-template[data-templatetype="BLANK"] upscale-content-slot .configuration .text a:visited, 
+#upscale upscale-template[data-templatetype="BLANK"] upscale-content-slot .configuration .text a:active, 
 #upscale upscale-template[data-templatetype="BLANK"] upscale-content-slot .configuration .text a:focus,
 upscale-article-details .content .text a:hover,
-upscale-article-details .content .text a:visited,
+upscale-article-details .content .text a:active,
 upscale-article-details .content .text a:focus {
 	color: var(--cx-color-green) !important;
 }
