@@ -1721,6 +1721,7 @@ owl-date-time-container .owl-dt-calendar-table .owl-dt-calendar-cell-selected {
 	color: var(--cx-color-almostblack) !important;
     min-width: 0 !important;
 
+
 }
 
 .addCoupon .addCoupon-button .button-label:hover {
@@ -1879,6 +1880,14 @@ html[lang="sl-SI"] upscale-global-consent upscale-consent-input .unsubscribed:be
 	content: "Odjavili ste se od promocijskih informacij.";
 }
 
+html[lang="sl-SI"] upscale-checkout .coupon-invalid .message:before {
+	content: "Ni veljavno."
+}
+
+html[lang="sl-SI"] upscale-checkout .cart-notification .cart-notification__warning:before {
+	content: "Košarica je posodobljena.";
+}
+
 /* end slo */
 /* hr */
 html[lang="hr-HR"] .login .login-content .description:before {
@@ -1926,6 +1935,15 @@ html[lang="hr-HR"] upscale-global-consent upscale-consent-input .unsubscribed:be
 	content: "Odjavili ste se s promotivnih informacija.";
 }
 
+html[lang="hr-HR"] upscale-checkout .coupon-invalid .message:before {
+	content: "Ne vrijedi."
+}
+
+html[lang="hr-HR"] upscale-checkout .cart-notification .cart-notification__warning:before {
+	content: "Košara je ažurirana.";
+}
+
+
 /* end hr */
 
 .manage-account__formgroup .input-profile-container-mode .input-label:nth-child(3) .profile,
@@ -1940,7 +1958,9 @@ upscale-global-consent upscale-consent-input .unsubscribed:before{
 }
 
 .cancel-text,
-upscale-global-consent upscale-consent-input .unsubscribed {
+upscale-global-consent upscale-consent-input .unsubscribed,
+upscale-checkout .coupon-invalid .message,
+upscale-checkout .cart-notification .cart-notification__warning {
 	font-size: 0 !important;
 }
 .cancel-text:before {
@@ -1980,7 +2000,9 @@ upscale-browse .breadcrumbs .breadcrumb:nth-of-type(2):before {
 	font-size: 0 !important;
 }
 
-.formgroup-input-container .formgroup__container-content-form.ng-valid .shipping-address-list .selected-ship-address .actions .action-button:before {
+.formgroup-input-container .formgroup__container-content-form.ng-valid .shipping-address-list .selected-ship-address .actions .action-button:before,
+upscale-checkout .coupon-invalid .message:before,
+upscale-checkout .cart-notification .cart-notification__warning:before {
 	font-size: $font-size-14;
 }
 
@@ -2119,7 +2141,7 @@ upscale-address-listing  .content > .address-listing:first-child {
 }
 
 upscale-address-listing  .content .address-listing .create-address-btn {
-	
+	border: solid 2px var(--cx-color-blue) !important;
 }
 
 upscale-address-listing .address-listing__address .address-listing__address__line:last-of-type {
@@ -2760,10 +2782,30 @@ upscale-article-details .content .text a:focus {
 	margin-bottom: 20px !important;
 }
 
+upscale-cart .cart-notification-wrapper {
+	margin-top: 0 !important;
+}
+
+.upscale-extra-large .cart-list .list-view .product .product-data .info .recurrence,
+.upscale-extra-large .cart-list .list-view .product .product-data .info .quantity,
+.upscale-extra-large .cart-list .list-view .product .product-data .info .unit-price,
+.upscale-extra-large .cart-list .list-view .product .product-data .info .variant-attribute,
+.upscale-large .cart-list .list-view .product .product-data .info .recurrence,
+.upscale-large .cart-list .list-view .product .product-data .info .quantity,
+.upscale-large .cart-list .list-view .product .product-data .info .unit-price,
+.upscale-large .cart-list .list-view .product .product-data .info .variant-attribute {
+	text-transform: none !important;
+}
+
+/*upscale-checkout .coupon-invalid .message {
+	font-size: $font-size-14 !important;
+}*/
+
 /*
 .upscale-small upscale-checkout-address-form .formgroup-input-container.show-as-modal .formgroup__actions .formgroup__button,
 .upscale-extra-small upscale-checkout-address-form .formgroup-input-container.show-as-modal .formgroup__actions .formgroup__button {
 	max-width: 250px;
+
     margin: 0 auto;
 }*/
 
