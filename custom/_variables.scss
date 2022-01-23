@@ -1833,188 +1833,6 @@ upscale-address-listing .content .address-listing__address__default {
     padding-left: 12px;
 }
 
-/* localization */
-/* slo */
-html[lang="sl-SI"] .login .login-content .description:before {
-	content: "Ste že član skupnosti Moja zemlja? \A Prijavite se v svoj uporabniški račun.";
-}
-
-html[lang="sl-SI"] .register-content .description:before {
-	content: "Nov član? Ustvarite svoj uporabniški račun in izkoristite prednosti.";
-}
-
-html[lang="sl-SI"] .manage-account__formgroup .input-profile-container-mode .input-label:nth-child(3) .profile:before,
-html[lang="sl-SI"] .manage-account__formgroup .formgroup__container-content .formgroup__container-content-form .input-profile-container .input-label:nth-of-type(3):before {
-	content: "Telefonska številka";
-}
-
-html[lang="sl-SI"] .manage-account upscale-formgroup-input-container:nth-of-type(2) .formgroup__container .formgroup__container-header:before {
-	content: "Uporabniški profil";
-}
-
-html[lang="sl-SI"] .product-detail-content .outOfStock:before {
-	content: "Ni na zalogi";
-}
-
-html[lang="sl-SI"] upscale-template[data-name="Svetovanje"] upscale-breadcrumbs .breadcrumbs__text:before {
-	content: "Svetovanje";
-}
-
-html[lang="sl-SI"] upscale-browse .breadcrumbs .breadcrumb:nth-of-type(2):before {
-	content: "Seznam";
-}
-
-html[lang="sl-SI"] upscale-template[data-name="Svetovanje"] upscale-breadcrumbs .breadcrumbs__text {
-    font-size: 0 !important;
-}
-
-html[lang="sl-SI"] .formgroup-input-container .formgroup__container-content-form.ng-valid .shipping-address-list .selected-ship-address .actions .action-button:before {
-	content: "Izberi drug naslov";
-}
-
-html[lang="sl-SI"] upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions .cancel:before {
-	content: "Prekliči";
-}
-
-html[lang="sl-SI"] upscale-global-consent upscale-consent-input .unsubscribed:before {
-	content: "Odjavili ste se od promocijskih informacij.";
-}
-
-html[lang="sl-SI"] upscale-checkout .coupon-invalid .message:before {
-	content: "Ni veljavno."
-}
-
-html[lang="sl-SI"] upscale-checkout .cart-notification .cart-notification__warning:before {
-	content: "Košarica je posodobljena.";
-}
-
-/* end slo */
-/* hr */
-html[lang="hr-HR"] .login .login-content .description:before {
-	content: "Već ste član zajednice Moja zemlja? \A Prijavite se na svoj korisnički račun.";
-}
-
-html[lang="hr-HR"] .register-content .description:before {
-	content: "Novi član? Napravite svoj korisnički račun i iskoristite prednosti.";
-}
-
-html[lang="hr-HR"] .manage-account__formgroup .input-profile-container-mode .input-label:nth-child(3) .profile:before,
-html[lang="hr-HR"] .manage-account__formgroup .formgroup__container-content .formgroup__container-content-form .input-profile-container .input-label:nth-of-type(3):before {
-	content: "Broj telefona";
-}
-
-html[lang="hr-HR"] .manage-account upscale-formgroup-input-container:nth-of-type(2) .formgroup__container .formgroup__container-header:before {
-	content: "Korisnički profil";
-}
-
-html[lang="hr-HR"] .product-detail-content .outOfStock:before {
-	content: "Nije na zalihi";
-}
-
-html[lang="hr-HR"] upscale-template[data-name="Savjetovanje"] upscale-breadcrumbs .breadcrumbs__text:before {
-	content: "Savjetovanje";
-}
-
-html[lang="hr-HR"] upscale-browse .breadcrumbs .breadcrumb:nth-of-type(2):before {
-	content: "Popis";
-}
-
-html[lang="hr-HR"] upscale-template[data-name="Savjetovanje"] upscale-breadcrumbs .breadcrumbs__text {
-    font-size: 0 !important;
-}
-
-html[lang="hr-HR"] .formgroup-input-container .formgroup__container-content-form.ng-valid .shipping-address-list .selected-ship-address .actions .action-button:before {
-	content: "Odaberite drugu adresu";
-}
-
-html[lang="hr-HR"] upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions .cancel:before {
-	content: "Otkazati";
-}
-
-html[lang="hr-HR"] upscale-global-consent upscale-consent-input .unsubscribed:before {
-	content: "Odjavili ste se s promotivnih informacija.";
-}
-
-html[lang="hr-HR"] upscale-checkout .coupon-invalid .message:before {
-	content: "Ne vrijedi."
-}
-
-html[lang="hr-HR"] upscale-checkout .cart-notification .cart-notification__warning:before {
-	content: "Košara je ažurirana.";
-}
-
-
-/* end hr */
-
-.manage-account__formgroup .input-profile-container-mode .input-label:nth-child(3) .profile,
-.manage-account__formgroup .formgroup__container-content .formgroup__container-content-form .input-profile-container .input-label:nth-of-type(3) {
-	font-size: 0 !important;
-}
-
-.manage-account__formgroup .input-profile-container-mode .input-label:nth-child(3) .profile:before,
-.manage-account__formgroup .formgroup__container-content .formgroup__container-content-form .input-profile-container .input-label:nth-of-type(3):before,
-upscale-global-consent upscale-consent-input .unsubscribed:before{
-	font-size: $font-size-12 !important;	
-}
-
-.cancel-text,
-upscale-global-consent upscale-consent-input .unsubscribed,
-upscale-checkout .coupon-invalid .message,
-upscale-checkout .cart-notification .cart-notification__warning {
-	font-size: 0 !important;
-}
-.cancel-text:before {
-	content: "X";
-	font-size: 1.6rem;
-}
-
-.manage-account upscale-formgroup-input-container:nth-of-type(2) .formgroup__container .formgroup__container-header {
-	font-size: 0 !important;
-}
-
-.manage-account upscale-formgroup-input-container:nth-of-type(2) .formgroup__container .formgroup__container-header:before {
-	font-size: $font-size-20;
-}
-
-.product-detail-content .outOfStock:before {
-	font-size: $font-size-20;
-}
-.product-detail-content .outOfStock {
-	color: var(--cx-color-red) !important;
-	font-size: 0 !important;
-}
-
-upscale-template[data-name="Svetovanje"] upscale-breadcrumbs .breadcrumbs__text:before {
-	font-size: $font-size-13;
-}
-
-upscale-browse .breadcrumbs .breadcrumb:nth-of-type(2){
-	font-size: 0;
-}
-
-upscale-browse .breadcrumbs .breadcrumb:nth-of-type(2):before {
-	font-size: $font-size-13;	
-}
-
-.formgroup-input-container .formgroup__container-content-form.ng-valid .shipping-address-list .selected-ship-address .actions .action-button {
-	font-size: 0 !important;
-}
-
-.formgroup-input-container .formgroup__container-content-form.ng-valid .shipping-address-list .selected-ship-address .actions .action-button:before,
-upscale-checkout .coupon-invalid .message:before,
-upscale-checkout .cart-notification .cart-notification__warning:before {
-	font-size: $font-size-14;
-}
-
-upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions .cancel {
-	font-size: 0 !important;
-}
-
-upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions .cancel:before {
-	font-size: $font-size-12;
-}
-/* end localization */
-
 .footer-link {
 	font-size: $font-size-13 !important;
 }
@@ -2367,7 +2185,13 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .bod
 }
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input .make-selection {
 	min-width: 150px !important;
+	font-weight: 300 !important;	
 }
+
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input .make-selection {
+	color: rgba(0,0,0,.42) !important;
+}
+
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input .make-selection,
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-resizable-input .column .resizable-input-value {
 	border-width: 1px !important;
@@ -2797,6 +2621,202 @@ upscale-cart .cart-notification-wrapper {
 	text-transform: none !important;
 }
 
+upscale-promotion-badge.badge {
+	background-color: var(--cx-color-green) !important;
+}
+
+upscale-promotion-badge.badge .text-block .text {
+	color: var(--cx-color-white) !important;
+}
+
+/* localization */
+/* slo */
+html[lang="sl-SI"] .login .login-content .description:before {
+	content: "Ste že član skupnosti Moja zemlja? \A Prijavite se v svoj uporabniški račun.";
+}
+
+html[lang="sl-SI"] .register-content .description:before {
+	content: "Nov član? Ustvarite svoj uporabniški račun in izkoristite prednosti.";
+}
+
+html[lang="sl-SI"] .manage-account__formgroup .input-profile-container-mode .input-label:nth-child(3) .profile:before,
+html[lang="sl-SI"] .manage-account__formgroup .formgroup__container-content .formgroup__container-content-form .input-profile-container .input-label:nth-of-type(3):before {
+	content: "Telefonska številka";
+}
+
+html[lang="sl-SI"] .manage-account upscale-formgroup-input-container:nth-of-type(2) .formgroup__container .formgroup__container-header:before {
+	content: "Uporabniški profil";
+}
+
+html[lang="sl-SI"] .product-detail-content .outOfStock:before {
+	content: "Ni na zalogi";
+}
+
+html[lang="sl-SI"] upscale-template[data-name="Svetovanje"] upscale-breadcrumbs .breadcrumbs__text:before {
+	content: "Svetovanje";
+}
+
+html[lang="sl-SI"] upscale-browse .breadcrumbs .breadcrumb:nth-of-type(2):before {
+	content: "Seznam";
+}
+
+html[lang="sl-SI"] upscale-template[data-name="Svetovanje"] upscale-breadcrumbs .breadcrumbs__text {
+    font-size: 0 !important;
+}
+
+html[lang="sl-SI"] .formgroup-input-container .formgroup__container-content-form.ng-valid .shipping-address-list .selected-ship-address .actions .action-button:before {
+	content: "Izberi drug naslov";
+}
+
+html[lang="sl-SI"] upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions .cancel:before {
+	content: "Prekliči";
+}
+
+html[lang="sl-SI"] upscale-global-consent upscale-consent-input .unsubscribed:before {
+	content: "Odjavili ste se od promocijskih informacij.";
+}
+
+html[lang="sl-SI"] upscale-checkout .coupon-invalid .message:before {
+	content: "Ni veljavno."
+}
+
+html[lang="sl-SI"] upscale-checkout .cart-notification .cart-notification__warning:before {
+	content: "Košarica je posodobljena.";
+}
+
+/* end slo */
+/* hr */
+html[lang="hr-HR"] .login .login-content .description:before {
+	content: "Već ste član zajednice Moja zemlja? \A Prijavite se na svoj korisnički račun.";
+}
+
+html[lang="hr-HR"] .register-content .description:before {
+	content: "Novi član? Napravite svoj korisnički račun i iskoristite prednosti.";
+}
+
+html[lang="hr-HR"] .manage-account__formgroup .input-profile-container-mode .input-label:nth-child(3) .profile:before,
+html[lang="hr-HR"] .manage-account__formgroup .formgroup__container-content .formgroup__container-content-form .input-profile-container .input-label:nth-of-type(3):before {
+	content: "Broj telefona";
+}
+
+html[lang="hr-HR"] .manage-account upscale-formgroup-input-container:nth-of-type(2) .formgroup__container .formgroup__container-header:before {
+	content: "Korisnički profil";
+}
+
+html[lang="hr-HR"] .product-detail-content .outOfStock:before {
+	content: "Nije na zalihi";
+}
+
+html[lang="hr-HR"] upscale-template[data-name="Savjetovanje"] upscale-breadcrumbs .breadcrumbs__text:before {
+	content: "Savjetovanje";
+}
+
+html[lang="hr-HR"] upscale-browse .breadcrumbs .breadcrumb:nth-of-type(2):before {
+	content: "Popis";
+}
+
+html[lang="hr-HR"] upscale-template[data-name="Savjetovanje"] upscale-breadcrumbs .breadcrumbs__text {
+    font-size: 0 !important;
+}
+
+html[lang="hr-HR"] .formgroup-input-container .formgroup__container-content-form.ng-valid .shipping-address-list .selected-ship-address .actions .action-button:before {
+	content: "Odaberite drugu adresu";
+}
+
+html[lang="hr-HR"] upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions .cancel:before {
+	content: "Otkazati";
+}
+
+html[lang="hr-HR"] upscale-global-consent upscale-consent-input .unsubscribed:before {
+
+	content: "Odjavili ste se s promotivnih informacija.";
+}
+
+html[lang="hr-HR"] upscale-checkout .coupon-invalid .message:before {
+	content: "Ne vrijedi."
+}
+
+html[lang="hr-HR"] upscale-checkout .cart-notification .cart-notification__warning:before {
+	content: "Košara je ažurirana.";
+}
+
+
+/* end hr */
+
+.manage-account__formgroup .input-profile-container-mode .input-label:nth-child(3) .profile,
+.manage-account__formgroup .formgroup__container-content .formgroup__container-content-form .input-profile-container .input-label:nth-of-type(3) {
+	font-size: 0 !important;
+}
+
+.manage-account__formgroup .input-profile-container-mode .input-label:nth-child(3) .profile:before,
+.manage-account__formgroup .formgroup__container-content .formgroup__container-content-form .input-profile-container .input-label:nth-of-type(3):before,
+upscale-global-consent upscale-consent-input .unsubscribed:before{
+	font-size: $font-size-12 !important;	
+}
+
+.cancel-text,
+upscale-global-consent upscale-consent-input .unsubscribed,
+upscale-checkout .coupon-invalid .message,
+upscale-checkout .cart-notification .cart-notification__warning {
+	font-size: 0 !important;
+}
+.cancel-text:before {
+	content: "X";
+	font-size: 1.6rem;
+}
+
+.manage-account upscale-formgroup-input-container:nth-of-type(2) .formgroup__container .formgroup__container-header {
+	font-size: 0 !important;
+}
+
+.manage-account upscale-formgroup-input-container:nth-of-type(2) .formgroup__container .formgroup__container-header:before {
+	font-size: $font-size-20;
+}
+
+.product-detail-content .outOfStock:before {
+	font-size: $font-size-20;
+}
+.product-detail-content .outOfStock {
+	color: var(--cx-color-red) !important;
+	font-size: 0 !important;
+}
+
+upscale-template[data-name="Svetovanje"] upscale-breadcrumbs .breadcrumbs__text:before {
+	font-size: $font-size-13;
+}
+
+upscale-browse .breadcrumbs .breadcrumb:nth-of-type(2){
+	font-size: 0;
+}
+
+upscale-browse .breadcrumbs .breadcrumb:nth-of-type(2):before {
+	font-size: $font-size-13;	
+}
+
+.formgroup-input-container .formgroup__container-content-form.ng-valid .shipping-address-list .selected-ship-address .actions .action-button {
+	font-size: 0 !important;
+}
+
+.formgroup-input-container .formgroup__container-content-form.ng-valid .shipping-address-list .selected-ship-address .actions .action-button:before,
+upscale-checkout .coupon-invalid .message:before,
+upscale-checkout .cart-notification .cart-notification__warning:before {
+	font-size: $font-size-14;
+}
+
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions .cancel {
+	font-size: 0 !important;
+}
+
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions .cancel:before {
+	font-size: $font-size-12;
+}
+/* end localization */
+
+upscale-manage-account .content .manage-account .numeric-input-value::placeholder,
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-resizable-input .column .resizable-input-value::placeholder {
+	color: rgba(0,0,0,.42) !important;
+}
+
 /*upscale-checkout .coupon-invalid .message {
 	font-size: $font-size-14 !important;
 }*/
@@ -2805,7 +2825,6 @@ upscale-cart .cart-notification-wrapper {
 .upscale-small upscale-checkout-address-form .formgroup-input-container.show-as-modal .formgroup__actions .formgroup__button,
 .upscale-extra-small upscale-checkout-address-form .formgroup-input-container.show-as-modal .formgroup__actions .formgroup__button {
 	max-width: 250px;
-
     margin: 0 auto;
 }*/
 
