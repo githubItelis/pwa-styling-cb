@@ -2148,10 +2148,12 @@ upscale-manage-account .content .manage-account__formgroup .formgroup__container
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-dropdown .column,
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column,
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-numeric-input .column,
-upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-resizable-input .column {
-
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-resizable-input .column,
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-toggle .toggle,
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-checkbox-group .column { 
 	flex-direction: row;
 	align-items: baseline;
+	flex-wrap: wrap;
 	/*align-items: flex-start;*/
 }
 
@@ -2541,7 +2543,12 @@ upscale-checkout .checkout-sections .formgroup-input-container .formgroup__conta
 .upscale-small upscale-account .account,
 .upscale-extra-small upscale-account .account__link,
 .upscale-extra-small upscale-account .account {
-    width: 100%;	
+    width: 100% !important;	
+}
+
+.upscale-small upscale-account .account__link,
+.upscale-extra-small upscale-account .account__link {
+	height: auto !important;
 }
 
 .upscale-small upscale-account .account__link,
@@ -2672,7 +2679,8 @@ html[lang="sl-SI"] upscale-manage-account .content .manage-account upscale-attri
 	content: "Prekliči";
 }
 
-html[lang="sl-SI"] upscale-global-consent upscale-consent-input .unsubscribed:before {
+html[lang="sl-SI"] upscale-global-consent upscale-consent-input .unsubscribed:before,
+html[lang="sl-SI"] upscale-checkout .checkout-sections upscale-formgroup-input-container upscale-consent-input .unsubscribed:before {
 	content: "Odjavili ste se od promocijskih informacij.";
 }
 
@@ -2682,6 +2690,10 @@ html[lang="sl-SI"] upscale-checkout .coupon-invalid .message:before {
 
 html[lang="sl-SI"] upscale-checkout .cart-notification .cart-notification__warning:before {
 	content: "Košarica je posodobljena.";
+}
+
+html[lang="sl-SI"] upscale-order-confirmation .overview .overview__sub-headline:last-child:before {
+	content: "Št. naročila: ";
 }
 
 /* end slo */
@@ -2727,7 +2739,8 @@ html[lang="hr-HR"] upscale-manage-account .content .manage-account upscale-attri
 	content: "Otkazati";
 }
 
-html[lang="hr-HR"] upscale-global-consent upscale-consent-input .unsubscribed:before {
+html[lang="hr-HR"] upscale-global-consent upscale-consent-input .unsubscribed:before,
+html[lang="hr-HR"] upscale-checkout .checkout-sections upscale-formgroup-input-container upscale-consent-input .unsubscribed:before {
 
 	content: "Odjavili ste se s promotivnih informacija.";
 }
@@ -2740,17 +2753,23 @@ html[lang="hr-HR"] upscale-checkout .cart-notification .cart-notification__warni
 	content: "Košara je ažurirana.";
 }
 
+html[lang="hr-HR"] upscale-order-confirmation .overview .overview__sub-headline:last-child:before {
+	content: "Broj narudžbe: ";
+}
+
 
 /* end hr */
 
 .manage-account__formgroup .input-profile-container-mode .input-label:nth-child(3) .profile,
-.manage-account__formgroup .formgroup__container-content .formgroup__container-content-form .input-profile-container .input-label:nth-of-type(3) {
+.manage-account__formgroup .formgroup__container-content .formgroup__container-content-form .input-profile-container .input-label:nth-of-type(3),
+upscale-checkout .checkout-sections upscale-formgroup-input-container upscale-consent-input .unsubscribed {
 	font-size: 0 !important;
 }
 
 .manage-account__formgroup .input-profile-container-mode .input-label:nth-child(3) .profile:before,
 .manage-account__formgroup .formgroup__container-content .formgroup__container-content-form .input-profile-container .input-label:nth-of-type(3):before,
-upscale-global-consent upscale-consent-input .unsubscribed:before{
+upscale-global-consent upscale-consent-input .unsubscribed:before,
+upscale-checkout .checkout-sections upscale-formgroup-input-container upscale-consent-input .unsubscribed:before {
 	font-size: $font-size-12 !important;	
 }
 
