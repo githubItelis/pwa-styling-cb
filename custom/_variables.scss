@@ -2699,6 +2699,11 @@ html[lang="sl-SI"] upscale-order-confirmation .details-section .order-details .o
 	content: "Dostava";
 }
 
+html[lang="sl-SI"] upscale-order-confirmation .overview .address-listing .address-listing__info-block:first-child .address-listing__bold:before {
+	content: "Naslov za dostavo";
+}
+
+
 /* end slo */
 /* hr */
 html[lang="hr-HR"] .login .login-content .description:before {
@@ -2759,6 +2764,10 @@ html[lang="hr-HR"] upscale-order-confirmation .details-section .order-details .o
 	content: "Dostava";
 }
 
+html[lang="hr-HR"] upscale-order-confirmation .overview .address-listing .address-listing__info-block:first-child .address-listing__bold:before {
+	content: "Dostavna adresa";
+}
+
 /* end hr */
 
 .manage-account__formgroup .input-profile-container-mode .input-label:nth-child(3) .profile,
@@ -2767,7 +2776,8 @@ html[lang="hr-HR"] upscale-order-confirmation .details-section .order-details .o
 upscale-global-consent upscale-consent-input .unsubscribed,
 upscale-checkout .checkout-sections upscale-formgroup-input-container upscale-consent-input .unsubscribed,
 upscale-checkout .coupon-invalid .message,
-upscale-checkout .cart-notification .cart-notification__warning
+upscale-checkout .cart-notification .cart-notification__warning,
+upscale-order-confirmation .overview .address-listing .address-listing__info-block:first-child .address-listing__bold
 {
 	font-size: 0 !important;
 }
@@ -2793,7 +2803,8 @@ upscale-order-confirmation .details-section .order-details .order-details .shipp
 }
 
 .manage-account upscale-formgroup-input-container:nth-of-type(2) .formgroup__container .formgroup__container-header:before,
-upscale-order-confirmation .details-section .order-details .order-details .shipping-summary:before {
+upscale-order-confirmation .details-section .order-details .order-details .shipping-summary:before,
+upscale-order-confirmation .overview .address-listing .address-listing__info-block:first-child .address-listing__bold:before {
 	font-size: $font-size-20;
 }
 
