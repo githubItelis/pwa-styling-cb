@@ -729,7 +729,8 @@ upscale-attribute-set-label {
 .card .content .division-name,
 .division-info-container,
 .order-details__info-cards .order-details__vat-total,
-.order-details .division-info {
+.order-details .division-info,
+upscale-order-confirmation .details-section .order-details .details-body__item:nth-of-type(4) {
 	display: none !important;
 }
 
@@ -1502,7 +1503,10 @@ upscale-product-details .product-detail-content upscale-generic-image .img img.c
 	padding: 0 12px;
 }
 
-.manage-account .formgroup__container-row {
+.manage-account .formgroup__container-row,
+upscale-order-confirmation .overview .address-listing .address-listing__bold,
+upscale-order-confirmation .details-section .order-details .order-details .shipping-summary:before,
+upscale-order-confirmation .details-section .order-details__banner .order-details__banner-headline {
 	border-bottom: 2px solid var(--cx-color-almostblack);
 }
 
@@ -1721,7 +1725,6 @@ owl-date-time-container .owl-dt-calendar-table .owl-dt-calendar-cell-selected {
 	color: var(--cx-color-almostblack) !important;
     min-width: 0 !important;
 
-
 }
 
 .addCoupon .addCoupon-button .button-label:hover {
@@ -1917,7 +1920,8 @@ upscale-address-listing .content .address-listing__address__default {
 .overview__sub-headline,
 .overview .address-listing__info-block .address-listing__bold,
 .order-details__banner-headline,
-.product-summary .card .product .product-data .info .name {
+.product-summary .card .product .product-data .info .name,
+.details-section .order-details .details-body__item-key {
 	font-weight: 700 !important;
 	font-size: $font-size-20 !important;
 	color: var(--cx-color-almostblack) !important;
@@ -2007,7 +2011,8 @@ upscale-back-in-stock form mat-checkbox .mat-checkbox-inner-container {
     color: var(--cx-color-green) !important;
 }
 
-#upscale .price div:nth-child(2).selling-price {
+#upscale .price div:nth-child(2).selling-price,
+#upscale .discount-product-promotion-font {
     color: var(--cx-color-red) !important;
 }
 
@@ -2148,12 +2153,10 @@ upscale-manage-account .content .manage-account__formgroup .formgroup__container
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-dropdown .column,
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column,
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-numeric-input .column,
-upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-resizable-input .column,
-upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-toggle .toggle,
-upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-checkbox-group .column { 
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-resizable-input .column {
+
 	flex-direction: row;
 	align-items: baseline;
-	flex-wrap: wrap;
 	/*align-items: flex-start;*/
 }
 
@@ -2543,12 +2546,7 @@ upscale-checkout .checkout-sections .formgroup-input-container .formgroup__conta
 .upscale-small upscale-account .account,
 .upscale-extra-small upscale-account .account__link,
 .upscale-extra-small upscale-account .account {
-    width: 100% !important;	
-}
-
-.upscale-small upscale-account .account__link,
-.upscale-extra-small upscale-account .account__link {
-	height: auto !important;
+    width: 100%;	
 }
 
 .upscale-small upscale-account .account__link,
@@ -2624,8 +2622,13 @@ upscale-cart .cart-notification-wrapper {
 .upscale-large .cart-list .list-view .product .product-data .info .recurrence,
 .upscale-large .cart-list .list-view .product .product-data .info .quantity,
 .upscale-large .cart-list .list-view .product .product-data .info .unit-price,
-.upscale-large .cart-list .list-view .product .product-data .info .variant-attribute {
+.upscale-large .cart-list .list-view .product .product-data .info .variant-attribute,
+.card .product .product-data .unit-price {
 	text-transform: none !important;
+}
+
+upscale-product-card.cart__line-item.cart-list .card .product .product-data .variant-attribute .variant-attribute--key {
+    text-transform: capitalize !important;
 }
 
 upscale-promotion-badge.badge {
@@ -2692,8 +2695,8 @@ html[lang="sl-SI"] upscale-checkout .cart-notification .cart-notification__warni
 	content: "Košarica je posodobljena.";
 }
 
-html[lang="sl-SI"] upscale-order-confirmation .overview .overview__sub-headline:last-child:before {
-	content: "Št. naročila: ";
+html[lang="sl-SI"] upscale-order-confirmation .details-section .order-details .order-details .shipping-summary:before {
+	content: "Dostava";
 }
 
 /* end slo */
@@ -2741,7 +2744,6 @@ html[lang="hr-HR"] upscale-manage-account .content .manage-account upscale-attri
 
 html[lang="hr-HR"] upscale-global-consent upscale-consent-input .unsubscribed:before,
 html[lang="hr-HR"] upscale-checkout .checkout-sections upscale-formgroup-input-container upscale-consent-input .unsubscribed:before {
-
 	content: "Odjavili ste se s promotivnih informacija.";
 }
 
@@ -2753,16 +2755,20 @@ html[lang="hr-HR"] upscale-checkout .cart-notification .cart-notification__warni
 	content: "Košara je ažurirana.";
 }
 
-html[lang="hr-HR"] upscale-order-confirmation .overview .overview__sub-headline:last-child:before {
-	content: "Broj narudžbe: ";
+html[lang="hr-HR"] upscale-order-confirmation .details-section .order-details .order-details .shipping-summary:before {
+	content: "Dostava";
 }
-
 
 /* end hr */
 
 .manage-account__formgroup .input-profile-container-mode .input-label:nth-child(3) .profile,
 .manage-account__formgroup .formgroup__container-content .formgroup__container-content-form .input-profile-container .input-label:nth-of-type(3),
-upscale-checkout .checkout-sections upscale-formgroup-input-container upscale-consent-input .unsubscribed {
+.cancel-text,
+upscale-global-consent upscale-consent-input .unsubscribed,
+upscale-checkout .checkout-sections upscale-formgroup-input-container upscale-consent-input .unsubscribed,
+upscale-checkout .coupon-invalid .message,
+upscale-checkout .cart-notification .cart-notification__warning
+{
 	font-size: 0 !important;
 }
 
@@ -2773,12 +2779,10 @@ upscale-checkout .checkout-sections upscale-formgroup-input-container upscale-co
 	font-size: $font-size-12 !important;	
 }
 
-.cancel-text,
-upscale-global-consent upscale-consent-input .unsubscribed,
-upscale-checkout .coupon-invalid .message,
-upscale-checkout .cart-notification .cart-notification__warning {
-	font-size: 0 !important;
+upscale-order-confirmation .details-section .order-details .order-details .shipping-summary:before {
+	font-weight: 700;
 }
+
 .cancel-text:before {
 	content: "X";
 	font-size: 1.6rem;
@@ -2788,7 +2792,8 @@ upscale-checkout .cart-notification .cart-notification__warning {
 	font-size: 0 !important;
 }
 
-.manage-account upscale-formgroup-input-container:nth-of-type(2) .formgroup__container .formgroup__container-header:before {
+.manage-account upscale-formgroup-input-container:nth-of-type(2) .formgroup__container .formgroup__container-header:before,
+upscale-order-confirmation .details-section .order-details .order-details .shipping-summary:before {
 	font-size: $font-size-20;
 }
 
@@ -2834,6 +2839,83 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .bod
 upscale-manage-account .content .manage-account .numeric-input-value::placeholder,
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-resizable-input .column .resizable-input-value::placeholder {
 	color: rgba(0,0,0,.42) !important;
+}
+
+.upscale-extra-small upscale-checkout upscale-formgroup-input-container .formgroup__container-content upscale-consent-input.consent-item .content,
+.upscale-small upscale-checkout upscale-formgroup-input-container .formgroup__container-content upscale-consent-input.consent-item .content {
+	width: auto !important;
+	padding-left: 0; 
+}
+
+upscale-checkout .checkout-sections .formgroup-input-container .formgroup__button {
+	margin-left: 12px !important;
+}
+
+upscale-checkout .checkout-sections .formgroup-input-container:nth-of-type(2) .formgroup__container-content-form {
+	display: flex;
+}
+
+upscale-order-confirmation .overview {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+upscale-order-confirmation .overview .overview__headline {
+	width: 100%;
+}
+
+upscale-order-confirmation .overview .overview__sub-headline:nth-of-type(2) {
+	margin-right: 5px;
+}
+
+.upscale-extra-small upscale-order-confirmation .details-section .order-details .product-summary upscale-product-card .card .product,
+.upscale-small upscale-order-confirmation .details-section .order-details .product-summary upscale-product-card .card .product {
+	flex-direction: column;
+}
+
+upscale-order-confirmation .overview .address-listing {
+	width: 100%;
+}
+
+upscale-order-confirmation .overview .address-listing .address-listing__bold,
+upscale-order-confirmation .details-section .order-details .order-details .shipping-summary:before {
+	margin-bottom: 14px;
+}
+
+upscale-order-confirmation .overview .overview .address-listing .address-listing__info-block {
+	margin-bottom: 20px;
+}
+
+upscale-order-confirmation .details-section .order-details .order-details .shipping-summary:before {
+	width: 100%;
+    display: inline-block;    
+}
+
+upscale-order-confirmation .details-section .order-details__banner .order-details__banner-headline {
+	padding: 16px 0 0 0 !important;
+}
+upscale-order-confirmation .details-section .order-details .shipping-summary,
+upscale-order-confirmation .details-section .order-details .details-body__item,
+upscale-order-confirmation .details-section .order-details .details-body__price-details {
+	padding: 16px 0 !important;
+}
+
+upscale-order-confirmation .product-summary upscale-product-card .card .product .image {
+	padding-left: 0 !important;
+}
+
+upscale-order-confirmation .details-section > .order-details {
+	padding: 0 16px;
+}
+
+upscale-order-confirmation .details-section .order-details__banner,
+upscale-order-confirmation .details-section .order-details__banner:hover {
+	background-color: var(--cx-color-white) !important;
+}
+
+.upscale-tablet upscale-order-confirmation .details-section {
+	width: 85%;
+	margin: 0 auto;
 }
 
 /*upscale-checkout .coupon-invalid .message {
@@ -2885,6 +2967,21 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .bod
 		line-height: 1.2 !important;
 		color: var(--cx-color-almostblack) !important;
 		font-weight: 400 !important;
+	}
+}
+
+@media (min-width: 900px) {
+	.details-section .details-body {
+		font-size: $font-size-14 !important;
+	}
+}
+
+@media (max-width: 899px){
+	.details-section .details-body {
+		font-size: $font-size-14 !important;
+	}
+	.details-section .order-details__banner {
+		height: auto !important;
 	}
 }
 
