@@ -4,3 +4,16 @@
 .card .buttons .edit-button {
 	border-width: 2px;
 }
+
+.card .product .product-data .info .recurrence,
+.card .product .product-data .info .variant-attribute,
+.card .product .product-data .quantity,
+.card .product .product-data .unit-price {
+	font-size: $font-size-14;
+    text-transform: none;
+    font-weight: 400;
+}
+
+.card .product .product-data .unit-price {
+	font-weight: 700;
+}
