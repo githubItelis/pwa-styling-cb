@@ -10,13 +10,12 @@
 	
 		&__link {
 			border-radius: 0;		
-			width: 50%;
+			width: 100%;
 			margin-left: 110px;
 			max-width: 418px;
 			padding: 0;
 			border-bottom: 1px solid var(--cx-color-grey-border);
-			cursor: pointer;
-			height: 50px;
+			cursor: pointer;			
 			
 			&:hover {
 				background-color: transparent;
@@ -26,6 +25,7 @@
 			&-text {
 				letter-spacing: 0.5px;
 				font-size: $font-size-20;
+				line-height: 1.2;
 			}
 			
 			&-arrow {
@@ -51,6 +51,22 @@
 	
 		&__link:hover .account__link-arrow:after {
 			border-color: var(--cx-color-green);
+		}
+	}
+}
+
+.upscale-extra-small :host {
+	.account {
+		&__link {
+			height: auto;
+		}
+	}
+}
+
+.upscale-small :host {
+	.account {
+		&__link {
+			height: auto;
 		}
 	}
 }
