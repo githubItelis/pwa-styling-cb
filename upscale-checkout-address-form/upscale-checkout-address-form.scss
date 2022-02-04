@@ -4,4 +4,14 @@
 	.formgroup-input-container .save-address-container {
 		padding-left: 0;
 	}
+	
+}
+
+.upscale-extra-small :host .formgroup-input-container .shipping-address-list .selected-ship-address {	
+	flex-direction: column;
+    align-items: flex-start;
+}
+
+.upscale-extra-small :host .formgroup-input-container .shipping-address-list .selected-ship-address .actions {
+	margin-top: 20px;
 }
