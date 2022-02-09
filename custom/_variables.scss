@@ -1713,11 +1713,11 @@ owl-date-time-container .owl-dt-calendar-table .owl-dt-calendar-cell-selected {
 }
 
 .formgroup-input-container .shipping-wrapper .input-row [name=address-line2],
-.formgroup-input-container .shipping-wrapper .input-row [name=cc-address-line2],
+.formgroup-input-container .shipping-wrapper .input-row [name=cc-address-line2]
+/* samo hrvaška .formgroup-input-container .shipping-wrapper .select-input.country select option:nth-child(2) */
+/*.formgroup-input-container .shipping-wrapper .select-input.country,
 .cdk-overlay-pane .formgroup-input-container .shipping-wrapper .select-input.country,
-.formgroup-input-container .shipping-wrapper .select-input.country select option[value="HR"]
- /* samo hrvaška .formgroup-input-container .shipping-wrapper .select-input.country select option:nth-child(2) */
-/*.formgroup-input-container .shipping-wrapper .select-input.country*/ {
+*/ {
 	display: none;
 }
 
@@ -2702,6 +2702,9 @@ html[lang="sl-SI"] upscale-order-confirmation .details-section .order-details .o
 html[lang="sl-SI"] upscale-order-confirmation .overview .address-listing .address-listing__info-block:first-child .address-listing__bold:before {
 	content: "Naslov za dostavo";
 }
+html[lang="sl-SI"] .formgroup-input-container .shipping-wrapper .select-input.country select option[value="HR"] {
+	display: none;
+}
 
 
 /* end slo */
@@ -2766,6 +2769,9 @@ html[lang="hr-HR"] upscale-order-confirmation .details-section .order-details .o
 
 html[lang="hr-HR"] upscale-order-confirmation .overview .address-listing .address-listing__info-block:first-child .address-listing__bold:before {
 	content: "Dostavna adresa";
+}
+html[lang="hr-HR"] .formgroup-input-container .shipping-wrapper .select-input.country select option[value="SI"] {
+	display: none;
 }
 
 /* end hr */
