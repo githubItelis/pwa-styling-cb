@@ -7,4 +7,15 @@
 	.order-details .order-line__cancel {
 		border-bottom: 1px solid var(--cx-color-green);
 	}
+	
+	.order-details .card .content {
+		padding: 8px 12px !important;
+	}
+	
+	.order-details .order-details__info-cards .card .header {
+		display: flex !important;
+		font-size: 20px;
+		height: auto;
+		border-bottom: 2px solid;
+	}
 }
