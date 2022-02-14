@@ -4,7 +4,7 @@
 	max-width: 1500px;
     margin: 0 auto;
 	width: 85%;
-	padding: 0 12px;
+	padding: 0 12px;	
 	/*font-family: $font-family;*/	
 	
 	.breadcrumbs__link {
@@ -19,6 +19,10 @@
 .breadcrumbs {
 	/*font-family: $font-family;*/
 	width: 85%;
+}
+:host .breadcrumbs__text, 
+:host .breadcrumbs__link {
+	line-height: 1.2;
 }
 
 .breadcrumbs .breadcrumb:first-child {
