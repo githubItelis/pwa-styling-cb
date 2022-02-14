@@ -1639,6 +1639,12 @@ upscale-manage-account .content .manage-account__formgroup {
     padding-top: 10px !important;
 }
 
+.upscale-extra-small .order-listing .order-card .card-holder,
+.upscale-small .order-listing .order-card .card-holder {
+	margin-left: 0;
+	width: 100%;
+}
+
 .account__link-text {
 	/*font-size: $font-size-14 !important;*/
     font-weight: 700 !important;
@@ -2934,6 +2940,14 @@ upscale-order-confirmation .details-section .order-details__banner:hover {
 	width: 85%;
 	margin: 0 auto;
 }
+
+upscale-order-details upscale-order-line .order-line__shipping-info {
+	display: none !important;
+}
+
+/*upscale-shipping-tag[ng-reflect-division-name="SL dev"] {
+    display: none;
+}*/
 
 /*upscale-checkout .coupon-invalid .message {
 	font-size: $font-size-14 !important;
