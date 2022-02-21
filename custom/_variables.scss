@@ -131,7 +131,8 @@ upscale-product-details .product-detail-content .title,
 }
 
 upscale-dropdown,
-.quantity-label__text {
+.quantity-label__text,
+.body .attribute-set-description {
 	font-size: $font-size-14 !important;
 }
 
@@ -151,7 +152,8 @@ upscale-dropdown,
 input[type=text],
 select,
 textarea,
-upscale-manage-account .content .manage-account .input-profile-container-mode {
+upscale-manage-account .content .manage-account .input-profile-container-mode,
+.body .attribute-set-description {
 	color: var(--cx-color-almostblack) !important;
 }
 
@@ -2943,6 +2945,10 @@ upscale-order-confirmation .details-section .order-details__banner:hover {
 
 upscale-order-details upscale-order-line .order-line__shipping-info {
 	display: none !important;
+}
+
+.body .action-button .attribute-set-info {
+	padding-top: 0 !important;
 }
 
 /*upscale-shipping-tag[ng-reflect-division-name="SL dev"] {
