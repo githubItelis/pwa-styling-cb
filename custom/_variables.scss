@@ -170,7 +170,8 @@ upscale-manage-account .content .manage-account .input-profile-container-mode {
 }
 
 .more-button:hover,
-#upscale .image-component-link-button:hover {
+#upscale .image-component-link-button:hover,
+upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .storybook-background upscale-ui-carousel .overlay .overlay-content .link-text:hover {
 	background-color: var(--cx-color-green) !important;
 }
 
@@ -356,7 +357,8 @@ button,
 .formgroup-input-container .shipping-address-list .action--button-black,
 .details-section .shopping-button,
 .no-content-holder button,
-upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions button {
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions button,
+upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .storybook-background upscale-ui-carousel .overlay .overlay-content .link-text {
 	background-color: var(--cx-color-blue) !important;
 	color: var(--cx-color-white) !important;
 	border: solid 2px var(--cx-color-blue) !important;    
@@ -414,7 +416,8 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .bod
 .formgroup-input-container .shipping-address-list .action--button-black,
 .details-section .shopping-button,
 .no-content-holder button,
-upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions button {
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions button,
+upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .storybook-background upscale-ui-carousel .overlay .overlay-content .link-text {
 	min-width: 250px !important;
 	height: 40px !important;
 	font-weight: 700 !important;
@@ -864,6 +867,10 @@ upscale-storybook-content upscale-generic-image .img img {
 	height: 100%;
     width: auto !important;
     margin: 0 auto;
+}
+
+upscale-storybook-content .storybook-category-content-cell-background upscale-generic-image .img img {
+	width: 100% !important;
 }
 
 upscale-article-card {
@@ -2949,6 +2956,43 @@ upscale-order-details upscale-order-line .order-line__shipping-info {
 
 .body .action-button .attribute-set-info {
 	padding-top: 0 !important;
+}
+
+upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .storybook-background .story-books .grid {
+	margin-bottom: 0 !important;
+}
+
+upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .storybook-category-content-cell-background upscale-generic-image:not(.product-info-image) {
+	height: 450px !important;
+}
+
+upscale-storybook .container-content upscale-ui-carousel .slick-prev,
+upscale-storybook .container-content upscale-ui-carousel .slick-next {
+	border-radius: 50% !important;
+}
+
+upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .storybook-background upscale-ui-carousel .overlay {
+	max-width: 500px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 10%;
+    bottom: 0;    
+}
+
+upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .storybook-background upscale-ui-carousel .overlay .overlay-content {
+	justify-content: center;
+}
+
+upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .storybook-background upscale-ui-carousel .overlay .overlay-content .content-headline,
+upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .storybook-background upscale-ui-carousel .overlay .overlay-content .content-subheadline {
+	color: var(--cx-color-almostblack) !important;	
+}
+upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .storybook-background upscale-ui-carousel .overlay .overlay-content .content-headline {
+	font-size: $font-size-20 !important;
+	font-weight: 700 !important;
+	letter-spacing: 0.5px !important;
 }
 
 /*upscale-shipping-tag[ng-reflect-division-name="SL dev"] {
