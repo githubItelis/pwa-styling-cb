@@ -19,6 +19,70 @@
 	}
 }
 
+:host .storybook-content .overlay .content-headline,
+.upscale-medium :host .storybook-content .overlay .content-headline,
+.upscale-medium :host .storybook-content .overlay .article-headline, 
+.upscale-small :host .storybook-content .overlay .content-headline,
+.upscale-small :host .storybook-content .overlay .article-headline, 
+.upscale-extra-small :host .storybook-content .overlay .content-headline,
+.upscale-extra-small :host .storybook-content .overlay .article-headline {
+	margin-bottom: 10px;
+}
+
+:host .storybook-content .overlay .content-headline,
+.upscale-medium :host .storybook-content .overlay .content-headline,
+.upscale-medium :host .storybook-content .overlay .product-name,
+.upscale-medium :host .storybook-content .overlay .category-name,
+.upscale-medium :host .storybook-content .overlay .article-headline,
+.upscale-small :host .storybook-content .overlay .content-headline,
+.upscale-small :host .storybook-content .overlay .product-name,
+.upscale-small :host .storybook-content .overlay .category-name,
+.upscale-small :host .storybook-content .overlay .article-headline,
+.upscale-extra-small :host .storybook-content .overlay .content-headline,
+.upscale-extra-small :host .storybook-content .overlay .product-name,
+.upscale-extra-small :host .storybook-content .overlay .category-name,
+.upscale-extra-small :host .storybook-content .overlay .article-headline,
+:host .storybook-content .overlay .content-subheadline,
+.upscale-medium :host .storybook-content .overlay .content-subheadline,
+.upscale-medium :host .storybook-content .overlay .article-subheadline,
+.upscale-small :host .storybook-content .overlay .content-subheadline, 
+.upscale-small :host .storybook-content .overlay .article-subheadline,
+.upscale-extra-small :host .storybook-content .overlay .content-subheadline,
+.upscale-extra-small :host .storybook-content .overlay .article-subheadline {
+	max-height: none;
+	display: inline-block;
+}
+
+:host .storybook-content .overlay .content-headline
+.upscale-medium :host .storybook-content .overlay .content-headline,
+.upscale-medium :host .storybook-content .overlay .product-name,
+.upscale-medium :host .storybook-content .overlay .category-name,
+.upscale-medium :host .storybook-content .overlay .article-headline,
+.upscale-small :host .storybook-content .overlay .content-headline,
+.upscale-small :host .storybook-content .overlay .product-name,
+.upscale-small :host .storybook-content .overlay .category-name,
+.upscale-small :host .storybook-content .overlay .article-headline,
+.upscale-extra-small :host .storybook-content .overlay .content-headline,
+.upscale-extra-small :host .storybook-content .overlay .product-name,
+.upscale-extra-small :host .storybook-content .overlay .category-name,
+.upscale-extra-small :host .storybook-content .overlay .article-headline {
+	line-height: 1;
+}
+
+:host .storybook-content .overlay .content-subheadline,
+.upscale-medium :host .storybook-content .overlay .content-subheadline,
+.upscale-medium :host .storybook-content .overlay .article-subheadline,
+.upscale-small :host .storybook-content .overlay .content-subheadline, 
+.upscale-small :host .storybook-content .overlay .article-subheadline,
+.upscale-extra-small :host .storybook-content .overlay .content-subheadline,
+.upscale-extra-small :host .storybook-content .overlay .article-subheadline {
+	line-height: 1.2;
+}
+
+:host .storybook-content .overlay .link-text {
+	margin-bottom: 20px;
+}
+
 /*
 .upscale-small :host .storybook-background,
 .upscale-extra-small :host .storybook-background {
