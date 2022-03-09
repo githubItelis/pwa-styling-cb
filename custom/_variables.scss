@@ -240,7 +240,8 @@ upscale-template upscale-storybook:nth-of-type(1) upscale-ui-carousel .storybook
 }
 
 .image-aspect-ratio_16-9 {
-	padding-top: 34% !important;
+	/*padding-top: 34% !important;*/
+	padding-top: 40% !important;
 }
 
 .image-content .image-container upscale-generic-image.image-aspect-ratio_16-9 {
@@ -883,8 +884,15 @@ upscale-article-card upscale-aspect-ratio-image.image {
 }
 
 .upscale-extra-small .image-container .overlay-content,
-.upscale-small .image-container .overlay-content {
+.upscale-small .image-container .overlay-content,
+.upscale-small upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .storybook-background upscale-ui-carousel .overlay,
+.upscale-extra-small upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .storybook-background upscale-ui-carousel .overlay {
 	position: relative !important;
+}
+
+.upscale-small upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .storybook-background upscale-ui-carousel .overlay,
+.upscale-extra-small upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .storybook-background upscale-ui-carousel .overlay {
+	left: 0 !important;
 }
 
 .upscale-extra-small upscale-article-card,
@@ -2963,7 +2971,7 @@ upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .st
 }
 
 upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .storybook-category-content-cell-background upscale-generic-image:not(.product-info-image) {
-	height: 450px !important;
+	height: auto !important;
 }
 
 upscale-storybook .container-content upscale-ui-carousel .slick-prev,
@@ -2993,6 +3001,27 @@ upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .st
 	font-size: $font-size-20 !important;
 	font-weight: 700 !important;
 	letter-spacing: 0.5px !important;
+}
+
+.upscale-small upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .storybook-background upscale-ui-carousel .slick-arrow,
+.upscale-extra-small upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .storybook-background upscale-ui-carousel .slick-arrow {
+	display: none !important;
+}
+
+.upscale-small upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .storybook-background upscale-generic-image.image-aspect-ratio_16-9,
+.upscale-extra-small upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .storybook-background upscale-generic-image.image-aspect-ratio_16-9 {
+	padding-top: 80% !important;
+}
+
+.upscale-small upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .storybook-background upscale-generic-image.image-aspect-ratio_16-9 .img img,
+.upscale-extra-small upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .storybook-background upscale-generic-image.image-aspect-ratio_16-9 .img img {
+    position: absolute;
+    right: -20px;
+	width: auto !important;
+}
+
+.upscale-medium upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .storybook-background upscale-ui-carousel .overlay {
+	max-width: 300px;
 }
 
 /*upscale-shipping-tag[ng-reflect-division-name="SL dev"] {
