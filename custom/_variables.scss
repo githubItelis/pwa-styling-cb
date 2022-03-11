@@ -3015,9 +3015,12 @@ upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .st
 
 .upscale-small upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .storybook-background upscale-generic-image.image-aspect-ratio_16-9 .img img,
 .upscale-extra-small upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .storybook-background upscale-generic-image.image-aspect-ratio_16-9 .img img {
-    position: absolute;
-    right: -20px;
-	width: auto !important;
+    width: auto !important;
+	-webkit-transform: translateX(-46%);
+	   -moz-transform: translateX(-46%);
+		 -o-transform: translateX(-46%);
+		-ms-transform: translateX(-46%);
+			transform: translateX(-46%);
 }
 
 .upscale-medium upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .storybook-background upscale-ui-carousel .overlay {
