@@ -77,6 +77,10 @@ html, body, #upscale {
 #upscale .storybook-component-headline.title-custom-aa {
 	padding-left: 0 !important;
 }
+
+#upscale .storybook-component-headline {
+	margin-bottom: 10px !important;
+}
 /*
 .storybook-component-headline {
 	font-size: 26px;
@@ -706,6 +710,10 @@ upscale-attribute-set-label {
 .upscale-small .content {
     padding: 0 12px;
 	width: 100%;
+}
+.upscale-extra-small .content-slot-component-background .container.none .content,
+.upscale-small .content-slot-component-background .container.none .content {
+	padding: 0;
 }
 .content {
     box-sizing: border-box;
@@ -2863,16 +2871,22 @@ upscale-browse .breadcrumbs .breadcrumb:nth-of-type(2):before {
 
 .formgroup-input-container .formgroup__container-content-form.ng-valid .shipping-address-list .selected-ship-address .actions .action-button:before,
 upscale-checkout .coupon-invalid .message:before,
-upscale-checkout .cart-notification .cart-notification__warning:before {
+upscale-checkout .cart-notification .cart-notification__warning:before,
+upscale-generic-alert-dialog .generic-alert__buttons .generic-alert__button:before {
 	font-size: $font-size-14;
 }
 
-upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions .cancel {
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions .cancel,
+upscale-generic-alert-dialog .generic-alert__buttons .generic-alert__button {
 	font-size: 0 !important;
 }
 
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions .cancel:before {
 	font-size: $font-size-12;
+}
+
+upscale-generic-alert-dialog .generic-alert__buttons .generic-alert__button:before {
+	content: "V redu";
 }
 /* end localization */
 
@@ -3026,6 +3040,26 @@ upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .st
 .upscale-medium upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .storybook-background upscale-ui-carousel .overlay {
 	max-width: 300px;
 }
+
+upscale-template[data-name="Naslovna stran"] upscale-storybook:not(:first-of-type) upscale-generic-image.generic-image.image-aspect-ratio_1-1 {
+	padding-top: 0 !important;
+}
+
+upscale-template[data-name="Naslovna stran"] upscale-storybook:not(:first-of-type) upscale-generic-image.generic-image.image-aspect-ratio_1-1::ng-deep {
+	padding-top: 30px;
+}
+
+.image-aspect-ratio_1-1[_ngcontent-serverApp-c145] {
+	padding-top: 0 !important;
+}
+
+.order-details__info-cards .card upscale-shipping-tag:first-of-type {
+	display: none !important;
+}
+
+/*.upscale-extra-small upscale-template[data-name="Naslovna stran"] upscale-storybook:not(:first-of-type) upscale-generic-image.generic-image.image-aspect-ratio_1-1 {
+	max-height: 240px;
+}*/
 
 /*upscale-shipping-tag[ng-reflect-division-name="SL dev"] {
     display: none;
