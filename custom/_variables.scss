@@ -3041,29 +3041,9 @@ upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .st
 	max-width: 300px;
 }
 
-upscale-template[data-name="Naslovna stran"] upscale-storybook:not(:first-of-type) upscale-generic-image.generic-image.image-aspect-ratio_1-1 {
-	padding-top: 0 !important;
-}
-
-upscale-template[data-name="Naslovna stran"] upscale-storybook:not(:first-of-type) upscale-generic-image.generic-image.image-aspect-ratio_1-1::ng-deep {
-	padding-top: 30px;
-}
-
-.image-aspect-ratio_1-1[_ngcontent-serverApp-c145] {
-	padding-top: 0 !important;
-}
-
 .order-details__info-cards .card upscale-shipping-tag:first-of-type {
 	display: none !important;
 }
-
-/*.upscale-extra-small upscale-template[data-name="Naslovna stran"] upscale-storybook:not(:first-of-type) upscale-generic-image.generic-image.image-aspect-ratio_1-1 {
-	max-height: 240px;
-}*/
-
-/*upscale-shipping-tag[ng-reflect-division-name="SL dev"] {
-    display: none;
-}*/
 
 /*upscale-checkout .coupon-invalid .message {
 	font-size: $font-size-14 !important;
