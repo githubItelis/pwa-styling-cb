@@ -2871,13 +2871,13 @@ upscale-browse .breadcrumbs .breadcrumb:nth-of-type(2):before {
 
 .formgroup-input-container .formgroup__container-content-form.ng-valid .shipping-address-list .selected-ship-address .actions .action-button:before,
 upscale-checkout .coupon-invalid .message:before,
-upscale-checkout .cart-notification .cart-notification__warning:before,
-upscale-generic-alert-dialog .generic-alert__buttons .generic-alert__button:before {
+upscale-checkout .cart-notification .cart-notification__warning:before/*,
+upscale-generic-alert-dialog .generic-alert__buttons .generic-alert__button:before*/ {
 	font-size: $font-size-14;
 }
 
-upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions .cancel,
-upscale-generic-alert-dialog .generic-alert__buttons .generic-alert__button {
+upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions .cancel/*,
+upscale-generic-alert-dialog .generic-alert__buttons .generic-alert__button*/ {
 	font-size: 0 !important;
 }
 
@@ -2885,9 +2885,9 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .bod
 	font-size: $font-size-12;
 }
 
-upscale-generic-alert-dialog .generic-alert__buttons .generic-alert__button:before {
+/*upscale-generic-alert-dialog .generic-alert__buttons .generic-alert__button:before {
 	content: "V redu";
-}
+}*/
 /* end localization */
 
 upscale-manage-account .content .manage-account .numeric-input-value::placeholder,
