@@ -424,6 +424,8 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .bod
 upscale-manage-account .content .manage-account upscale-attribute-set .body .body-content upscale-attribute-set-date-time-picker .column .date-picker-input-wrapper .date-picker-input-wrapper-actions button,
 upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .storybook-background upscale-ui-carousel .overlay .overlay-content .link-text {
 	min-width: 250px !important;
+
+
 	height: 40px !important;
 	font-weight: 700 !important;
 	font-size: $font-size-14 !important;
@@ -2617,7 +2619,8 @@ upscale-article-details .content .text a:focus {
 	margin-bottom: 20px;
 }*/
 
-.video-responsive {
+.video-responsive,
+.itelis-video-container {
   	position: relative;
   	/*padding-top: 100%;*/ /* 1:1 Aspect Ratio */
 	/*padding-top: 75%;*/ /* 4:3 Aspect Ratio */
@@ -2627,7 +2630,8 @@ upscale-article-details .content .text a:focus {
 	height: 0;
 	overflow: hidden;
 }
-.video-responsive iframe {
+.video-responsive iframe,
+.itelis-video {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -3081,10 +3085,35 @@ upscale-template[data-name="Article"] upscale-storybook-content a[href="/sl-SI/a
 	width: 85%;	
 }
 
+#upscale upscale-template[data-name="Article"] upscale-storybook:nth-of-type(2) .container-content .story-books .storybook-content .content-slot-component-background {
+	background-color: transparent !important;
+	width: 100%;
+}
+
+upscale-template[data-name="Article"] upscale-storybook:nth-of-type(2) .container-content .story-books .storybook-content .content-slot-component-background .ratio-1-1 {
+	padding-top: 0;
+	height: auto;
+}
+upscale-template[data-name="Article"] upscale-storybook:nth-of-type(2) .container-content .story-books .storybook-content .content-slot-component-background .ratio-1-1 .content {
+	position: relative;
+	padding: 0;
+}
+
+upscale-template[data-name="Article"] upscale-storybook:nth-of-type(2) .container-content .story-books .storybook-content .content-slot-component-background .ratio-1-1 .content .text {
+	font-size: 14px !important;
+    font-weight: 300 !important;
+}
+
+upscale-template[data-name="Article"] upscale-storybook:nth-of-type(3) .container-content .story-books upscale-storybook-content .storybook-content {
+	align-items: center;
+}
+
 @media (min-width: 1200px){
 	#upscale upscale-template[data-templatetype="BLANK"] upscale-content-slot .configuration,
 	upscale-storybook[data-component-id="df6425b1-0782-4cc7-9b72-4f25bb41792c"] .story-books upscale-storybook-content.story .storybook-content,
-	upscale-storybook[data-component-id="ab45f089-8931-4f15-92db-ea8bca470351"] .story-books upscale-storybook-content.story .storybook-content {
+	upscale-storybook[data-component-id="ab45f089-8931-4f15-92db-ea8bca470351"] .story-books upscale-storybook-content.story .storybook-content,
+	#upscale upscale-template[data-name="Article"] upscale-storybook:nth-of-type(2) .container-content .story-books .storybook-content .content-slot-component-background,
+	upscale-template[data-name="Article"] upscale-storybook:nth-of-type(3) .container-content .story-books {
     	padding: 30px 191px !important;
 	}
 }
@@ -3098,8 +3127,13 @@ upscale-template[data-name="Article"] upscale-storybook-content a[href="/sl-SI/a
 		padding: 0 !important;
 	}
 	upscale-storybook[data-component-id="df6425b1-0782-4cc7-9b72-4f25bb41792c"] .story-books upscale-storybook-content.story .storybook-content,
-	upscale-storybook[data-component-id="ab45f089-8931-4f15-92db-ea8bca470351"] .story-books upscale-storybook-content.story .storybook-content {
+	upscale-storybook[data-component-id="ab45f089-8931-4f15-92db-ea8bca470351"] .story-books upscale-storybook-content.story .storybook-content,
+	#upscale upscale-template[data-name="Article"] upscale-storybook:nth-of-type(2) .container-content .story-books .storybook-content .content-slot-component-background,
+	upscale-template[data-name="Article"] upscale-storybook:nth-of-type(3) .container-content .story-books {
 		padding: 0 20px !important;
+	}
+	upscale-template[data-name=Article] upscale-storybook:nth-of-type(3) .container-content .story-books upscale-storybook-content .storybook-content {
+		align-items: normal;
 	}
 }
 /*width: 100% !important;*/
