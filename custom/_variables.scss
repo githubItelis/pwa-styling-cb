@@ -1095,6 +1095,11 @@ em {
 	border-width: 0 2px 2px 0 !important;
 }
 
+article.content em,
+.storybook-content em {
+	border: none !important;
+}
+
 .attribute-details__banner,
 .attribute-details__body {
 	max-width: 600px;
