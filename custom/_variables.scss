@@ -67,7 +67,9 @@ html, body, #upscale {
 	font-size: $font-size-20 !important;
 }
 
-#upscale .storybook-component-headline {
+#upscale .storybook-component-headline,
+#upscale .storybook-product-content-headline,
+#upscale .storybook-product-content-name {
 	font-weight: 700 !important;
 }
 
@@ -157,7 +159,9 @@ input[type=text],
 select,
 textarea,
 upscale-manage-account .content .manage-account .input-profile-container-mode,
-.body .attribute-set-description {
+.body .attribute-set-description,
+#upscale .storybook-product-content-headline,
+#upscale .storybook-product-content-sub-headline {
 	color: var(--cx-color-almostblack) !important;
 }
 
@@ -335,7 +339,8 @@ button,
 #upscale .storybook-category-content-name,
 #upscale .storybook-component-headline,
 .headline,
-#upscale .image-component-link-button {
+#upscale .image-component-link-button,
+#upscale .storybook-product-content-headline {
 	letter-spacing: 0.5px !important;	
 }
 
@@ -518,14 +523,22 @@ upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .st
 	color: var(--cx-color-green) !important;
 	font-weight: 500;
 	letter-spacing: 0.5px;
-	padding: 12px 12px 0 12px;
+	padding: 12px 12px 0 12px;	
+}
+
+.generic-text-large,
+#upscale .storybook-product-content-sub-headline,
+#upscale .storybook-product-content-headline,
+#upscale .storybook-product-content-name {
 	line-height: 1.2 !important;
 }
+
 
 .upscale-medium .consents,
 .upscale-extra-small .consents,
 .upscale-small .consents,
-.consents {
+.consents,
+#upscale .storybook-product-content-sub-headline {
 	font-size: $font-size-13 !important;
 }
 
@@ -1283,7 +1296,6 @@ upscale-category-tile.browse-category-card-color picture img {
 	width: auto !important;
 }
 
-
 upscale-category-tile .default .browse-category-name {
 	letter-spacing: 0.5px !important;
 }
@@ -1594,7 +1606,8 @@ upscale-order-confirmation .details-section .order-details__banner .order-detail
 	margin: 20px 0 10px 0;
 }
 
-.recap {
+.recap,
+#upscale .storybook-product-content-sub-headline {
 	font-weight: 400 !important;
 }
 
@@ -3203,7 +3216,7 @@ upscale-storybook[data-component-id="9a1316bb-ba7e-485f-a8a3-4399c9c3641e"] .con
 #upscale upscale-storybook[data-component-id="99008876-f98a-4e07-a406-919b35637764"] .container-content .story-books .storybook-content a .product .overlay-content .content-subheadline.storybook-product-content-sub-headline,
 #upscale upscale-storybook[data-component-id="b92f12cd-c5ad-4a3f-b2f1-d05c7ab3eb11"] .container-content .story-books .storybook-content a .product .overlay-content .content-subheadline.storybook-product-content-sub-headline,
 #upscale upscale-storybook[data-component-id="9a1316bb-ba7e-485f-a8a3-4399c9c3641e"] .container-content .story-books .storybook-content a .product .overlay-content .content-subheadline.storybook-product-content-sub-headline {
-	font-size: 13px;
+	font-size: $font-size-13;
 	line-height: 1.5;
     font-weight: 400;
 	color: var(--cx-color-almostblack) !important;
