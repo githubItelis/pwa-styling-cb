@@ -3339,6 +3339,28 @@ upscale-storybook[data-component-id="9a1316bb-ba7e-485f-a8a3-4399c9c3641e"] .con
 .download-xls:before { content: "XLS"; }
 .download-xlsx:before { content: "XLSX"; }
 
+upscale-volume-pricing .volume-pricing .banner-headline {
+	font-size: $font-size-14 !important;
+	font-weight: 700 !important;
+	padding-left: 0 !important;
+	height: 30px !important;
+	color: var(--cx-color-almostblack);
+}
+
+upscale-volume-pricing .volume-pricing table thead th {
+	font-weight: 700 !important;
+    line-height: 30px !important;
+    font-size: $font-size-14 !important;
+	color: var(--cx-color-almostblack) !important;
+}
+
+upscale-volume-pricing .volume-pricing table tbody td {
+	font-weight: 300 !important;
+    line-height: 30px !important;
+    font-size: $font-size-13 !important;
+	color: var(--cx-color-almostblack) !important;
+}
+
 @media (min-width: 1200px){
 	#upscale upscale-template[data-templatetype="BLANK"] upscale-content-slot .configuration,
 	upscale-storybook[data-component-id="df6425b1-0782-4cc7-9b72-4f25bb41792c"] .story-books upscale-storybook-content.story .storybook-content,
