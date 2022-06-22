@@ -371,7 +371,8 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .bod
 upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .storybook-background upscale-ui-carousel .overlay .overlay-content .link-text,
 #upscale upscale-storybook[data-component-id="99008876-f98a-4e07-a406-919b35637764"] .container-content .story-books .storybook-content a .product .overlay-content .link-text.storybook-product-link-text-button,
 #upscale upscale-storybook[data-component-id="b92f12cd-c5ad-4a3f-b2f1-d05c7ab3eb11"] .container-content .story-books .storybook-content a .product .overlay-content .link-text.storybook-product-link-text-button,
-#upscale upscale-storybook[data-component-id="9a1316bb-ba7e-485f-a8a3-4399c9c3641e"] .container-content .story-books .storybook-content a .product .overlay-content .link-text.storybook-product-link-text-button
+#upscale upscale-storybook[data-component-id="9a1316bb-ba7e-485f-a8a3-4399c9c3641e"] .container-content .story-books .storybook-content a .product .overlay-content .link-text.storybook-product-link-text-button,
+#upscale .storybook-article-link-text-button 
 {
 	background-color: var(--cx-color-blue) !important;
 	color: var(--cx-color-white) !important;
@@ -416,7 +417,8 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .bod
 
 #upscale upscale-storybook[data-component-id="99008876-f98a-4e07-a406-919b35637764"] .container-content .story-books .storybook-content a .product .overlay-content .link-text.storybook-product-link-text-button:hover,
 #upscale upscale-storybook[data-component-id="b92f12cd-c5ad-4a3f-b2f1-d05c7ab3eb11"] .container-content .story-books .storybook-content a .product .overlay-content .link-text.storybook-product-link-text-button:hover,
-#upscale upscale-storybook[data-component-id="9a1316bb-ba7e-485f-a8a3-4399c9c3641e"] .container-content .story-books .storybook-content a .product .overlay-content .link-text.storybook-product-link-text-button:hover {
+#upscale upscale-storybook[data-component-id="9a1316bb-ba7e-485f-a8a3-4399c9c3641e"] .container-content .story-books .storybook-content a .product .overlay-content .link-text.storybook-product-link-text-button:hover,
+#upscale .storybook-article-link-text-button:hover {
 	background-color: var(--cx-color-green) !important;
 	border-color: var(--cx-color-green) !important;
 }
@@ -441,7 +443,8 @@ upscale-manage-account .content .manage-account upscale-attribute-set .body .bod
 upscale-template[data-name="Naslovna stran"] upscale-storybook:first-of-type .storybook-background upscale-ui-carousel .overlay .overlay-content .link-text,
 #upscale upscale-storybook[data-component-id="99008876-f98a-4e07-a406-919b35637764"] .container-content .story-books .storybook-content a .product .overlay-content .link-text.storybook-product-link-text-button,
 #upscale upscale-storybook[data-component-id="b92f12cd-c5ad-4a3f-b2f1-d05c7ab3eb11"] .container-content .story-books .storybook-content a .product .overlay-content .link-text.storybook-product-link-text-button,
-#upscale upscale-storybook[data-component-id="9a1316bb-ba7e-485f-a8a3-4399c9c3641e"] .container-content .story-books .storybook-content a .product .overlay-content .link-text.storybook-product-link-text-button {
+#upscale upscale-storybook[data-component-id="9a1316bb-ba7e-485f-a8a3-4399c9c3641e"] .container-content .story-books .storybook-content a .product .overlay-content .link-text.storybook-product-link-text-button,
+#upscale .storybook-article-link-text-button {
 	min-width: 250px !important;
 	height: 40px !important;
 	font-weight: 700 !important;
@@ -3359,6 +3362,102 @@ upscale-volume-pricing .volume-pricing table tbody td {
     line-height: 30px !important;
     font-size: $font-size-13 !important;
 	color: var(--cx-color-almostblack) !important;
+}
+/* article pri produktih (kot storybook) */
+upscale-storybook[data-component-id="374e5c2f-62d4-4663-8483-6cf781c31c12"] .storybook-content a {
+	width: 100% !important;
+	flex-direction: row !important;
+}
+
+upscale-storybook[data-component-id="374e5c2f-62d4-4663-8483-6cf781c31c12"] .storybook-content upscale-generic-image.image-aspect-ratio_1-1 {
+	height: 150px !important;
+}
+
+upscale-storybook[data-component-id="374e5c2f-62d4-4663-8483-6cf781c31c12"] .storybook-content .aspect-ratio-image {
+	max-width: 150px;
+}
+
+upscale-storybook[data-component-id="374e5c2f-62d4-4663-8483-6cf781c31c12"] .storybook-content .overlay .overlay-content {
+	padding: 6px 12px 6px 24px !important;
+}
+
+upscale-storybook[data-component-id="374e5c2f-62d4-4663-8483-6cf781c31c12"] .storybook-content .overlay .link-text {
+	margin-bottom: 0 !important;
+}
+
+#upscale .storybook-article-content-headline,
+#upscale .storybook-article-content-sub-headline,
+#upscale .storybook-component-sub-headline {
+	color: var(--cx-color-almostblack) !important;
+}
+
+#upscale .storybook-article-link-text-button {
+	pointer-events: auto !important;
+}
+
+#upscale .storybook-article-content-headline {
+	line-height: 1.22;
+    font-weight: 700 !important;
+	font-size: $font-size-16 !important;
+	letter-spacing: 0.5px !important;
+}
+
+#upscale .storybook-article-content-sub-headline {
+	line-height: 1.5 !important;
+    font-weight: 400 !important;
+	max-width: 600px;
+	padding-bottom: 24px;
+	font-size: $font-size-13 !important;
+}
+
+#upscale .storybook-component-sub-headline {
+	padding-left: 12px;
+	font-weight: 400 !important;
+	font-size: $font-size-14 !important;
+	margin-bottom: 10px;
+}
+
+#upscale.upscale-small .storybook-component-sub-headline,
+#upscale.upscale-extra-small .storybook-component-sub-headline {
+	padding-left: 0;
+}
+
+.upscale-small upscale-storybook[data-component-id="374e5c2f-62d4-4663-8483-6cf781c31c12"] .storybook-content a,
+.upscale-extra-small upscale-storybook[data-component-id="374e5c2f-62d4-4663-8483-6cf781c31c12"] .storybook-content a {
+	flex-direction: column !important;
+}
+
+.upscale-small upscale-storybook[data-component-id="374e5c2f-62d4-4663-8483-6cf781c31c12"] .storybook-content .overlay .overlay-content,
+.upscale-extra-small upscale-storybook[data-component-id="374e5c2f-62d4-4663-8483-6cf781c31c12"] .storybook-content .overlay .overlay-content {
+	padding-left: 0 !important;
+}
+
+.upscale-small upscale-storybook[data-component-id="374e5c2f-62d4-4663-8483-6cf781c31c12"] .storybook-content .aspect-ratio-image,
+.upscale-extra-small upscale-storybook[data-component-id="374e5c2f-62d4-4663-8483-6cf781c31c12"] .storybook-content .aspect-ratio-image {
+	max-width: 250px;
+	min-width: 150px;
+}
+
+.upscale-small upscale-storybook[data-component-id="374e5c2f-62d4-4663-8483-6cf781c31c12"] .storybook-content upscale-generic-image.image-aspect-ratio_1-1,
+.upscale-extra-small upscale-storybook[data-component-id="374e5c2f-62d4-4663-8483-6cf781c31c12"] .storybook-content upscale-generic-image.image-aspect-ratio_1-1 {
+	padding-top: 100% !important;
+	height: 0 !important;
+}
+
+.upscale-medium upscale-storybook .storybook-content .overlay .link-text,
+.upscale-small upscale-storybook .storybook-content .overlay .link-text,
+.upscale-extra-small upscale-storybook .storybook-content .overlay .link-text {
+	margin-top: 0 !important;
+}
+
+upscale-storybook .storybook-content .overlay .content-headline,
+.upscale-medium upscale-storybook .storybook-content .overlay .content-headline,
+.upscale-medium upscale-storybook .storybook-content .overlay .article-headline,
+.upscale-small upscale-storybook .storybook-content .overlay .content-headline,
+.upscale-small upscale-storybook .storybook-content .overlay .article-headline,
+.upscale-extra-small upscale-storybook .storybook-content .overlay .content-headline,
+.upscale-extra-small upscale-storybook .storybook-content .overlay .article-headline {
+	margin-bottom: 6px !important;
 }
 
 @media (min-width: 1200px){
