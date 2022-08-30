@@ -3579,10 +3579,20 @@ upscale-order-details .order-details.container-content .order-details__info-card
 	text-transform: capitalize;
 }
 
+/* HR test euro konverzija */
 .upscale-tablet upscale-custom-component[data-component-id="0fc5dd9a-30cc-4285-aa0a-67ec2ed71054"] .container-content {
     max-width: 600px;
 }
 
+upscale-template[data-templatetype="ORDER_CONFIRMATION"] upscale-custom-component[data-component-id="6be57c0c-56b3-49cf-a1e2-bcfd6c247ee6"] .container-content {
+    max-width: 950px;	    
+    margin: 0 auto;
+}
+
+upscale-template[data-templatetype="ORDER_CONFIRMATION"] upscale-custom-component[data-component-id="6be57c0c-56b3-49cf-a1e2-bcfd6c247ee6"] .container-content iframe {
+	width: 85%;
+    margin: 0 auto;
+}
 /*
 .upscale-extra-small .product-detail-content .img img,
 .upscale-small .product-detail-content .img img {
