@@ -3610,13 +3610,18 @@ upscale-template[data-templatetype="ORDER_CONFIRMATION"] upscale-custom-componen
 	margin-top: 24px;
 }
 
-.upscale-desktop upscale-template[data-templatetype="CART"] upscale-custom-component[data-component-id="cbdb1aaa-5ff4-4967-9f37-342c15d9fbc1"] .container-content {
+.upscale-desktop upscale-template[data-templatetype="CART"] upscale-custom-component[data-component-id="cbdb1aaa-5ff4-4967-9f37-342c15d9fbc1"] .container-content,
+.upscale-desktop upscale-template[data-templatetype="CHECKOUT"] upscale-custom-component[data-component-id="9545a113-19c9-48d9-9876-4224bbcd4bd2"] .container-content {
 	display: grid;
     grid-template-columns: 2fr 1fr;
     flex-direction: column;
     grid-column-gap: 8%;
     -moz-column-gap: 8%;
     	 column-gap: 8%;
+}
+
+.upscale-desktop upscale-template[data-templatetype="CHECKOUT"] upscale-custom-component[data-component-id="9545a113-19c9-48d9-9876-4224bbcd4bd2"] .container-content iframe {
+	padding: 0 12px;
 }
 
 /*
