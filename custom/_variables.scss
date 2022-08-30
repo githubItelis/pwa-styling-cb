@@ -3584,15 +3584,32 @@ upscale-order-details .order-details.container-content .order-details__info-card
     max-width: 600px;
 }
 
-upscale-template[data-templatetype="ORDER_CONFIRMATION"] upscale-custom-component[data-component-id="6be57c0c-56b3-49cf-a1e2-bcfd6c247ee6"] .container-content {
+upscale-template[data-templatetype="ORDER_CONFIRMATION"] upscale-custom-component[data-component-id="6be57c0c-56b3-49cf-a1e2-bcfd6c247ee6"] {
     max-width: 950px;	    
     margin: 0 auto;
 }
 
-upscale-template[data-templatetype="ORDER_CONFIRMATION"] upscale-custom-component[data-component-id="6be57c0c-56b3-49cf-a1e2-bcfd6c247ee6"] .container-content iframe {
-	width: 85%;
-    margin: 0 auto;
+upscale-template[data-templatetype="ORDER_CONFIRMATION"] upscale-custom-component[data-component-id="6be57c0c-56b3-49cf-a1e2-bcfd6c247ee6"] .container-content {
+	width: 100%;
 }
+
+.upscale-large upscale-template[data-templatetype="ORDER_CONFIRMATION"] upscale-custom-component[data-component-id="6be57c0c-56b3-49cf-a1e2-bcfd6c247ee6"] .container-content,
+.upscale-medium upscale-template[data-templatetype="ORDER_CONFIRMATION"] upscale-custom-component[data-component-id="6be57c0c-56b3-49cf-a1e2-bcfd6c247ee6"] .container-content,
+.upscale-small upscale-template[data-templatetype="ORDER_CONFIRMATION"] upscale-custom-component[data-component-id="6be57c0c-56b3-49cf-a1e2-bcfd6c247ee6"] .container-content,
+.upscale-extra-small upscale-template[data-templatetype="ORDER_CONFIRMATION"] upscale-custom-component[data-component-id="6be57c0c-56b3-49cf-a1e2-bcfd6c247ee6"] .container-content {
+	width: 85%;
+	margin: 0 auto;
+}
+
+upscale-template[data-templatetype="ORDER_CONFIRMATION"] upscale-custom-component[data-component-id="6be57c0c-56b3-49cf-a1e2-bcfd6c247ee6"] .container-content iframe {
+	padding: 0 16px;
+	width: 100%;
+}
+
+.upscale-large upscale-template[data-templatetype="ORDER_CONFIRMATION"] upscale-custom-component[data-component-id="6be57c0c-56b3-49cf-a1e2-bcfd6c247ee6"] .container-content {
+	margin-top: 24px;
+}
+
 /*
 .upscale-extra-small .product-detail-content .img img,
 .upscale-small .product-detail-content .img img {
