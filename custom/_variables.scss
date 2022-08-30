@@ -3575,6 +3575,14 @@ upscale-storybook .storybook-content .overlay .content-headline,
 	}
 }
 
+upscale-order-details .order-details.container-content .order-details__info-cards:last-of-type > .card:nth-child(3) .content {
+	text-transform: capitalize;
+}
+
+.upscale-tablet upscale-custom-component[data-component-id="0fc5dd9a-30cc-4285-aa0a-67ec2ed71054"] .container-content {
+    max-width: 600px;
+}
+
 /*
 .upscale-extra-small .product-detail-content .img img,
 .upscale-small .product-detail-content .img img {
