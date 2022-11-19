@@ -3632,7 +3632,8 @@ upscale-template[data-templatetype="ORDER_CONFIRMATION"] upscale-custom-componen
 	margin: 0 !important;
 }
 
-.max-quantity-warning {
+.max-quantity-warning,
+upscale-order-details .order-details .card upscale-order-line.order-details__order-line button.order-line__cancel {
 	display: none !important;
 }
 
