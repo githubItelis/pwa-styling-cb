@@ -3633,7 +3633,11 @@ upscale-template[data-templatetype="ORDER_CONFIRMATION"] upscale-custom-componen
 }
 
 .max-quantity-warning,
-upscale-order-details .order-details .card upscale-order-line.order-details__order-line button.order-line__cancel {
+upscale-order-details .order-details .card upscale-order-line.order-details__order-line button.order-line__cancel,
+upscale-order-details .order-details upscale-order-line.order-details__order-line .order-line__record:nth-child(7),
+upscale-order-details .order-details upscale-order-line.order-details__order-line .order-line__record:nth-child(9),
+upscale-checkout .checkout-sections upscale-checkout-address-form:nth-of-type(2) upscale-formgroup-input-container .formgroup__container .shipping-address-list .selected-ship-address .actions button.action-button:first-child,
+upscale-checkout .checkout-sections upscale-checkout-address-form:nth-of-type(2) upscale-checkout-address-form upscale-formgroup-input-container .formgroup__container .shipping-address-list .new--address-wrapper {
 	display: none !important;
 }
 
