@@ -3641,6 +3641,80 @@ upscale-checkout .checkout-sections upscale-checkout-address-form:nth-of-type(2)
 	display: none !important;
 }
 
+.slick-prev,
+.slick-prev:before,
+.slick-next,
+.slick-next:before {
+	animation: fadein 2s;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;		
+    }
+	80% {
+		opacity: 0;		
+	}
+    100% {
+        opacity: 1;		
+    }
+}
+
+/* tailored categories - smaller icons - 2022-12-08 */
+upscale-tailored-categories .container-content .component-headline-group {
+	padding: 20px 12px 10px 12px !important
+}
+upscale-tailored-categories .container-content upscale-ui-carousel .slick-list .slick-slide {
+	width: 25% !important;
+}
+
+upscale-tailored-categories .container-content upscale-ui-carousel .slick-list .slide .upscale-generic-image {
+    padding-top: 0 !important;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+upscale-tailored-categories .container-content upscale-ui-carousel .slick-list .slide .upscale-generic-image .img {
+    position: relative;    
+}
+
+upscale-tailored-categories .container-content upscale-ui-carousel .slick-list .slide upscale-generic-image .text {
+	width: 100%;
+    text-align: center;
+    left: 0 !important;
+	text-transform: uppercase;
+	font-size: 14px !important;
+    letter-spacing: 0.5px;
+    font-weight: 300 !important;
+    color: var(--cx-color-almostblack) !important;
+	position: relative;
+}
+
+upscale-tailored-categories .container-content upscale-ui-carousel .slick-slider .slick-dots {
+    position: relative !important;
+    bottom: 0 !important;
+    margin-top: 30px !important;    
+}
+/* end tailored categories */
+.slick-dots li button:before {
+    font-size: 8px !important;
+}
+
+/* next sell - 2022-12-08 */
+upscale-next-sell .container-content upscale-ui-carousel.carousel-content .slick-track {
+	margin-left: 0;
+}
+
+upscale-next-sell .container-content upscale-ui-carousel.carousel-content .slick-track .slick-slide upscale-product-tile {
+	width: 160px;
+	margin-left: 12px;
+}
+
+upscale-next-sell .container-content .component-headline-group h1 {
+	padding-left: 12px;
+}
+
 /*
 .upscale-extra-small .product-detail-content .img img,
 .upscale-small .product-detail-content .img img {
