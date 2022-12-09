@@ -3715,6 +3715,36 @@ upscale-next-sell .container-content .component-headline-group h1 {
 	padding-left: 12px;
 }
 
+/*span.converted-price {
+    text-transform: uppercase;
+}*/
+
+/* storybook none */
+#upscale .storybook-image-content-background-overlay {
+	background-color: transparent !important;
+}
+
+#upscale .storybook-image-content-headline,
+#upscale .storybook-image-content-sub-headline {
+	color: var(--cx-color-almostblack) !important;
+}
+
+#upscale .storybook-image-content-headline {
+	line-height: 1.22;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    letter-spacing: 0.5px !important;
+}
+
+#upscale .storybook-image-content-sub-headline {
+	line-height: 1.5 !important;
+    font-weight: 400 !important;
+    max-width: 600px;
+    padding-bottom: 24px;
+    font-size: 13px !important;
+}
+/* end storybook none */
+
 /*
 .upscale-extra-small .product-detail-content .img img,
 .upscale-small .product-detail-content .img img {
